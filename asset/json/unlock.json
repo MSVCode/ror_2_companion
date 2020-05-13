@@ -1,0 +1,14 @@
+[
+  {
+    "type":0,
+    "key": "item-58",
+    "name": "Flawless",
+    "description": "Add an extra charge of your Secondary skill."
+  },
+  {
+    "type":0,
+    "key": "item-61",
+    "name": "Advancement",
+    "description": "Complete a Teleporter event."
+  }
+]

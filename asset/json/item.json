@@ -1,0 +1,44 @@
+[
+  {
+    "id": 61,
+    "name": "Armor-Piercing Rounds",
+    "description": "Deal extra damage to bosses.",
+    "detail": "Deal an additional 20% damage (+20% per stack) to bosses.",
+    "lore": null,
+    "procChance": null,
+    "damage": "20%",
+    "heal": null,
+    "statusList": [
+        {
+            "type":"Damage",
+            "initialAmount":"20%",
+            "stackType":1,
+            "addedAmount":"+20%"
+        }
+    ],
+    "damageType": 1,
+    "rarity": 0,
+    "itemCategory": 1
+  },
+  {
+    "id": 58,
+    "name": "Backup Magazine",
+    "description": "Add an extra charge of your Secondary skill.",
+    "detail": "Add +1 (+1 per stack) charge of your Secondary skill.",
+    "lore": null,
+    "procChance": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [
+        {
+            "type":"Charge",
+            "initialAmount":"1",
+            "stackType":1,
+            "addedAmount":"+1"
+        }
+    ],
+    "damageType": null,
+    "rarity": 0,
+    "itemCategory": 2
+  }
+]
