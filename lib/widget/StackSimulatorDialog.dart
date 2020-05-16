@@ -16,8 +16,8 @@ class StackSimulatorDialog extends StatefulWidget {
 
 class StackSimulatorDialogState extends State<StackSimulatorDialog> {
   TextEditingController _countController;
-  final numberRegex = RegExp(r"\d");
-  final nonNumberRegex = RegExp(r"[^\d]");
+  final numberRegex = RegExp(r"[\d\-\+\.]");
+  final nonNumberRegex = RegExp(r"[^\d\-\+\.]");
   int _numberOfItem = 1;
 
   @override
@@ -41,23 +41,21 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
     return initial + added * (_numberOfItem - 1);
   }
 
-  /// initial and added is the same
-  ///
   /// Input is scalar, not percent
-  double calculateExponential(double added) {
-    return pow(1 + added, (_numberOfItem - 1));
+  double calculateExponential(double initial, double added) {
+    return (1+initial) * pow(1+added, (_numberOfItem - 1));
   }
 
   /// initial and added is the same
-  /// 
+  ///
   /// Input is scalar, not percent
   double calculateHyperbolic(double added) {
-    return 1 - 1 / (1 + added * (_numberOfItem - 1));
+    return 1 - 1 / (1 + added * _numberOfItem);
   }
 
   ///special stacking
   double calculateBandolier() {
-    return 1 - 1 / pow(_numberOfItem, 0.33);
+    return 1 - 1 / pow(_numberOfItem+1, 0.33);
   }
 
   ///Data comes in string
@@ -65,19 +63,31 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
   ///Calculate result for a single status
   String calculateResult(
       String initialText, String addedText, STACK_TYPE stackType) {
-    bool isPercent = initialText.contains("%");
+
+    if (initialText==null || addedText==null) return "-";
+    
+    bool initialIsPercent = initialText.contains("%");
+    bool addedIsPercent = addedText.contains("%");
     String measurement =
         nonNumberRegex.allMatches(initialText).map((m) => m[0]).join();
     String numInitial =
         numberRegex.allMatches(initialText).map((m) => m[0]).join();
-    String numAdded =
-        numberRegex.allMatches(initialText).map((m) => m[0]).join();
+    String numAdded = numberRegex.allMatches(addedText).map((m) => m[0]).join();
 
     double initial = double.tryParse(numInitial);
     double added = double.tryParse(numAdded);
 
-    if (isPercent) {
+    // bool isNegative = added < 0;
+
+    //convert to positive for calculation
+    // if (isNegative) {
+    //   added *= -1;
+    // }
+
+    if (initialIsPercent) {
       initial /= 100;
+    }
+    if (addedIsPercent) {
       added /= 100;
     }
 
@@ -87,7 +97,7 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
         result = calculateBandolier();
         break;
       case STACK_TYPE.EXPONENTIAL:
-        result = calculateExponential(added);
+        result = calculateExponential(initial, added);
         break;
       case STACK_TYPE.HYPERBOLIC:
         result = calculateHyperbolic(added);
@@ -95,36 +105,47 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
       case STACK_TYPE.LINEAR:
         result = calculateLinear(initial, added);
         break;
-      case STACK_TYPE.NONE:
-        result = initial;
-        break;
       // case STACK_TYPE.RUSTED_KEY: //too special
       //   result = calculateBandolier();
       //   break;
       default:
+        result = initial;
         break;
     }
 
-    if (isPercent) result *= 100;
+    //result based on initial
+    if (initialIsPercent) result *= 100;
 
-    // result = result.roundToDouble();
+    // if (isNegative) result *= -1;
 
     // assumes right-side measurement
     return "${result.toStringAsFixed(0)}$measurement";
   }
 
   List<Widget> buildResultStatus() {
-    return widget.statusList.map<Widget>((stat) {
+    var statList = widget.statusList.map<Widget>((stat) {
       return CustomDetailRow(
         flexList: [1, 1, 1],
         children: <Widget>[
           Text(stat.type),
           Text(enumToTitle(stat.stackType)),
           Text(calculateResult(
-              stat.initialAmount, stat.addedAmount, stat.stackType))
+              stat.initialAmount, stat.addedAmount, stat.stackType), textAlign: TextAlign.right,)
         ],
       );
     }).toList();
+
+    return [
+      CustomDetailRow(
+        flexList: [1, 1, 1],
+        children: <Widget>[
+          Text("Type"),
+          Text("Stack Type"),
+          Text("Result", textAlign: TextAlign.right,)
+        ],
+      ),
+      ...statList
+    ];
   }
 
   @override

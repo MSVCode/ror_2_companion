@@ -29,7 +29,7 @@ class ItemDetailScreen extends StatelessWidget {
               "ID",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            Text(data.id.toString())
+            Text(data.id >= 10000 ? "?" : data.id.toString())
           ],
         ),
         CustomDetailRow(
@@ -49,10 +49,25 @@ class ItemDetailScreen extends StatelessWidget {
               "Category",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            Text(enumToTitle(data.itemCategory))
+            Text(data.itemCategory.map((val) => enumToTitle(val)).join(", "))
           ],
         ),
       ],
+    );
+  }
+
+  Widget _buildSimulateStack(BuildContext context, Item data) {
+    //skip for equipment
+    if (data.itemCategory.contains(ITEM_CATEGORY.EQUIPMENT)) return SizedBox();
+
+    return RaisedButton(
+      child: Text("Simulate Stack"),
+      onPressed: () => showDialog(
+        context: context,
+        builder: (_) => StackSimulatorDialog(
+          statusList: data.statusList,
+        ),
+      ),
     );
   }
 
@@ -107,16 +122,10 @@ class ItemDetailScreen extends StatelessWidget {
           ],
         ),
         ...statList,
-        SizedBox(height: 16,),
-        RaisedButton(
-          child: Text("Simulate Stack"),
-          onPressed: () => showDialog(
-            context: context,
-            builder: (_) => StackSimulatorDialog(
-              statusList: data.statusList,
-            ),
-          ),
-        )
+        SizedBox(
+          height: 16,
+        ),
+        _buildSimulateStack(context, data)
       ],
     );
   }
@@ -124,7 +133,21 @@ class ItemDetailScreen extends StatelessWidget {
   Widget _buildUnlock(BuildContext context, Item data) {
     Unlock unlock = DataProvider.of(context).findItemUnlock(data.id);
 
-    if (unlock == null) return SizedBox();
+    if (unlock == null) return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Text(
+          "Unlock",
+          style: TextStyle(
+              fontSize: MediaQuery.of(context).textScaleFactor * 20,
+              fontWeight: FontWeight.bold),
+        ),
+        SizedBox(
+          height: 12,
+        ),
+        Text("Available from beginning")
+      ],
+    );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -181,7 +204,7 @@ class ItemDetailScreen extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.blueGrey[800],
               borderRadius: BorderRadius.circular(4)),
-          child: Text("No Lore"),
+          child: Text(data.lore ?? "No Lore", style: TextStyle(color: Colors.blueGrey[200]),),
         )
       ],
     );

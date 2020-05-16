@@ -1,5 +1,5 @@
 
-enum STACK_TYPE {NONE, LINEAR, EXPONENTIAL, HYPERBOLIC, BANDOLIER, RUSTED_KEY}
+enum STACK_TYPE {LINEAR, EXPONENTIAL, HYPERBOLIC, BANDOLIER, RUSTED_KEY}
 enum DAMAGE_TYPE {BASE, TOTAL}
 enum RARITY {COMMON, UNCOMMON, LEGENDARY, BOSS, LUNAR, EQUIPMENT}
 enum ITEM_CATEGORY {HEAL, DAMAGE, UTILITY, EQUIPMENT}
@@ -38,18 +38,18 @@ class Item {
   /// detailed description
   String detail;
   String lore;
-  /// base proc-chance in percent (0-100)
-  double procChance;
-  /// Damaging items (flat or %)
+  /// base proc-coefficient in scalar (0-1) | the probability to proc chain
+  double procCoef;
+  /// Damage from items (flat or %) that calculates from a certain type of damage
   String damage;
-  /// Healing items (flat or %)
+  /// Healing from items (flat or % or regen/s) for survivor
   String heal; 
   /// what increased by stacking
   List<ItemStatus> statusList;
 
   DAMAGE_TYPE damageType;
   RARITY rarity;
-  ITEM_CATEGORY itemCategory;
+  List<ITEM_CATEGORY> itemCategory;
 
   Item({
     this.id,
@@ -57,7 +57,7 @@ class Item {
     this.description,
     this.detail,
     this.lore,
-    this.procChance,
+    this.procCoef,
     this.damage,
     this.heal,
     this.statusList,
@@ -70,9 +70,11 @@ class Item {
     List<dynamic> isList = map["statusList"];
     List<ItemStatus> statusList = isList.map<ItemStatus>((val)=>ItemStatus.fromMap(val)).toList();
 
+    List<dynamic> icList = map["itemCategory"];
+    List<ITEM_CATEGORY> itemCategory = icList.map<ITEM_CATEGORY>((val)=>ITEM_CATEGORY.values[val ?? 0]).toList();
+
     DAMAGE_TYPE damageType = map["damageType"]!=null?DAMAGE_TYPE.values[map["damageType"]]:null;
     RARITY rarity = RARITY.values[map["rarity"] ?? 0];
-    ITEM_CATEGORY itemCategory = ITEM_CATEGORY.values[map["itemCategory"] ?? 0];
 
     return Item(
       id: map["id"],
@@ -80,7 +82,7 @@ class Item {
       description: map["description"],
       detail: map["detail"],
       lore: map["lore"],
-      procChance: map["procChance"],
+      procCoef: map["procCoef"],
       damage: map["damage"],
       heal: map["heal"],
       statusList: statusList,

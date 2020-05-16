@@ -82,12 +82,6 @@ class _SettingScreenState extends State<SettingScreen> {
               onTap: () =>
                   _launchURL("https://github.com/MSVCode/ror_2_companion"),
             ),
-            ListTile(
-              title: Text("Support: Buy me a coffee"),
-              subtitle:
-                  Text("Buy me a coffee to help me maintain this project"),
-              onTap: () => _launchURL("https://www.buymeacoffee.com/MSVCode"),
-            ),
           ],
         ),
       ),

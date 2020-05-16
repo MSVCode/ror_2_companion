@@ -115,7 +115,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                 children: [
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Boss", style: small),
+                      title: Text("Boss", style: small.copyWith(color: Colors.yellow)),
                       value: _checkRarityBoss,
                       onChanged: (val) {
                         setState(() => _checkRarityBoss = val);
@@ -137,7 +137,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                 children: [
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Equipment", style: small),
+                      title: Text("Equipment", style: small.copyWith(color: Colors.orange)),
                       value: _checkRarityEquipment,
                       onChanged: (val) {
                         setState(() => _checkRarityEquipment = val);
@@ -146,7 +146,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                   ),
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Legendary", style: small),
+                      title: Text("Legendary", style: small.copyWith(color: Colors.red)),
                       value: _checkRarityLegendary,
                       onChanged: (val) {
                         setState(() => _checkRarityLegendary = val);
@@ -159,7 +159,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                 children: [
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Lunar", style: small),
+                      title: Text("Lunar", style: small.copyWith(color: Colors.blue)),
                       value: _checkRarityLunar,
                       onChanged: (val) {
                         setState(() => _checkRarityLunar = val);
@@ -168,7 +168,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                   ),
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Uncommon", style: small),
+                      title: Text("Uncommon", style: small.copyWith(color: Colors.green)),
                       value: _checkRarityUncommon,
                       onChanged: (val) {
                         setState(() => _checkRarityUncommon = val);
@@ -179,14 +179,14 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
               ),
               Divider(height: 16),
               Text(
-                "Category (Chest)",
+                "Category",
                 textAlign: TextAlign.center,
               ),
               Row(
                 children: [
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Damage", style: small),
+                      title: Text("Damage", style: small.copyWith(color: Colors.redAccent)),
                       value: _checkCategoryDamage,
                       onChanged: (val) {
                         setState(() => _checkCategoryDamage = val);
@@ -195,7 +195,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                   ),
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Equipment", style: small),
+                      title: Text("Equipment", style: small.copyWith(color: Colors.orangeAccent)),
                       value: _checkCategoryEquipment,
                       onChanged: (val) {
                         setState(() => _checkCategoryEquipment = val);
@@ -208,7 +208,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                 children: [
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Heal", style: small),
+                      title: Text("Heal", style: small.copyWith(color: Colors.greenAccent)),
                       value: _checkCategoryHeal,
                       onChanged: (val) {
                         setState(() => _checkCategoryHeal = val);
@@ -217,7 +217,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                   ),
                   Expanded(
                     child: CheckboxListTile(
-                      title: Text("Utility", style: small),
+                      title: Text("Utility", style: small.copyWith(color: Colors.purpleAccent)),
                       value: _checkCategoryUtility,
                       onChanged: (val) {
                         setState(() => _checkCategoryUtility = val);

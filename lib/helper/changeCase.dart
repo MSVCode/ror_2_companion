@@ -1,5 +1,7 @@
 ///Change enum values to title case
 String enumToTitle(dynamic input) {
+  if (input==null) return "None";
+  
   String mod = input.toString().split('.').last.replaceAll("_", " ");
 
   return mod

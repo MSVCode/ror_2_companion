@@ -51,7 +51,10 @@ class DataProvider with ChangeNotifier {
         item.description.toLowerCase().contains(query);
 
       bool rarity = filterRarity[item.rarity];
-      bool category = filterItemCategory[item.itemCategory];
+      
+      //find at least one true category
+      var trueCategory = item.itemCategory.indexWhere((val) => filterItemCategory[val]);
+      bool category = trueCategory>-1;
 
       return contains && rarity && category;
     }).toList();
@@ -77,6 +80,15 @@ class DataProvider with ChangeNotifier {
 
     //convert into class
     itemList = itemJson.map<Item>((v) => Item.fromMap(v)).toList();
+
+    //sort by rarity, then name
+    itemList.sort((a,b){
+      if (a.rarity!=b.rarity)
+        return a.rarity.index - b.rarity.index;
+
+      return a.name.compareTo(b.name);
+    });
+    
     filteredItemList = itemList;
   }
 
