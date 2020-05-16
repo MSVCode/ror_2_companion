@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="ror_2_companion"
+        android:label="Risk of Rain 2 Companion"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
