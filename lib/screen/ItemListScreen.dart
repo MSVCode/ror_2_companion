@@ -19,12 +19,36 @@ class _ItemListScreenState extends State<ItemListScreen> {
     var prov = DataProvider.of(context);
     var data = prov.filteredItemList[index];
 
+    Color cardColor;
+    switch (data.rarity) {
+      case RARITY.BOSS:
+        cardColor = Colors.yellow[800];
+        break;
+      case RARITY.COMMON:
+        cardColor = Colors.white30;
+        break;
+      case RARITY.EQUIPMENT:
+        cardColor = Colors.orange[800];
+        break;
+      case RARITY.LEGENDARY:
+        cardColor = Colors.red[800];
+        break;
+      case RARITY.LUNAR:
+        cardColor = Colors.blue[800];
+        break;
+      case RARITY.UNCOMMON:
+        cardColor = Colors.green[800];
+        break;
+      default:
+        break;
+    }
+
     return CustomGridTile(
-      id: data.id,
-      imagePath: "asset/gameAsset/item/${data.id}.png",
-      name: data.name,
-      path: "/item",
-    );
+        id: data.id,
+        imagePath: "asset/gameAsset/item/${data.id}.png",
+        name: data.name,
+        path: "/item",
+        cardColor: cardColor);
   }
 
   void _onSearch(String text) {
@@ -80,14 +104,16 @@ class _ItemListScreenState extends State<ItemListScreen> {
                 height: 4,
               ),
               Expanded(
-                child: Consumer<SettingProvider>(builder: (_, settingModel, __){
-                  return GridView.builder(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: settingModel.gridCount),
-                    itemBuilder: _buildItemGrid,
-                    itemCount: dataModel.filteredItemList.length,
-                  );
-                },),
+                child: Consumer<SettingProvider>(
+                  builder: (_, settingModel, __) {
+                    return GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: settingModel.gridCount),
+                      itemBuilder: _buildItemGrid,
+                      itemCount: dataModel.filteredItemList.length,
+                    );
+                  },
+                ),
               )
             ],
           );
