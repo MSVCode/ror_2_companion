@@ -1760,33 +1760,6 @@
       }
     ],
     "damageType": null,
-    "rarity": 2,
-    "itemCategory": [0, 2]
-  },
-  {
-    "id": 52,
-    "name": "Titanic Knurl",
-    "description": "Boosts health and regeneration.",
-    "detail": "Increase maximum health by 40 (+40 per stack) and base health regeneration by +1.6 hp/s (+1.6 hp/s per stack).",
-    "lore": null,
-    "procCoef": null,
-    "damage": null,
-    "heal": null,
-    "statusList": [
-      {
-        "type":"Max Health",
-        "initialAmount":"40",
-        "stackType":0,
-        "addedAmount":"+40"
-      },
-      {
-        "type":"Health Regen",
-        "initialAmount":"1.6",
-        "stackType":0,
-        "addedAmount":"+1.6"
-      }
-    ],
-    "damageType": null,
     "rarity": 3,
     "itemCategory": [0, 2]
   },
@@ -2863,7 +2836,7 @@
     "itemCategory": [3]
   },
   {
-    "id": 20022,
+    "id": 20023,
     "name": "Fuel Array",
     "description": "Looks like it could power something. EXTREMELY unstable...",
     "detail": "Quest item used to unlock new survivor: Rex",
