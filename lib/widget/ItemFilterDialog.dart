@@ -102,131 +102,140 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
       contentPadding: EdgeInsets.all(4),
       content: Container(
         width: MediaQuery.of(context).size.width,
-        child: ListView(shrinkWrap: true,
-            // crossAxisAlignment: CrossAxisAlignment.center,
-            // mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              SizedBox(height: 8),
-              Text(
-                "Rarity",
-                textAlign: TextAlign.center,
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Boss", style: small.copyWith(color: Colors.yellow)),
-                      value: _checkRarityBoss,
-                      onChanged: (val) {
-                        setState(() => _checkRarityBoss = val);
-                      },
-                    ),
+        child: ListView(
+          shrinkWrap: true,
+          children: <Widget>[
+            SizedBox(height: 8),
+            Text(
+              "Rarity",
+              textAlign: TextAlign.center,
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Boss",
+                        style: small.copyWith(color: Colors.yellow)),
+                    value: _checkRarityBoss,
+                    onChanged: (val) {
+                      setState(() => _checkRarityBoss = val);
+                    },
                   ),
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Common", style: small),
-                      value: _checkRarityCommon,
-                      onChanged: (val) {
-                        setState(() => _checkRarityCommon = val);
-                      },
-                    ),
-                  )
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Equipment", style: small.copyWith(color: Colors.orange)),
-                      value: _checkRarityEquipment,
-                      onChanged: (val) {
-                        setState(() => _checkRarityEquipment = val);
-                      },
-                    ),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Common", style: small),
+                    value: _checkRarityCommon,
+                    onChanged: (val) {
+                      setState(() => _checkRarityCommon = val);
+                    },
                   ),
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Legendary", style: small.copyWith(color: Colors.red)),
-                      value: _checkRarityLegendary,
-                      onChanged: (val) {
-                        setState(() => _checkRarityLegendary = val);
-                      },
-                    ),
+                )
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Equipment",
+                        style: small.copyWith(color: Colors.orange)),
+                    value: _checkRarityEquipment,
+                    onChanged: (val) {
+                      setState(() => _checkRarityEquipment = val);
+                    },
                   ),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Lunar", style: small.copyWith(color: Colors.blue)),
-                      value: _checkRarityLunar,
-                      onChanged: (val) {
-                        setState(() => _checkRarityLunar = val);
-                      },
-                    ),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Legendary",
+                        style: small.copyWith(color: Colors.red)),
+                    value: _checkRarityLegendary,
+                    onChanged: (val) {
+                      setState(() => _checkRarityLegendary = val);
+                    },
                   ),
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Uncommon", style: small.copyWith(color: Colors.green)),
-                      value: _checkRarityUncommon,
-                      onChanged: (val) {
-                        setState(() => _checkRarityUncommon = val);
-                      },
-                    ),
-                  )
-                ],
-              ),
-              Divider(height: 16),
-              Text(
-                "Category",
-                textAlign: TextAlign.center,
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Damage", style: small.copyWith(color: Colors.redAccent)),
-                      value: _checkCategoryDamage,
-                      onChanged: (val) {
-                        setState(() => _checkCategoryDamage = val);
-                      },
-                    ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Lunar",
+                        style: small.copyWith(color: Colors.blue)),
+                    value: _checkRarityLunar,
+                    onChanged: (val) {
+                      setState(() => _checkRarityLunar = val);
+                    },
                   ),
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Equipment", style: small.copyWith(color: Colors.orangeAccent)),
-                      value: _checkCategoryEquipment,
-                      onChanged: (val) {
-                        setState(() => _checkCategoryEquipment = val);
-                      },
-                    ),
-                  )
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Heal", style: small.copyWith(color: Colors.greenAccent)),
-                      value: _checkCategoryHeal,
-                      onChanged: (val) {
-                        setState(() => _checkCategoryHeal = val);
-                      },
-                    ),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Uncommon",
+                        style: small.copyWith(color: Colors.green)),
+                    value: _checkRarityUncommon,
+                    onChanged: (val) {
+                      setState(() => _checkRarityUncommon = val);
+                    },
                   ),
-                  Expanded(
-                    child: CheckboxListTile(
-                      title: Text("Utility", style: small.copyWith(color: Colors.purpleAccent)),
-                      value: _checkCategoryUtility,
-                      onChanged: (val) {
-                        setState(() => _checkCategoryUtility = val);
-                      },
-                    ),
-                  )
-                ],
-              ),
-            ]),
+                )
+              ],
+            ),
+            Divider(height: 16),
+            Text(
+              "Category",
+              textAlign: TextAlign.center,
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Damage",
+                        style: small.copyWith(color: Colors.redAccent)),
+                    value: _checkCategoryDamage,
+                    onChanged: (val) {
+                      setState(() => _checkCategoryDamage = val);
+                    },
+                  ),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Equipment",
+                        style: small.copyWith(color: Colors.orangeAccent)),
+                    value: _checkCategoryEquipment,
+                    onChanged: (val) {
+                      setState(() => _checkCategoryEquipment = val);
+                    },
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Heal",
+                        style: small.copyWith(color: Colors.greenAccent)),
+                    value: _checkCategoryHeal,
+                    onChanged: (val) {
+                      setState(() => _checkCategoryHeal = val);
+                    },
+                  ),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Utility",
+                        style: small.copyWith(color: Colors.purpleAccent)),
+                    value: _checkCategoryUtility,
+                    onChanged: (val) {
+                      setState(() => _checkCategoryUtility = val);
+                    },
+                  ),
+                )
+              ],
+            ),
+          ],
+        ),
       ),
       actions: <Widget>[
         FlatButton(

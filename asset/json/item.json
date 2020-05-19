@@ -192,7 +192,7 @@
       {
         "type":"Radius",
         "initialAmount":"16m",
-        "stackType":1,
+        "stackType":0,
         "addedAmount":"+8m"
       },
       {
@@ -246,7 +246,7 @@
       {
         "type":"Shield",
         "initialAmount":"8%",
-        "stackType":1,
+        "stackType":0,
         "addedAmount":"+8%"
       }
     ],
@@ -267,7 +267,7 @@
       {
         "type":"Heal",
         "initialAmount":"25",
-        "stackType":1,
+        "stackType":0,
         "addedAmount":"+25"
       }
     ],
@@ -288,13 +288,13 @@
       {
         "type":"Damage",
         "initialAmount":"150%",
-        "stackType":1,
+        "stackType":0,
         "addedAmount":"+75%"
       },
       {
         "type":"Radius",
         "initialAmount":"12m",
-        "stackType":1,
+        "stackType":0,
         "addedAmount":"+4m"
       }
     ],
