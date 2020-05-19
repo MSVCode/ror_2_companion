@@ -1476,7 +1476,7 @@
       {
         "type":"Cooldown Reduce",
         "initialAmount":"25%",
-        "stackType":2,
+        "stackType":1,
         "addedAmount":"+25%"
       }
     ],
