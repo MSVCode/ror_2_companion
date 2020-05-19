@@ -38,24 +38,28 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
 
   /// Input is scalar, not percent
   double calculateLinear(double initial, double added) {
-    return initial + added * (_numberOfItem - 1);
+    int numberOfItem = _numberOfItem < 0 ? 0 : _numberOfItem;
+    return initial + added * (numberOfItem - 1);
   }
 
   /// Input is scalar, not percent
   double calculateExponential(double initial, double added) {
-    return (1+initial) * pow(1+added, (_numberOfItem - 1));
+    int numberOfItem = _numberOfItem < 0 ? 0 : _numberOfItem;
+    return (1 + initial) * pow(1 + added, (numberOfItem - 1));
   }
 
   /// initial and added is the same
   ///
   /// Input is scalar, not percent
   double calculateHyperbolic(double added) {
-    return 1 - 1 / (1 + added * _numberOfItem);
+    int numberOfItem = _numberOfItem < 0 ? 0 : _numberOfItem;
+    return 1 - 1 / (1 + added * numberOfItem);
   }
 
   ///special stacking
   double calculateBandolier() {
-    return 1 - 1 / pow(_numberOfItem+1, 0.33);
+    int numberOfItem = _numberOfItem < 0 ? 0 : _numberOfItem;
+    return 1 - 1 / pow(numberOfItem + 1, 0.33);
   }
 
   ///Data comes in string
@@ -63,9 +67,8 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
   ///Calculate result for a single status
   String calculateResult(
       String initialText, String addedText, STACK_TYPE stackType) {
+    if (initialText == null || addedText == null) return "-";
 
-    if (initialText==null || addedText==null) return "-";
-    
     bool initialIsPercent = initialText.contains("%");
     bool addedIsPercent = addedText.contains("%");
     String measurement =
@@ -129,8 +132,11 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
         children: <Widget>[
           Text(stat.type),
           Text(enumToTitle(stat.stackType)),
-          Text(calculateResult(
-              stat.initialAmount, stat.addedAmount, stat.stackType), textAlign: TextAlign.right,)
+          Text(
+            calculateResult(
+                stat.initialAmount, stat.addedAmount, stat.stackType),
+            textAlign: TextAlign.right,
+          )
         ],
       );
     }).toList();
@@ -141,7 +147,10 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
         children: <Widget>[
           Text("Type"),
           Text("Stack Type"),
-          Text("Result", textAlign: TextAlign.right,)
+          Text(
+            "Result",
+            textAlign: TextAlign.right,
+          )
         ],
       ),
       ...statList
@@ -154,9 +163,8 @@ class StackSimulatorDialogState extends State<StackSimulatorDialog> {
       title: Text("Stack Simulation"),
       content: Container(
         width: MediaQuery.of(context).size.width - 20,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisSize: MainAxisSize.min,
+        child: ListView(
+          shrinkWrap: true,
           children: <Widget>[
             TextField(
               decoration: InputDecoration(labelText: "Number of Item"),
