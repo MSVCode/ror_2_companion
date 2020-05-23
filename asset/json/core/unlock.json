@@ -238,5 +238,23 @@
     "key": "survivor-0",
     "name": "...To Be Left Alone",
     "description": "Stabilize the Cell in the Void Fields."
+  },
+  {
+    "type":2,
+    "key": "skill-0-0-1",
+    "name": "Acrid: Easy Prey",
+    "description": "As Acrid, land the killing blow on 50 total enemies that have 1 hit point left."
+  },
+  {
+    "type":2,
+    "key": "skill-0-2-1",
+    "name": "Acrid: Bad Medicine",
+    "description": "As Acrid, land the final blow on a Scavenger."
+  },
+  {
+    "type":2,
+    "key": "skill-0-3-1",
+    "name": "Acrid: Pandemic",
+    "description": "As Acrid, inflict Poison 1000 total times."
   }
 ]

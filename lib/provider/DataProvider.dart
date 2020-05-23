@@ -143,9 +143,16 @@ class DataProvider with ChangeNotifier {
 
     List<Map<String, dynamic>> unlockJson;
 
+    // Currently Unlock's core and translation data have exact same keys, so it's okay to load them directly
     try {
-      String data = await DefaultAssetBundle.of(context)
-          .loadString("asset/json/core/unlock.json");
+      String data;
+      if (translation.isEmpty) {
+        data = await DefaultAssetBundle.of(context)
+            .loadString("asset/json/core/unlock.json");
+      } else {
+        data = await DefaultAssetBundle.of(context)
+            .loadString("asset/json/$translation/unlock.json");
+      }
       //type hinting
       List<dynamic> rawData = json.decode(data);
       unlockJson = rawData.map<Map<String, dynamic>>((e) => e).toList();
@@ -153,33 +160,8 @@ class DataProvider with ChangeNotifier {
       throw new Exception("Unable to load unlock data");
     }
 
-    //if translation is used
-    String translationData;
-    List<Map<String, dynamic>> translationJson;
-    if (translation.isNotEmpty) {
-      try {
-        translationData = await DefaultAssetBundle.of(context)
-            .loadString("asset/json/$translation/unlock.json");
-        //type hinting
-        List<dynamic> rawData = json.decode(translationData);
-        translationJson = rawData.map<Map<String, dynamic>>((e) => e).toList();
-      } catch (err) {
-        throw new Exception("Unable to load unlock translation");
-      }
-    }
-
     //convert into class
-    unlockList = unlockJson.map<Unlock>((v) {
-      //if translation is used, merge map
-      if (translationJson != null) {
-        //find translation data
-        var replace = translationJson
-            .firstWhere((rep) => rep["key"] == v["key"], orElse: () => null);
-        if (replace != null) v.addAll(replace);
-      }
-
-      return Unlock.fromMap(v);
-    }).toList();
+    unlockList = unlockJson.map<Unlock>((v) => Unlock.fromMap(v)).toList();
   }
 
   /// Find unlock for a certain item id
@@ -224,19 +206,72 @@ class DataProvider with ChangeNotifier {
   Future<void> loadSurvivor() async {
     if (survivorList != null) return;
 
-    List<dynamic> survivorJson;
+    List<Map<String, dynamic>> survivorJson;
 
     try {
       String data = await DefaultAssetBundle.of(context)
           .loadString("asset/json/core/survivor.json");
-      survivorJson = json.decode(data);
+
+      List<dynamic> rawData = json.decode(data);
+      survivorJson = rawData.map<Map<String, dynamic>>((e) => e).toList();
     } catch (err) {
       throw new Exception("Unable to load survivor data");
     }
 
+    //if translation is used
+    String translationData;
+    List<Map<String, dynamic>> translationJson;
+    if (translation.isNotEmpty) {
+      try {
+        translationData = await DefaultAssetBundle.of(context)
+            .loadString("asset/json/$translation/survivor.json");
+        //type hinting
+        List<dynamic> rawData = json.decode(translationData);
+        translationJson = rawData.map<Map<String, dynamic>>((e) => e).toList();
+      } catch (err) {
+        throw new Exception("Unable to load survivor translation");
+      }
+    }
+
     //convert into class
-    survivorList =
-        survivorJson.map<Survivor>((v) => Survivor.fromMap(v)).toList();
+    survivorList = survivorJson.map<Survivor>((v) {
+      //if translation is used, merge map
+      if (translationJson != null) {
+        //find translation data
+        var replace = translationJson.firstWhere((rep) => rep["id"] == v["id"],
+            orElse: () => null);
+
+        if (replace != null) {
+          //skip skill for general replace
+          var finalData = {...replace};
+          finalData.remove("skillList");
+
+          //loop skill replacement here
+          List<dynamic> rawCore = v["skillList"];
+          List<Map<String, dynamic>> coreSkillList =
+              rawCore.map<Map<String, dynamic>>((val) => val).toList();
+          List<dynamic> rawTranslation = replace["skillList"];
+          List<Map<String, dynamic>> translationSkillList =
+              rawTranslation.map<Map<String, dynamic>>((val) => val).toList();
+
+          //assumes same length and same position
+          //will automatically 'update' v - as it's by reference
+          for (int i = 0; i < coreSkillList.length; i++) {
+            var repData = translationSkillList[i];
+
+            //add skill to v here
+            if (repData != null) {
+              coreSkillList[i].addAll(repData);
+            }
+          }
+
+          //add other data
+          v.addAll(finalData);
+        }
+      }
+
+      return Survivor.fromMap(v);
+    }).toList();
 
     //sort by rarity, then name
     survivorList.sort((a, b) {
@@ -263,11 +298,11 @@ class DataProvider with ChangeNotifier {
   /// Find unlock for a certain survivor's skill loadout
   ///
   /// Might returns null
-  Unlock findLoadoutUnlock(int survivorId, SKILL_TYPE type, int variant) {
+  Unlock findSkillUnlock(int survivorId, SKILL_TYPE type, int variant) {
     return unlockList.firstWhere(
         (val) =>
-            val.unlockType == UNLOCK_TYPE.LOADOUT &&
-            val.key == "loadout-$survivorId-${type.index}-$variant",
+            val.unlockType == UNLOCK_TYPE.SKILL &&
+            val.key == "skill-$survivorId-${type.index}-$variant",
         orElse: () => null);
   }
 }

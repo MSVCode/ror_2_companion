@@ -51,10 +51,11 @@ flutter:
   assets:
     - asset/json/core/
     - asset/gameAsset/item/
-    # - asset/gameAsset/survivor/
+    - asset/gameAsset/skill/
+    - asset/gameAsset/survivor/
 
     #translations
-    - asset/json/sample_en/
+    # - asset/json/sample_en/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

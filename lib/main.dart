@@ -5,8 +5,8 @@ import 'package:ror_2_companion/provider/SettingProvider.dart';
 import 'package:ror_2_companion/screen/ItemDetailScreen.dart';
 import 'package:ror_2_companion/screen/ItemListScreen.dart';
 import 'package:ror_2_companion/screen/Setting.dart';
-// import 'package:ror_2_companion/screen/SurvivorDetailScreen.dart';
-// import 'package:ror_2_companion/screen/SurvivorListScreen.dart';
+import 'package:ror_2_companion/screen/SurvivorDetailScreen.dart';
+import 'package:ror_2_companion/screen/SurvivorListScreen.dart';
 
 void main() {
   runApp(MultiProvider(
@@ -24,7 +24,7 @@ void main() {
       home: MyApp(),
       routes: {
         "/item": (context) => ItemDetailScreen(),
-        // "/survivor": (context) => SurvivorDetailScreen(),
+        "/survivor": (context) => SurvivorDetailScreen(),
       },
     ),
   ));
@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
   int _currentScreen = 0;
   List<Widget> _screenList = [
     ItemListScreen(),
-    // SurvivorListScreen()
+    SurvivorListScreen()
   ];
 
   @override
@@ -62,6 +62,12 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _ready = true;
     });
+  }
+
+  ///Change tab and close drawer
+  void _moveTab(int index){
+    setState(() => _currentScreen = index);
+    Navigator.of(context).pop();
   }
 
   Widget _buildApp() {
@@ -86,15 +92,17 @@ class _MyAppState extends State<MyApp> {
               child: ListView(
                 children: <Widget>[
                   ListTile(
+                    enabled: _currentScreen!=0,
                     leading: Icon(Icons.storage),
                     title: Text("Item List"),
-                    onTap: () => setState(() => _currentScreen = 0),
+                    onTap: () => _moveTab(0),
                   ),
-                  // ListTile(
-                  //   leading: Icon(Icons.people),
-                  //   title: Text("Survivor List"),
-                  //   onTap: () => setState(() => _currentScreen = 1),
-                  // ),
+                  ListTile(
+                    enabled: _currentScreen!=1,
+                    leading: Icon(Icons.people),
+                    title: Text("Survivor List"),
+                    onTap: () => _moveTab(1),
+                  ),
                   ListTile(
                     leading: Icon(Icons.settings),
                     title: Text("Setting"),

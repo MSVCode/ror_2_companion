@@ -1,7 +1,7 @@
 
-enum UNLOCK_TYPE {ITEM, SURVIVOR, LOADOUT}
+enum UNLOCK_TYPE {ITEM, SURVIVOR, SKILL}
 
-///Unlocking item/survivor/loadout
+///Unlocking item/survivor/skill
 class Unlock {
   /// replaces id | it's better to be unchanged
   /// For item, the key is `item-id`
