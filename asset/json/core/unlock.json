@@ -232,5 +232,11 @@
     "key": "item-20017",
     "name": "Cleanup Duty",
     "description": "Destroy 20 flying rocks in Sky Meadow."
+  },
+  {
+    "type":1,
+    "key": "survivor-0",
+    "name": "...To Be Left Alone",
+    "description": "Stabilize the Cell in the Void Fields."
   }
 ]

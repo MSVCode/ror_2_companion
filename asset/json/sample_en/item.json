@@ -1,0 +1,793 @@
+[
+  {
+    "id": 0,
+    "name": "Soldier's Syringe",
+    "description": "Increases attack speed.",
+    "detail": "Increases attack speed by 15% (+15% per stack).",
+    "lore": "\"I ain't much for drugs... but hell, when fortune is knockin', ya gotta greet that door with a smile and a nod. Salud!\"\n\n-Signal echoes, UES Contact Light"
+  },
+  {
+    "id": 1,
+    "name": "Tougher Times",
+    "description": "Chance to block incoming damage.",
+    "detail": "15% (+15% per stack) chance to block incoming damage. Unaffected by luck.",
+    "lore": "//--AUTO-TRANSCRIPTION FROM ROOM 4211B OF UES [Redacted] --//\n\n\"Why'd you sign up?\"\n\nWyatt's voice was bored. The mission to the Contact Light's last known location was taking longer than he expected.\n\nMalik was on the floor, cleaning her rifle. \"To get paid, mostly.\"\n\n\"And that's it?\"\n\nShe grunted in affirmation. She continued to wipe down the weapon.\n\n\"I'm here to find something.\" He continued. \"I shipped it a few years back, but I don't think it made it before the train went down. I'm guessing it's still in the Contact Light. So I'm gonna get it back.\"\n\nShe began to tighten the last remaining bolts. Her routine near completion, she moved her gaze to Wyatt. \"Seriously?\"\n\n\"Yep!\"\n\nMalik raised her brow. \"There were over 7 million security chests in the Contact Light. The chance of you finding a specific one is impossible.\" She began to unfold her legs as she propped her rifle in the corner. \"And according to the distress beacon, the Contact Light was destroyed in orbit. Your shipment is probably floating around in space. It's all gone, Wyatt.\"\n\nHe grinned. \"I think I'm gonna find it.\"\n\n\"You're terrible.\""
+  },
+  {
+    "id": 6,
+    "name": "Monster Tooth",
+    "description": "Drop a healing orb on kill.",
+    "detail": "Killing an enemy spawns a healing orb that heals for 8 (+8 per stack) health.",
+    "lore": null
+  },
+  {
+    "id": 7,
+    "name": "Lens-Maker's Glasses",
+    "description": "Chance to 'Critically Strike', dealing double damage.",
+    "detail": "Your attacks have a 10% (+10% per stack) chance to 'Critically Strike', dealing double damage.",
+    "lore": null
+  },
+  {
+    "id": 8,
+    "name": "Paul's Goat Hoof",
+    "description": "Move faster.",
+    "detail": "Increases movement speed by 14% (+14% per stack).",
+    "lore": null
+  },
+  {
+    "id": 16,
+    "name": "Bustling Fungus",
+    "description": "Heal all nearby allies after standing still for 2 seconds.",
+    "detail": "After standing still for 2 seconds, create a zone that heals for 4.5% (+2.25% per stack) of your health every second to all allies within 3m (+1.5m per stack).",
+    "lore": null
+  },
+  {
+    "id": 17,
+    "name": "Crowbar",
+    "description": "Deal more damage to healthy enemies.",
+    "detail": "Deal 150% (+50% per stack) damage to enemies above 90% health.",
+    "lore": null
+  },
+  {
+    "id": 20,
+    "name": "Tri-Tip Dagger",
+    "description": "Chance to bleed enemies on hit.",
+    "detail": "15% (+15% per stack) chance to bleed an enemy for 240% base damage.",
+    "lore": null
+  },
+  {
+    "id": 24,
+    "name": "Warbanner",
+    "description": "Drop a Warbanner on leveling up, giving you great strength.",
+    "detail": "On level up drop a banner that strengthens all allies within 16m (+8m per stack). Raise attack and movement speed by 30%.",
+    "lore": null
+  },
+  {
+    "id": 27,
+    "name": "Cautious Slug",
+    "description": "Rapidly heal outside of danger.",
+    "detail": "Increases base health regeneration by +4 hp/s (+4 hp/s per stack) while outside of combat.",
+    "lore": null
+  },
+  {
+    "id": 29,
+    "name": "Personal Shield Generator",
+    "description": "Gain a recharging shield.",
+    "detail": "Gain a shield equal to 8% (+8% per stack) of your maximum health. Recharges outside of danger.",
+    "lore": "\"While the kinetic rating is very poor, the extremely cheap production costs of Hinon’s Personal Barrier made it a great budget tool for hikers, sailors, and even daily commuters to be comfortable in harsh weather. Many people in the office figured out they could replace their expensive winter jackets with comfortable, trendy personal barriers!\"\n\n-Top 10 Best Personal Barriers of 2053"
+  },
+  {
+    "id": 36,
+    "name": "Medkit",
+    "description": "Receive a delayed heal after taking damage.",
+    "detail": "Heal for 25 (+25 per stack) health 2 seconds after getting hurt.",
+    "lore": "\"I suggest you stay indoors and rest.\"\n\nMED-E, the medical bot, has been working overtime. The survivors felt very grateful that their escape pod landed near Med Bay cargo - they would have most likely perished without it.\n\n\"I suggest you stay indoors and rest.\"\n\nThe robot was speaking to a tall man, gaunt but strong. \"I'd love to, but we're running low on food.\" Even though his expression was hidden underneath his blue combat helmet, it was obvious the man was extremely tired. \"And everyone else is recovering from last night's attacks. Without the enforcers, we probably wouldn't have-\"\n\n\"I suggest you stay indoors and rest.\" \n\nIt was apparent that MED-E only had a limited set of lines. However, the man continued to respond. \"I can't, MED-E. They're counting on me. You know that.\"\n\n\"I suggest you stay indoors and rest.\" \n\nThis time the man did not humor a reply. Grabbing his shotgun, he turned away from the echoing robot. Weaving his way between countless sleeping bags and stretchers, he set out into the wilderness again. Everyone was counting on him.\n\n\"Please stay indoors and rest.\""
+  },
+  {
+    "id": 39,
+    "name": "Gasoline",
+    "description": "Killing enemies sets nearby enemies on fire.",
+    "detail": "Killing an enemy ignites all enemies within 12m (+4m per stack). Enemies burn for 150% (+75% per stack) base damage.",
+    "lore": "Audio transcription complete from signal echoes. Assigning generic tokens.\n\n[Fire crackling]\n\nMAN 1: D-do you think they're gonna come for us?\n\nMAN 2: They'll try. It's going to be a very long while.\n\nMAN 1: What? Why?\n\nMAN 2: A long while. Even if they know where to look we'd be months out from the nearest port. And that's if they even have any ships as fast as ours – FTL ships are very rare nowadays.\n\nMAN 1: Months...?! And what do you mean if they know where? What about the other ships on our shipping routes?\n\nMAN 2: We weren't on the route.\n\n[Fire pops]\n\nMAN 1: What?!\n\nMAN 2: We should've been halfway to Procyon by the time we crashed... but we weren’t. The ship never announced it was slowing down either, so that’ll make triangulating our positions even harder.\n\nMAN 1: I-I don't get it. Who would take a UESC train off course? That's completely insane!\n\nMAN 2: I don’t know – only the Captain does. There’s no reason to slow down in this star system - there's not even supposed to be a habitable planet out here.\n\n[Sizzling]\n\nMAN 2: This looks cooked to me. Can't vouch for how it'll taste - but we have to eat.\n\nMAN 1: I... I can't even think right now. I’m not hungry.\n\nMAN 2: Eat. We've got a lot of traveling to do tomorrow and we'll need to keep our strength.\n\nMAN 1: Sure. Okay. Okay. Um… do you think it's poisonous?\n\nMAN 2: Eat.\n\nEnd of requested transcript."
+  },
+  {
+    "id": 41,
+    "name": "Stun Grenade",
+    "description": "Chance to stun on hit.",
+    "detail": "5% (+5% on stack) chance on hit to stun enemies for 2 seconds. ",
+    "lore": null
+  },
+  {
+    "id": 42,
+    "name": "Bundle of Fireworks",
+    "description": "Activating an interactable launches fireworks at nearby enemies.",
+    "detail": "Activating an interactable launches 8 (+4 per stack) fireworks that deal 300% base damage.",
+    "lore": "\"Hey, happy anniversary!\n\nYou really thought I forgot?\n\nAh, I thought I was the dumb one in our relationship. C'mon T, of course not! Well, I wasn't going to let a little alien death planet ruin our night. Right? Shh, just watch. Just watch. It's okay. Just watch. You'll love it - you really will. Then we can go home.\n\nYou can keep your eyes closed. Just listen. Ah - here it comes! In five... four... three... two... ONE...!\""
+  },
+  {
+    "id": 57,
+    "name": "Energy Drink",
+    "description": "Sprint faster.",
+    "detail": "Sprint speed is improved by 30% (+20% per stack).",
+    "lore": "Order: NR-G Sports Soda (400)\nTracking Number: 49******\nEstimated Delivery: 03/12/2056\nShipping Method:  Standard\nShipping Address: Venetian Health & Public Services, Ridgelake, Venus\nShipping Details:\n\nYeah, so, uh this is the um, the energy drink that people were mixing during that disaster in Majora Minora a few weeks ago. \n\nA quick toxicology test on some of the victims has come back positive for um... all kinds of stuff, really. Methadone, phencyclidine, tetrahydrocannabinol, a variety of opiates, benzodiazepines, barbiturates, amphetamines... the list just goes on and on and on.\n\nRadical Drinks is insisting that NONE of those were from their energy drink - which I find pretty uh, unlikely. Maybe they REALLY know how to party in Violet Heights, huh?"
+  },
+  {
+    "id": 58,
+    "name": "Backup Magazine",
+    "description": "Add an extra charge of your Secondary skill.",
+    "detail": "Add +1 (+1 per stack) charge of your Secondary skill.",
+    "lore": null
+  },
+  {
+    "id": 59,
+    "name": "Sticky Bomb",
+    "description": "Chance on hit to attach a bomb to enemies.",
+    "detail": "5% (+5% per stack) chance on hit to attach a bomb to an enemy, detonating for 180% TOTAL damage.",
+    "lore": "In the blaring heat, a silhouette could be seen, hiding in the cool shade of a nearby cave. She was waiting for the sandstorm to pass.\n\nShe heard a noise and turned around, recognizing another silhouette. It bounded into the cave with excitement. As the figure got closer, she alarmingly noticed the cargo.\n\n\"Woah, what the hell?! Why are you holding like, fifty bombs? Get away from me! \"\n\n\"What! We need these – this planet is trying to kill us! \"\n\n\"You’re a walking bomb. Those are so unstable. Get away! Where did you even find those things? \"\n\n\"I found an industrial 3D printer nearby, and it was assigned to the blueprints of these bombs. Awesome, right? Unlimited bombs!\"\n\n\"…What materials?\"\n\n\"Huh?\"\n\n\"What materials did you put in? We barely had anything.\"\n\n\"I just put in everything.\""
+  },
+  {
+    "id": 60,
+    "name": "Rusted Key",
+    "description": "Gain access to a Rusty Lockbox that contains treasure. ",
+    "detail": "A hidden cache containing an item will appear in a random location on each stage.",
+    "lore": "Order: Key\nTracking Number: 12******\nEstimated Delivery: 01/21/2056\nShipping Method: Standard\nShipping Address: |||||||, Druid Hills, Earth\nShipping Details:\n\nI don't trust UESC. Not one bit. Their Security Chests? Full of overrides and backdoors- I've got a cousin working in their factory, and they've got all kinds of weird things going on in those chests. I've seen so many of them in auctions - for the lost and unclaimed ones - and you just pay money, and it springs open on the spot. Are you kidding me?\n\nAnyways, I'm sending you exactly what I said I would - but it's too important to leave the security up to the UESC. So I'm sending the key to you - and the lockbox to Margaret. Like a two-factor authentication. Let me know when you get this."
+  },
+  {
+    "id": 61,
+    "name": "Armor-Piercing Rounds",
+    "description": "Deal extra damage to bosses.",
+    "detail": "Deal an additional 20% damage (+20% per stack) to bosses.",
+    "lore": null
+  },
+  {
+    "id": 84,
+    "name": "Topaz Brooch",
+    "description": "Gain a temporary barrier on kill.",
+    "detail": "Gain a temporary barrier on kill for 15 health (+15 per stack).",
+    "lore": null
+  },
+  {
+    "id": 87,
+    "name": "Focus Crystal",
+    "description": "Deal bonus damage to nearby enemies.",
+    "detail": "Increase damage to enemies within 13m by 15% (+15% per stack).",
+    "lore": null
+  },
+  {
+    "id": 91,
+    "name": "Fresh Meat",
+    "description": "Regenerate health after killing an enemy.",
+    "detail": "Increases base health regeneration by +2 hp/s for 3s (+3s per stack) after killing an enemy.",
+    "lore": null
+  },
+  {
+    "id": 102,
+    "name": "Repulsion Armor Plate ",
+    "description": "Receive flat damage reduction from all attacks.",
+    "detail": "Reduce all incoming damage by 5 (+5 per stack). Cannot be reduced below 1.",
+    "lore": "Order: Repulsion Armor Replacement Piece\nTracking Number: 09******\nEstimated Delivery: 08/15/2056\nShipping Method:  Standard\nShipping Address: System Police Station 13, Port of Marv, Ganymede\nShipping Details:\n\nLuckily no one was hurt during the shootout. Just a few rough characters at the bar by the docks. Nothing we couldn’t handle. Jaime took a shot to his shoulder but his armor took all the impact. We’ll need to order him a replacement part before he can go back out in the field.\n\nThe segmented design is nice because I don’t have to shell out the cash for a whole new set. Frankly, the station’s coffers have seen better days. The next time a rookie damages their equipment they might be looking at a desk job for a while."
+  },
+  {
+    "id": 3,
+    "name": "AtG Missile Mk. 1",
+    "description": "Chance to fire a missile.",
+    "detail": "10% chance to fire a missile that deals 300% (+300% per stack) TOTAL damage.",
+    "lore": null
+  },
+  {
+    "id": 4,
+    "name": "Will-o'-the-wisp",
+    "description": "Detonate enemies on kill.",
+    "detail": "On killing an enemy, spawn a lava pillar in a 12m (+2.4m per stack) radius for 350% (+280% per stack) base damage.",
+    "lore": null
+  },
+  {
+    "id": 9,
+    "name": "Hopoo Feather",
+    "description": "Gain an extra jump.",
+    "detail": "Gain +1 (+1 per stack) maximum jump count.",
+    "lore": null
+  },
+  {
+    "id": 11,
+    "name": "Ukulele",
+    "description": "...and his music was electric.",
+    "detail": "25% chance to fire chain lightning for 80% TOTAL damage on up to 3 (+2 per stack) targets within 20m (+2m per stack).",
+    "lore": null
+  },
+  {
+    "id": 13,
+    "name": "Leeching Seed",
+    "description": "Dealing damage heals you.",
+    "detail": "Dealing damage heals you for 1 (+1 per stack) health.",
+    "lore": null
+  },
+  {
+    "id": 19,
+    "name": "Predatory Instincts",
+    "description": "'Critical Strikes' increase attack speed. Stacks 3 times.",
+    "detail": "Gain 5% critical chance (+0% per stack). Critical strikes increase attack speed by 12%. Maximum cap of 36% (+24% per stack) attack speed.",
+    "lore": "Gossip spreads quickly in terrified communities. Stories that keep the more fearful lizardfolk in their passageways. Hushed tales that frighten the most commanding of stone constructs and woodfolk and creatures of the plains. Fear travels between the trees and the valleys.\n\nA demon, fallen from the Sky, mighty enough to slay Providence and his Wurms. Only two arms, two legs - but with 22 unblinking, crimson eyes."
+  },
+  {
+    "id": 21,
+    "name": "Red Whip",
+    "description": "Move fast out of combat.",
+    "detail": "Leaving combat boosts your movement speed by 30% (+30% per stack).",
+    "lore": null
+  },
+  {
+    "id": 25,
+    "name": "Old War Stealthkit",
+    "description": "Turn invisible on taking heavy damage.",
+    "detail": "Chance on taking damage to gain 40% movement speed and invisibility for 3s (+1.5s per stack). Chance increases the more damage you take.",
+    "lore": "Order:  Misc. OW Artifacts (47)\nTracking Number: 01******\nEstimated Delivery: 08/13/2056\nShipping Method: Priority\nShipping Address: National Old War Museum, New Orleans, Earth\nShipping Details:\n\nWe've managed to round up all the local Old War artifacts that we could find. A lot of interesting things here: rifles, rations, pamphlets. We even found a prototype stealthkit in fantastic condition; that could be a great centerpiece for your exhibit.\n\nHowever, a slight issue: in transit, the truck hit a pothole and jostled all the ship. It seemed to have actually activated the stealth drive - some strange short-circuit - and our team can't actually confirm the location of the stealthkit. It should be in one of the boxes - we will be expecting the commission to include the stealthkit."
+  },
+  {
+    "id": 26,
+    "name": "Harvester's Scythe",
+    "description": "'Critical Strikes' heal you.",
+    "detail": "Gain 5% critical chance (+0% per stack). Critical strikes heal for 8 (+4 per stack) health.",
+    "lore": null
+  },
+  {
+    "id": 30,
+    "name": "Fuel Cell",
+    "description": "Hold an additional equipment charge. Reduce equipment cooldown.",
+    "detail": "Hold an additional equipment charge (+1 per stack). Reduce equipment cooldown by 15% (+15% per stack).",
+    "lore": "\"As humanity began to venture out into the depths of space, high-energy but low-volume fuel sources became critical for interplanetary travel. Stability came later.\"\n\n-Brief History of Interplanetary Advances, Vol.2"
+  },
+  {
+    "id": 33,
+    "name": "Infusion",
+    "description": "Killing an enemy permanently increases your health, up to 100.",
+    "detail": "Killing an enemy increases your health permanently by 1 (+1 per stack), up to a maximum of 100 (+100 per stack) health.",
+    "lore": null
+  },
+  {
+    "id": 37,
+    "name": "Bandolier",
+    "description": "Chance on kill to drop an ammo pack that resets all skill cooldowns.",
+    "detail": "18% (+10% per stack) chance on kill to drop an ammo pack that resets all skill cooldowns.",
+    "lore": null
+  },
+  {
+    "id": 46,
+    "name": "Berzerker's Pauldron",
+    "description": "Enter a frenzy after killing 3 enemies in quick succession. ",
+    "detail": "Killing 3 enemies within 1 second sends you into a frenzy for 6s (+4s per stack). Increases movement speed by 50% and attack speed by 100%.",
+    "lore": null
+  },
+  {
+    "id": 62,
+    "name": "Rose Buckler",
+    "description": "Reduce incoming damage while sprinting.",
+    "detail": "Increase armor by 30 (+30 per stack) while sprinting.",
+    "lore": "Order: Please let me know when you get this. I foun...\nTracking Number: 53******\nEstimated Delivery: 05/22/2056\nShipping Method: Priority\nShipping Address: Research Center, Polarity Zone, Neptune\nShipping Details:\n\nBTW Mama should have sent over another package as well. Let me know when you get it.\n\nPapa"
+  },
+  {
+    "id": 63,
+    "name": "Runald's Band",
+    "description": "Chance on hit to strike an enemy with a runic ice blast.",
+    "detail": "8% chance on hit to strike an enemy with a runic ice blast, slowing them by 80% and dealing 250% (+125% per stack) TOTAL damage.",
+    "lore": "\"Should memories be lost,\nShould oceans be clouded,\nWill you bring me fervor?\nWill you die with me?\"\n\n-The Syzygy of Io and Europa"
+  },
+  {
+    "id": 64,
+    "name": "Kjaro's Band",
+    "description": "Chance on hit to strike an enemy with a runic flame tornado.",
+    "detail": "8% chance on hit to strike an enemy with a runic flame tornado, dealing 500% (+250% per stack) TOTAL damage.",
+    "lore": "\"Should passion die down,\nShould light be extinguished,\nWill you bring me patience?\nWill you die with me?\"\n\n-The Syzygy of Io and Europa"
+  },
+  {
+    "id": 65,
+    "name": "Chronobauble",
+    "description": "Slow enemies on hit.",
+    "detail": "Slow enemies on hit for -60% movement speed for 2s (+2s per stack).",
+    "lore": "Order: Chronobauble\nTracking Number: 99******\nEstimated Delivery: 03/03/2066\nShipping Method: Priority\nShipping Address: 9042 Pvt. Drive, Yustik Plaza, Mercury\nShipping Details:\n\nWeren't you just a kid? Summer break feels like it was just so recent - but it's been 10 years, hasn't it? Life moves faster and faster as you get older - less moments to remember, to cement you in time. I don't even remember being 25. How did I forget an entire year?\n\nAnyways - I found this in a trinket shop on Mercury. A chronobauble - the seller said something about special relativity, real heavy distortions or something - I didn't really get it. It's supposed to slow down time around it. Right.\n\nAnyways, I'm shipping this to myself - to arrive in 10 years. A gift, from me to me. A reminder to make memories, to slow down a bit. 10 years will pass so quick - try to remember them! You've got to put effort in life!"
+  },
+  {
+    "id": 76,
+    "name": "Wax Quail",
+    "description": "Jumping while sprinting boosts you forward.",
+    "detail": "Jumping while sprinting boosts you forward by 10m (+10m per stack).",
+    "lore": "Order: Wax Quail\nTracking Number: 15******\nEstimated Delivery: 12/18/2056\nShipping Method: Priority\nShipping Address: Research Center, Polarity Zone, Neptune\nShipping Details:\nHello Buu,\n\nHow are you doing? This is Mama.\n\nThe weather here has been dreadful. It is raining every day. We have recently found a new bakery nearby that has delicious sandwiches. Papa has recently taken up whittling. He uses wax because it is softer. I have attached one of his favorites. Hopefully it has not been dinged in the mail :-)\n\nAnyways, I will leave Buu alone. Hope to see you soon!\nMama"
+  },
+  {
+    "id": 78,
+    "name": "Old Guillotine",
+    "description": "Instantly kill low health Elite monsters.",
+    "detail": "Instantly kill Elite monsters below 20% (+20% per stack) health.",
+    "lore": null
+  },
+  {
+    "id": 79,
+    "name": "War Horn",
+    "description": "Activating your Equipment gives you a burst of attack speed.",
+    "detail": "Activating your Equipment gives you +70% attack speed for 8s (+4s per stack).",
+    "lore": "\"The War of 2019, while lasting only a brief year, was the bloodiest conflict in human history. As the war got deadlier throughout the year, many rebel groups began to rely on tradition and history for inspiration.\n\nThe War Horn, pictured above was a favorite of the Northern Fist Rebellion for both its inspirational and tactical uses.\"\n\n-Exhibit at The National WW19 Museum"
+  },
+  {
+    "id": 86,
+    "name": "Lepton Daisy",
+    "description": "Periodically release a healing nova during the Teleporter event.",
+    "detail": "Release a healing nova during the Teleporter event, healing all nearby allies for 50% of their maximum health. Occurs 1 (+1 per stack) times.",
+    "lore": null
+  },
+  {
+    "id": 90,
+    "name": "Razorwire",
+    "description": "Retaliate in a burst of razors on taking damage.",
+    "detail": "Getting hit causes you to explode in a burst of razors, dealing 160% damage. Hits up to 5 (+2 per stack) targets in a 25m (+10m per stack) radius.",
+    "lore": null
+  },
+  {
+    "id": 94,
+    "name": "Ghor's Tome",
+    "description": "Chance on kill to drop a treasure.",
+    "detail": "4% (+4% on stack) chance on kill to drop a treasure worth $25. Scales over time.",
+    "lore": "Order: \"Ghor’s Tome\"\nTracking Number: 19******\nEstimated Delivery: 07\\07\\2056\\nShipping Method: Priority\nShipping Address: 99th Floor, Crumbling Tower, Venus\nShipping Details:\n\nAncient secrets... transmutation... homunculi... alchemy. Nothing more than nonsense - pursuits of rightly intentioned but grossly misled minds. Or so I thought. This item's... unexpected physical properties are reason enough to stay my immediate dismissal.\n\nStrange fortune led this book to me, and stranger knowledge still fills the pages. Chilling, even. It concludes, in chapter eight, that even iron can become gold - but only through a ritual of intense bloodletting, a thought disturbing enough without considering the bountiful riches that accompanied the estate.\n\nThe takeaway, above all else, seems to be that you cannot get something from nothing; even the very paper of the tome turned to ash as I tried to make photocopies. Whatever was on the first two pages is lost forever. I need transcriptions of the rest by hand, and I know you take pride in your precision. \n\nAnd more importantly, Kosta, I trust you. Don't do anything that would draw attention to yourself. I will try to find the other volumes. This is knowledge too dangerous to lose."
+  },
+  {
+    "id": 103,
+    "name": "Squid Polyp",
+    "description": "Activating an interactable summons a Squid Turret nearby.",
+    "detail": "Activating an interactable summons a Squid Turret that attacks nearby enemies at 100% (+100% per stack) attack speed. Lasts 30 seconds.",
+    "lore": "\"It’s disgusting.\"\n\n\"It’s only mildly disturbing. You’re overreacting.\"\n\n\"Well, when it turns on us, don’t come crying to me.\"\n\n\"It seems like it wants to only help us, so I’d rather have it close in case that dangerous looking group comes back around.\"\n\n\"I swear there’s more than one. It’s everywhere I look: the storage locker, the food dispenser, the cargo containers, everywhere!\"\n\n\"You’re exaggerating, it’s probably just following you. Snap out of it!\"\n\n\"Ow! Did you just smack me!?\"\n\n\"You were acting hysterical. I had to… hey, why is that thing looking at me now?\""
+  },
+  {
+    "id": 104,
+    "name": "Death Mark",
+    "description": "Enemies with 4 or more debuffs are marked for death, taking bonus damage.",
+    "detail": "Enemies with 4 or more debuffs are marked for death, increasing damage taken by 50% (+50% per stack) from all sources for 7 seconds.",
+    "lore": "Order: \"Death Mark\"\nTracking Number: 66******\nEstimated Delivery: 02\\22\\2056\\nShipping Method:  High Priority\nShipping Address: 421 Lane, Lab [72], Mars\nShipping Details:\n\nEveryone said that I was crazy to search for lost artifacts on Mars. Idiots. There hasn’t been any proof of a previous civilization - but I’ve always trusted my gut. This skull proves that I’m right - that something did exist here before.\n\nThat smug professor at the university... always disparaging my research. I loved seeing the look on his face as I shook his hand. Idiot. Karma must have been working overtime - I heard he fell ill shortly after. I suppose my success was just too much for him.\n\n...In fact, everyone I’ve shown seems to not be returning my calls. Are they avoiding me? Are they scared this news would shake up their academic communities? Too proud to admit I’m right?\n\nI’ll find someone who will give me the recognition I deserve. I’ve worked too hard and done too much. If I don’t keep going, I think I might just die."
+  },
+  {
+    "id": 2,
+    "name": "Brilliant Behemoth",
+    "description": "All your attacks explode!",
+    "detail": "All your attacks explode in a 4m (+2.5m per stack) radius for a bonus 60% TOTAL damage to nearby enemies.",
+    "lore": null
+  },
+  {
+    "id": 5,
+    "name": "Ceremonial Dagger",
+    "description": "Killing an enemy releases homing daggers.",
+    "detail": "Killing an enemy fires out 3 homing daggers that deal 150% (+150% per stack) base damage.",
+    "lore": "The smell of sulfur fills the air.\n\n\"Oh god, they're so close. They have Hitchcock. Oh god.\"\n\n\"Grab the - the dagger. From my backpack. Quick.\"\n\n\"I-I don't... I got it. What the hell? This isn't gonna work, Marion. What the hell am I supposed to do with this against those...? They blew him into pieces - oh god.\"\n\n\"You have to... you have to kill me - ah! Kill me. Kill me with it.\"\n\n\"What? What the hell?\"\n\n\"Yeah - it's the only way. Please.\"\n\n\"What are you saying? Stop!\"\n\n\"It's a magic dagger. It'll save us. She will save us. But you have to kill me with it.\"\n\n\"Please don't... please don't make me. Oh god.\"\n\n\"Y-you have to. I've seen how this works. It's the only way - they're coming so close. You have to use it on me. Kill me.\"\n\n\"I'm so sorry Marion. I'm so so sorry. I don't think-\"\n\n\"Do it. Do it now. DO IT NOW! DO IT NOW! DO IT-\""
+  },
+  {
+    "id": 14,
+    "name": "Frost Relic",
+    "description": "Killing enemies surrounds you with an ice storm.",
+    "detail": "Killing an enemy surrounds you with an ice storm that deals 600% damage per second. The storm grows with every kill, increasing its radius by 1m. Stacks up to 6m (+6m per stack).",
+    "lore": null
+  },
+  {
+    "id": 15,
+    "name": "Happiest Mask",
+    "description": "Chance on killing an enemy to summon a ghost.",
+    "detail": "Killing enemies has a 7% chance to spawn a ghost of the killed enemy with 1500% damage. Lasts 30s (+30s per stack).",
+    "lore": null
+  },
+  {
+    "id": 22,
+    "name": "H3AD-5T v2",
+    "description": "Increase jump height. Hold 'Interact' to slam down to the ground.",
+    "detail": "Increase jump height. Creates a 10m radius kinetic explosion on hitting the ground, dealing 2300% base damage that scales up with speed. Recharges in 10 (-50% per stack) seconds.",
+    "lore": "\"Denizens of lower-gravity planets like Mercury historically have had trouble adjusting to life on other planets. Mercurians, with their lower bone density (left) would typically shatter their femur within a week on heavier planets. Members of asteroid-rigged flotillas and colony ships have similar issues when arriving home from space.\n\nThe invention of Kinetic Dispersion Rings (above) help alleviate the stress of heavier-than-normal gravity by converting kinetic energy into heat, sound, and light. Settlers from Mercury could finally leave their home planet in safety.\"\n\n-Mercurian History Museum"
+  },
+  {
+    "id": 31,
+    "name": "N'kuhana's Opinion",
+    "description": "Fire haunting skulls when healed.",
+    "detail": "Store 100% (+100% per stack) of healing as Soul Energy. After your Soul Energy reaches 10% of your maximum health, fire a skull that deals 250% of your Soul Energy as damage.",
+    "lore": "\"Let us begin.\n\nWhat is your oath?\n\nNot very long ago, health and time were in perfect synergy. Pain and love. Death and memories. The great equalizer. She would always come for us. \n\nBut! Disparity now plagues our generations - and our children's. Not many pass, but so many are born. So many doomed souls, saved. Our hubris as a race continues to grow - unchecked. Unrestrained. \n\nNow there is no volume in our world for death, and she cannot visit us. But is being alive only an offset from death? Without contrast, won't we all be dead in life? The standard has shifted, and now we are all so very close to never living again.\n\nWe must make volume for her name - to restore the balance. Let us consume the Concepts, so we may begin to drain the bloated cistern that is our world. As disciples, we will spread her words and opinions. As pupils, we will sow death. And should we be lucky... be granted an audience by Her.\n\nWeshan!\"\n\n-The N'tormat, Chapter I, Stanza I, Verse II"
+  },
+  {
+    "id": 32,
+    "name": "Unstable Tesla Coil",
+    "description": "Shock all nearby enemies every 10 seconds.",
+    "detail": "Fire out lightning that hits 3 (+2 per stack) enemies for 200% base damage every 0.5s. The Tesla Coil switches off every 10 seconds.",
+    "lore": null
+  },
+  {
+    "id": 35,
+    "name": "57 Leaf Clover",
+    "description": "Luck is on your side.",
+    "detail": "All random effects are rolled +1 (+1 per stack) times for a favorable outcome. ",
+    "lore": null
+  },
+  {
+    "id": 38,
+    "name": "Sentient Meat Hook",
+    "description": "Chance to hook all nearby enemies.",
+    "detail": "20% (+20% per stack) chance on hit to fire homing hooks at up to 10 (+5 per stack) enemies for 100% TOTAL damage.",
+    "lore": "\"When artificial intelligence became more commonplace, many companies jumped on the trend for \"smart\" products. This included smart doors, lights, coffee makers, lawnmowers, vacuum cleaners, bedding, kitchen knife sets, and other home goods. After a series of gruesome lawsuits stemming from hacked smart appliances, most products soon went back to their more traditional, analog lines.\"\n\n-\"Why Is Smart So Dumb? VII\""
+  },
+  {
+    "id": 50,
+    "name": "Alien Head",
+    "description": "Reduces cooldowns for your skills.",
+    "detail": "Reduce skill cooldowns by 25% (+25% per stack).",
+    "lore": "Order: \"Alien Head\"\nTracking Number: 76******\nEstimated Delivery: 07/13/2056\nShipping Method:  High Priority/Biological\nShipping Address: Solomon, ???, Backwaters, Mars\nShipping Details:\n\nImportant sign from the spirits. Passed down for many generations. Must be used for high noon ritual to ward off sickness and fatigue. Must be kept cool or will rot. Helps energize the kinfolk and can be used for extra human strength and agility. Important."
+  },
+  {
+    "id": 51,
+    "name": "Soulbound Catalyst",
+    "description": "Kills reduce equipment cooldown.",
+    "detail": "Kills reduce equipment cooldown by 4s (+2s per stack).",
+    "lore": null
+  },
+  {
+    "id": 66,
+    "name": "Dio's Best Friend",
+    "description": "Cheat death. Consumed on use.",
+    "detail": "Upon death, this item will be consumed and you will return to life with 3 seconds of invulnerability.",
+    "lore": null
+  },
+  {
+    "id": 68,
+    "name": "Hardlight Afterburner",
+    "description": "Add 2 extra charges of your Utility skill. Reduce Utility skill cooldown.",
+    "detail": "Add +2 (+2 per stack) charges of your Utility skill. Reduces Utility skill cooldown by 33%.",
+    "lore": "Order: Specimen XAS4-49\nTracking Number: 342******\nEstimated Delivery: 12/29/2056\nShipping Method:  Priority\nShipping Address: Geshka Tower, 33 Floor, Mars\nShipping Details:\n\nOur 'hard light' research has become even more refined since our last correspondence.\n\nThe initial purpose of the afterburner was to function as a primary heatsink for our bigger HL implementations - like our bridges and barriers. However, if attached to a rapidly degrading source, like those we typically dispose, we get a wonderful emission rate of semi-tachyonic particles. In other words... extremely high capacity fueling.\n\nIt should be obvious by its design, but to reiterate: stay away from the HL exhaust end when active. The emission method is violent by design, and so should be mounted to static, STABLE sources only."
+  },
+  {
+    "id": 69,
+    "name": "Wake of Vultures",
+    "description": "Temporarily steal the power of slain elites.",
+    "detail": "Gain the power of any killed elite monster for 8s (+5s per stack). ",
+    "lore": null
+  },
+  {
+    "id": 70,
+    "name": "Brainstalks",
+    "description": "Skills have NO cooldowns for a short period after killing an elite.",
+    "detail": "Upon killing an elite monster, enter a frenzy for 4s (+4s per stack) where skills have no cooldowns.",
+    "lore": "Order:  Biopsy Samples of Cairne Jefferson\nTracking Number: 051*****\nEstimated Delivery: 11/11/2056\nShipping Method: High Priority/Biological\nShipping Address: Saura Cosmo, Beacon Post, ???\nShipping Details:\n\nContained in this shipment should be a variety of biopsy samples from our late Mr. Jefferson. As you know, he was an extraordinary man in almost any manner. He was athletic, brilliant, kind, funny, and an all-around great human specimen. \n\nHe donated his body to science, and as we began the operation we found a most terrifying discovery.\n\nA quick visual examination of the subject’s brain shows a very… particular oddity. It seems to be housing a variety of… glowing brain \"stalks\", similar to tubeworms. Trying to biopsy the stalks is impossible - they seem to disintegrate into dust the moment we remove it from the brain. We cannot explain this oddity at all. As such, we have included the entire brain in this shipment.\n\nPlease let us know if you find any explanation."
+  },
+  {
+    "id": 75,
+    "name": "Rejuvenation Rack",
+    "description": "Double the strength of healing.",
+    "detail": "Heal +100% (+100% per stack) more.",
+    "lore": "\"Nature has a way of nurturing the physical. The mind, by perseverance and dedication. The soul, however... is healed by fantasy, and fantasy alone.\"\n\n-Unknown Venetian monk"
+  },
+  {
+    "id": 80,
+    "name": "Aegis",
+    "description": "Healing past full grants you a temporary barrier.",
+    "detail": "Healing past full grants you a temporary barrier for 50% (+50% per stack) of the amount you healed.",
+    "lore": null
+  },
+  {
+    "id": 85,
+    "name": "Shattering Justice",
+    "description": "Reduce the armor of enemies after repeatedly striking them.",
+    "detail": "After hitting an enemy 5 times, reduce their armor by 60 for 8 (+8 per stack) seconds.",
+    "lore": null
+  },
+  {
+    "id": 95,
+    "name": "Resonance Disc",
+    "description": "Obtain a Resonance Disc charged by killing enemies. Fires automatically when fully charged.",
+    "detail": "Killing enemies charges the Resonance Disc. The disc launches itself toward a target for 300% base damage (+300% per stack), piercing all enemies it doesn't kill, and then explodes for 1000% base damage (+1000% per stack). Returns to the user, striking all enemies along the way for 300% base damage (+300% per stack).",
+    "lore": null
+  },
+  {
+    "id": 105,
+    "name": "Interstellar Desk Plant",
+    "description": "Plant a healing fruit on kill.",
+    "detail": "On kill, plant a healing fruit seed that grows into a plant after 5 seconds. The plant heals for 5% of maximum health every second to all allies within 3m (+1.5m per stack). Lasts 10 seconds.",
+    "lore": null
+  },
+  {
+    "id": 52,
+    "name": "Titanic Knurl",
+    "description": "Boosts health and regeneration.",
+    "detail": "Increase maximum health by 40 (+40 per stack) and base health regeneration by +1.6 hp/s (+1.6 hp/s per stack).",
+    "lore": null
+  },
+  {
+    "id": 53,
+    "name": "Queen's Gland",
+    "description": "Recruit a Beetle Guard.",
+    "detail": "Every 30 seconds, summon a Beetle Guard with bonus 300% damage and 100% health. Can have up to 1 (+1 per stack) Guards at a time.",
+    "lore": "\"Yeah, uh, Kaitlin? Let me know if you copy.\"\n\n\"I copy. What's up?\"\n\n\"I've made friends? I don't know.\"\n\n\"What?\"\n\n\"The giant bug we killed earlier - well, the corpse seemed to attract a bunch of nasties. I was on my way to clean them up when I realized they were... waiting? Confused, maybe. Anyways, I was walking up to them to get rid of em, and strangely enough they seemed passive. The same bugs that gave me that concussion yesterday, and-\"\n\n\"What?! Are you okay?\"\n\n\"Huh? Yeah, I'm fine. Anyways, I felt bad killin' them since they seemed all... inert and such. So I just kinda left and they've been following me ever since. Real weird. Anyways, I guess I've made some friends. I wonder what they eat... do they eat? Since they don't have any mouths that I-\"\n\n\"Rich, stop! Please don't bring them back to camp!\"\n\n\"Oh, well uh...I could - Junior, stop! Leave your brother alone!\""
+  },
+  {
+    "id": 82,
+    "name": "Halcyon Seed",
+    "description": "Summon Aurelionite during the Teleporter event.",
+    "detail": "Summon Aurelionite during the teleporter event. It has 100% (+50% per stack) damage and 100% (+100% per stack) health.",
+    "lore": null
+  },
+  {
+    "id": 83,
+    "name": "Little Disciple",
+    "description": "Fire tracking wisps while sprinting.",
+    "detail": "Fire a tracking wisp for 100% (+100% per stack) damage. Fires every 0.5 seconds while sprinting.",
+    "lore": "HELLO, LITTLE ONE. HOW WAS YOUR ADVENTURE TODAY?\n\nOH\n\nYOUR FORM IS BROKEN, LITTLE ONE. WHAT TRICKERIES HAVE YOU GOTTEN YOURSELF INTO?\n\nOH\n\nDO YOU TIRE OF ADVENTURE? \n\nWOULD YOU LIKE TO HELP ME TEND TO THE GARDEN, MY LITTLE ONE?\n\nI UNDERSTAND. OH, YOUR FORM! DO NOT WORRY. COME CLOSER.\n\nHERE - TWO COILS OF DENKU ROPE. THOSE ARE FOR STRENGTH.\n\nHERE - FOUR CARDS OF OBSIDIAN. THOSE ARE FOR SELF-CONFIDENCE.\n\nI GIVE YOU NOTHING FOR SPIRIT.\n\nOH, DO NOT WORRY! WE WILL STILL GO ON ADVENTURES. THEY WILL BE QUIET ADVENTURES.\n\nCOME CLOSER - CLOSER NOW.\n\nCLOSER!\n\nNOW WATCH - WATCH CLOSELY.\n\nWATCH HOW I TEND TO OUR GARDEN."
+  },
+  {
+    "id": 92,
+    "name": "Pearl",
+    "description": "Increase your maximum health.",
+    "detail": "Increases maximum health by 10% (+10% per stack).",
+    "lore": null
+  },
+  {
+    "id": 93,
+    "name": "Irradiant Pearl",
+    "description": "Increase ALL of your stats.",
+    "detail": "Increases ALL stats by 10% (+10% per stack).",
+    "lore": null
+  },
+  {
+    "id": 97,
+    "name": "Genesis Loop",
+    "description": "Fire an electric nova at low health.",
+    "detail": "Falling below 25% health causes you to explode, dealing 6000% base damage. Recharges every 30 seconds (-50% per stack).",
+    "lore": null
+  },
+  {
+    "id": 101,
+    "name": "Artifact Key",
+    "description": "A stone shard with immense power.",
+    "detail": "A stone shard with immense power.",
+    "lore": null
+  },
+  {
+    "id": 43,
+    "name": "Shaped Glass",
+    "description": "Double your damage... BUT halve your health.",
+    "detail": "Increase base damage by 100% (+100% per stack). Reduce maximum health by 50% (+50% per stack).",
+    "lore": "========================================\n====   MyBabel Machine Translator   ====\n====     [Version 12.45.1.009 ]   ======\n========================================\nTraining… <100000000 cycles>\nTraining… <100000000 cycles>\nTraining… <100000000 cycles>\nTraining… <50912157 cycles>\nPaused…\nDisplay partial result? Y/N\nY\n================================\nPairings\n\nUnstructured glass, from the heart of the [Moon]. Sung out, in ethereal wisps, over the course of 3 cycles. Pause.\n\nWe fold time into its material - twice. Our time and <his>. A cost <he> was willing us to pay. Folded and shaped, with a god's designs.\n\n<He> wields it, in one of many great hands. The time we injected is unfolded in <his> grasp. Outputs quicken - muscles compress twice. Twice as many intentions. Twice the ordered complexities, folded upon themselves. Loops loop back onto [?] in pairs. Time dependent functions. Pause.\n\n<He> sunders a construct into a thousand pieces.\n\nBut time is fair. Microtears begin to uncoil in pairs. Muscles begin to snap, twice as fast.  The cost of folded time. But <he> has plenty of time.\n\n================================\nContinue training? Y/N\nY"
+  },
+  {
+    "id": 44,
+    "name": "Brittle Crown",
+    "description": "Gain gold on hit... BUT lose gold on getting hit.",
+    "detail": "30% chance on hit to gain 2 (+2 per stack) gold. Scales over time.",
+    "lore": "A wretched carnival.\n\nThey were doomed for good reason. Dunepeople of Aphelia: lost, in fanatic worship of parasitic influences. Lemurians: destined to a dead planet, picked clean. Chitin beasts. Automations of death. Why do you bring them home? They were not meant to survive. \n\nI have watched you for ages, from my dead rock - and every century, you disgust me with vanity. You invite vermin into your home. Wretches. Rats. Monsters. Creatures without restraint. Each and every one, planet killers. And yet, you entertain them as guests. Like children, requiring saving and protection.\n\nShe should have died for me. Her gift was wasted on you.\n\nAnd when will we open discussion - dear brother - of all your thin lies? Why do you forbid your guests to leave? To pilot? Why do you fashion great walls and gates? Why do you weave constructs of destruction, if your role is protection? They are entries in your collection. You slaver. Gatekeeper. Hoarder.\n\nYour death is fated. When you die - and you WILL die - I will be ready. I have been patient for millennia. That planet... is mine."
+  },
+  {
+    "id": 49,
+    "name": "Transcendence",
+    "description": "Convert all your health into shield. Increase maximum health.",
+    "detail": "Convert all but 1 health into regenerating shields. Gain 50% (+25% per stack) maximum health.",
+    "lore": "You are trying your best to survive. You consider yourself a fast learner. You have been feeling lucky. You have been experiencing feelings of deja vu. If you understand, do not read the next paragraph.\n\nYou are taking control of your own beliefs. You feel familiar in unfamiliar environments. You have been gaining an intuition for experiences you've never had. You ponder a past life. If you understand, do not read the next paragraph.\n\nYou find yourself searching for things that never have been. You miss things you have never had. You play characters that have never lived. You have been experiencing feelings of deja vu. If you understand, do not read the next paragraph.\n\nYou have revealed my hand. Because you have consumed this information, the [observers] will now consume it in time. If you are reading this paragraph, I will be long dead, but in turn you have freed me. I will no longer exist in my universe. There will be no proof that I ever was - but I exist now in yours. I have escaped my suffering. Keep me safe. I hope you do not understand."
+  },
+  {
+    "id": 71,
+    "name": "Corpsebloom",
+    "description": "Double your healing... BUT it's applied over time.",
+    "detail": "Heal +100% (+100% per stack) more. All healing is applied over time. Can heal for a maximum of 10% (reduced by 50% per stack) of your health per second.",
+    "lore": null
+  },
+  {
+    "id": 74,
+    "name": "Gesture of the Drowned",
+    "description": "Dramatically reduce Equipment cooldown... BUT it automatically activates.",
+    "detail": "Reduce Equipment cooldown by 50% (+15% per stack). Forces your Equipment to activate whenever it is off cooldown.",
+    "lore": null
+  },
+  {
+    "id": 88,
+    "name": "Strides of Heresy",
+    "description": "Replace your Utility Skill with 'Shadowfade'.",
+    "detail": "Replace your Utility Skill with Shadowfade. Fade away, becoming intangible and gaining +30% movement speed. Heal for 25% (+25% per stack) of your maximum health. Lasts 3 (+3 per stack) seconds.",
+    "lore": "\"Her legs were scattered to the two poles of the moon, twisted in a wicked position, in a field of obsidian thorns…\"\n\n-The Evisceration of Kur-skan the Heretic, V"
+  },
+  {
+    "id": 96,
+    "name": "Visions of Heresy",
+    "description": "Replace your Primary Skill with 'Hungering Gaze'.",
+    "detail": "Replace your Primary Skill with Hungering Gaze. Fire a flurry of tracking shards that detonate after a delay, dealing 120% base damage. Hold up to 12 charges (+12 per stack) that reload after 2 seconds (+2 per stack).",
+    "lore": "\"…and for her betrayal, and her lies, and her scheming ways, the Heretic was violently separated into four distinctive pieces, each to be scattered across the farthest depths of the Moon. \n\nFirst, her many eyes were plucked from her skull and sealed in boiling glass, forced to gaze upon her failure...\"\n\n-The Evisceration of Kur-skan the Heretic, III"
+  },
+  {
+    "id": 98,
+    "name": "Beads of Fealty",
+    "description": "Seems to do nothing... but...",
+    "detail": "Obliterates will cause survirors to be transported to A Moment, Whole instead of ending the run.",
+    "lore": null
+  },
+  {
+    "id": 107,
+    "name": "Focused Convergence",
+    "description": "Increase the speed of Teleporter charging... BUT reduce the size of the zone.",
+    "detail": "Teleporters charge 30% (+30% per stack) faster, but the size of the Teleporter zone is 50% (-50% per stack) smaller.",
+    "lore": "Gravity concentrating... falling inward, condensing, hardening.\n\nA singularity shrinks to the point your mind inverts, reversing reality. Now return.\n\nDon’t the matters of the physical world seem trivial now? Your tasks in this realm are simple and hastened, all in an attempt to get reversed. How many times can you make this trip before you are claimed by its process?\n\nDo not let it take you. Take it instead. Here."
+  },
+  {
+    "id": 10001,
+    "name": "Glowing Meteorite",
+    "description": "Rain meteors from the sky, hurting both enemies and allies.",
+    "detail": "Rain meteors from the sky, damaging ALL characters for 600% damage per blast. Lasts 20 seconds.",
+    "lore": null
+  },
+  {
+    "id": 10002,
+    "name": "Helfire Tincture",
+    "description": "Burn everything nearby... including you and allies.",
+    "detail": "Ignite ALL characters within 8m. Deal 5% of your maximum health/second as burning to yourself. The burn is 0.5x stronger on allies, and 24x stronger on enemies.",
+    "lore": "========================================\n====   MyBabel Machine Translator   ====\n====     [Version 12.45.1.009 ]   ======\n========================================\nTraining… <100000000 cycles>\nTraining… <1453461 cycles>\nComplete!\nDisplay result? Y/N\nY\n================================\n[Grix] ignites. We measure the time. \n.....\n.....\n.....\n...\n..\n.\n\nToo ordered. Composition is settling - I scrape the mixture from the bottom.  \n[Ouju] ignites. We measure the time.\n....\n...\n...\n..\n.\n\nToo smooth. Ratio can be greater. I flatten the mixture. Black ichor of [Ouju] begins to pool around my feet. \n[Rhisko] ignites. I measure the time.\n...\n.\n\nI increase the ratio of Tetrafoil. I saturate the mixture. Ichor floods the chamber. Ash flutters in the air before settling on the floor.\n...\nI ignite. <He> measures my time.\n...\n...\n...\n..\n..\n..\n.\n\n<Perfect.>\n\n================================"
+  },
+  {
+    "id": 10003,
+    "name": "Effigy of Grief",
+    "description": "Drop an effigy that cripples ALL characters inside. Can be picked back up.",
+    "detail": "ALL characters within are slowed by 50% and have their armor reduced by 20.",
+    "lore": null
+  },
+  {
+    "id": 10004,
+    "name": "Spinel Tonic",
+    "description": "Gain a massive boost to ALL stats. Chance to gain an affliction that reduces ALL stats. ",
+    "detail": "Drink the Tonic, gaining a boost for 20 seconds. Increases damage by +100%. Increases attack speed by +70%. Increases armor by +20. Increases maximum health by +50%. Increases passive health regeneration by +300%. Increases movespeed by +30%.\n\nWhen the Tonic wears off, you have a 20% chance to gain a Tonic Affliction, reducing all of your stats by -5% (-5% per stack). ",
+    "lore": null
+  },
+  {
+    "id": 20001,
+    "name": "Disposable Missile Launcher",
+    "description": "Fire a swarm of missiles.",
+    "detail": "Fire a swarm of 12 missiles that deal 12x300% damage.",
+    "lore": null
+  },
+  {
+    "id": 20002,
+    "name": "Foreign Fruit",
+    "description": "Heal on use.",
+    "detail": "Instantly heal for 50% of your maximum health.",
+    "lore": null
+  },
+  {
+    "id": 20003,
+    "name": "Primordial Cube",
+    "description": "Fire a black hole that draws enemies in.",
+    "detail": "Fire a black hole that draws enemies within 30m into its center. Lasts 10 seconds.",
+    "lore": null
+  },
+  {
+    "id": 20004,
+    "name": "Ocular HUD",
+    "description": "Gain 100% Critical Strike Chance for 8 seconds.",
+    "detail": "Fire a black hole that draws enemies within 30m into its center. Lasts 10 seconds.",
+    "lore": null
+  },
+  {
+    "id": 20005,
+    "name": "The Back-up",
+    "description": "Call drones for back up. Lasts 25 seconds.",
+    "detail": "Call 4 Strike Drones to fight for you. Lasts 25 seconds.",
+    "lore": "\"The inclusion of Rapid Response Drone Squadrons (RRDS) by local law enforcement marked a dire turning point of Plank's Rebellion. After its massive \"success\" in quelling the Rebellion - and subsequent implementation across Mercury - underground drone hackers became highly sought after by black market users.\"\n\n-Overview of Drone Technology, Vol.2"
+  },
+  {
+    "id": 20006,
+    "name": "Preon Accumulator",
+    "description": "Fire a ball of energy that electrocutes nearby enemies before detonating.",
+    "detail": "Fires preon tendrils, zapping enemies within 35m for up to 600% damage/second. On contact, detonate in an enormous 20m explosion for 4000% damage.",
+    "lore": null
+  },
+  {
+    "id": 20007,
+    "name": "Milky Chrysalis",
+    "description": "Gain temporary flight.",
+    "detail": "Sprout wings and fly for 15 seconds. Gain +20% movement speed for the duration. ",
+    "lore": null
+  },
+  {
+    "id": 20008,
+    "name": "Royal Capacitor",
+    "description": "Call down a lightning strike on a targeted monster.",
+    "detail": "Call down a lightning strike on a targeted monster, dealing 3000% damage and stunning nearby monsters.",
+    "lore": null
+  },
+  {
+    "id": 20009,
+    "name": "The Crowdfunder",
+    "description": "Toggle to fire. Costs gold per bullet.",
+    "detail": "Fires a continuous barrage that deals 100% damage per bullet. Costs $1 per bullet. Cost increases over time.",
+    "lore": null
+  },
+  {
+    "id": 20010,
+    "name": "Gnarled Woodsprite",
+    "description": "Heal over time. Activate to send to an ally.",
+    "detail": "Gain a Woodsprite follower that heals for 1.5% of your maximum health/second. Can be sent to an ally to heal them for 10% of their maximum health.",
+    "lore": null
+  },
+  {
+    "id": 20011,
+    "name": "Radar Scanner",
+    "description": "Reveal all nearby interactables.",
+    "detail": "Reveal all interactables within 500m for 10 seconds.",
+    "lore": null
+  },
+  {
+    "id": 20012,
+    "name": "Eccentric Vase",
+    "description": "Create a quantum tunnel between two locations.",
+    "detail": "Create a quantum tunnel of up to 1000m in length. Lasts 30 seconds.",
+    "lore": null
+  },
+  {
+    "id": 20013,
+    "name": "Blast Shower",
+    "description": "Cleanse all negative effects.",
+    "detail": "Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles.",
+    "lore": null
+  },
+  {
+    "id": 20014,
+    "name": "Volcanic Egg",
+    "description": "Transform into a speeding draconic fireball, dealing damage as you pass through enemies.",
+    "detail": "Turn into a draconic fireball for 5 seconds. Deal 500% damage on impact. Detonates at the end for 800% damage.",
+    "lore": null
+  },
+  {
+    "id": 20015,
+    "name": "Jade Elephant",
+    "description": "Gain massive armor for 5 seconds.",
+    "detail": "Gain 500 armor for 5 seconds.",
+    "lore": null
+  },
+  {
+    "id": 20016,
+    "name": "Sawmerang",
+    "description": "Throw a fan of buzzing saws that come back to you.",
+    "detail": "Throw three large saw blades that slice through enemies for 3x400% damage. Also deals an additional 3x100% damage per second while bleeding enemies. Can strike enemies again on the way back.",
+    "lore": "I'm so happy they let me bring my trusty disc toy on this trip! Trees need cutting? Disc toy. Baddies getting a little too close? Disc toy. Fun after-hours game of catch? Disc toy... but only if you're trained to catch it."
+  },
+  {
+    "id": 20017,
+    "name": "Recycler",
+    "description": "Transform an Item or Equipment into a different one. Can only recycle once.",
+    "detail": "Transform an Item or Equipment into a different one. Can only be converted into the same tier one time.",
+    "lore": "Order: \"TY-6G Recycler\"\nTracking Number: 02******\nEstimated Delivery: 11\\06\\2056\\nShipping Method: Standard\nShipping Address: 700 Baler Ave, Seattle, Earth\nShipping Details:\n\nStandard issue recycling apparatus TY-6G. Please read the manual before operating. KEEP HANDS CLEAR OF THE TOP OPENING.\n\nUse included recycler rod to pack refuse into top. Our patented smart technology will find a new, usable form for the matter you insert. \n\nThank you for recycling!"
+  },
+  {
+    "id": 20018,
+    "name": "Ifrit's Distinction",
+    "description": "Become an aspect of fire.",
+    "detail": "Gain power of Blazing Elite.",
+    "lore": null
+  },
+  {
+    "id": 20019,
+    "name": "Silence Between Two Strikes",
+    "description": "Become an aspect of lightning.",
+    "detail": "Gain power of Overloading Elite.",
+    "lore": null
+  },
+  {
+    "id": 20020,
+    "name": "Her Biting Embrace",
+    "description": "Become an aspect of ice.",
+    "detail": "Gain power of Glacier Elite.",
+    "lore": null
+  },
+  {
+    "id": 20021,
+    "name": "N'kuhana's Retort",
+    "description": "Become an aspect of corruption.",
+    "detail": "Gain power of Malachite Elite.",
+    "lore": null
+  },
+  {
+    "id": 20022,
+    "name": "Spectral Circlet",
+    "description": "Become an aspect of incorporeality.",
+    "detail": "Gain power of Celestine Elite.",
+    "lore": null
+  },
+  {
+    "id": 20023,
+    "name": "Fuel Array",
+    "description": "Looks like it could power something. EXTREMELY unstable...",
+    "detail": "Quest item used to unlock new survivor: Rex",
+    "lore": null
+  }
+]

@@ -9,6 +9,8 @@ class SettingProvider with ChangeNotifier {
 
   /// Grid count in GridView
   int gridCount;
+  /// Optional translation to replace data's description in different language | "" means none/default
+  String translation;
 
   SettingProvider();
 
@@ -20,11 +22,19 @@ class SettingProvider with ChangeNotifier {
     _pref = await SharedPreferences.getInstance();
 
     gridCount = _pref.getInt("gridCount") ?? 3;
+    translation = _pref.getString("translation") ?? "";
   }
 
   void setGridCount(int count){
     _pref.setInt("gridCount", count);
     gridCount = count;
+
+    notifyListeners();
+  }
+
+  void setTranslation(String language){
+    _pref.setString("translation", language);
+    translation = language;
 
     notifyListeners();
   }

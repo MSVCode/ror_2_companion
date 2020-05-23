@@ -1,0 +1,76 @@
+[
+    {
+        "id":0,
+        "name":"Acrid",
+        "description":"Acrid is a melee-range hybrid who uses powerful poisons to melt tanky enemies.",
+        "skillList":[
+            {
+                "skillType":0,
+                "variant":0,
+                "name":"Poison",
+                "description":"Certain attacks Poison enemies, dealing damage equal to 10% of their maximum health over time. Poison cannot kill enemies.",
+                "noteList":[
+                    "Ticks 3 times/second for 10 seconds",
+                    "Deals 1% of target max health or Acrid's damage per second",
+                    "Non-lethal, will leave at least 1 health"
+                ]
+            },
+            {
+                "skillType":0,
+                "variant":1,
+                "name":"Blight",
+                "description":"Attacks that apply Poison apply stacking Blight instead, dealing 60% damage per second.",
+                "noteList":[
+                    "Ticks 3 times/second for 5 seconds",
+                    "Deals 20% of Acrid's damage per tick"
+                ]
+            },
+            {
+                "skillType":1,
+                "variant":0,
+                "name":"Vicious Wounds",
+                "description":"Maul an enemy for 200% damage. Every 3rd hit deals 400% damage.",
+                "noteList":[]
+            },
+            {
+                "skillType":2,
+                "variant":0,
+                "name":"Neurotoxin",
+                "description":"Spit toxic bile for 240% damage that poisons enemies hit.",
+                "noteList":[]
+            },
+            {
+                "skillType":2,
+                "variant":1,
+                "name":"Ravenous Bite",
+                "description":"Bite enemy, dealing 310% damage and poisoning them. Deals up to 3x damage to low health enemies.",
+                "noteList":[]
+            },
+            {
+                "skillType":3,
+                "variant":0,
+                "name":"Caustic Leap",
+                "description":"Leap into the air, dealing 320% damage, stunning, and poisoning enemies on impact. Leaves a pool of acid that deals 25% damage.",
+                "noteList":[
+                    "Has 2 charges initially"
+                ]
+            },
+            {
+                "skillType":3,
+                "variant":1,
+                "name":"Frenzied Leap",
+                "description":"Leap into the air, dealing 550% damage and stunning enemies on impact. Reduce the cooldown by 2s for every enemy hit.",
+                "noteList":[
+                    "Has 2 charges initially"
+                ]
+            },
+            {
+                "skillType":4,
+                "variant":0,
+                "name":"Epidemic",
+                "description":"Release a deadly poison that deals 100% damage and poisons enemies. The disease continually spreads to up to 20 targets.",
+                "noteList":[]
+            }
+        ]
+    }
+]

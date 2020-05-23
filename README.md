@@ -28,6 +28,21 @@ Notes about data:
 - ID >= `10000` are used for items with currently unknown in-game id (let us know the ID to update them)
 - `damage`, `heal`, `procChance` are currently unused, might be used for future releases
 
+### Contributing Language Translation
+You can help contribute translations to this app by creating translation files.
+
+How it works:
+1. The app will load `asset/json/core` data as base data
+2. If user set translation in setting other than `Default (English)`, `DataProvider` will load translation data
+3. It will try to access `asset/json/[translation_name]` folder and load the translation file
+4. Base data will be replaced with keys fron translation data
+
+How to contribute:
+1. Create a new folder for language you translating in `asset/json/[translation_code]`, e.g `asset/json/id`
+2. Copy json data from `asset/json/sample_en` for the base
+3. Edit all data except `id`, `key`, `type`, `skillType`, or `variant`
+4. Submit a pull request
+
 ## Disclaimer
 
 This application is not affiliated with, endorsed, sponsored, or specifically approved by Hopoo Games nor Gearbox Publishing.
