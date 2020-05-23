@@ -18,7 +18,7 @@ class ItemStatus {
   });
 
   static fromMap(Map<String, dynamic> map) {
-    STACK_TYPE stackType = STACK_TYPE.values[map["stackType"] ?? 0];
+    STACK_TYPE stackType = map["stackType"]!=null?STACK_TYPE.values[map["stackType"]]:null;
 
     return ItemStatus(
       type: map["type"],

@@ -82,7 +82,7 @@ class ItemDetailScreen extends StatelessWidget {
           children: <Widget>[
             Text(stat.type),
             Text(stat.initialAmount),
-            Text(enumToTitle(stat.stackType)),
+            Text(stat.stackType==null?"None":enumToTitle(stat.stackType)),
             Text(stat.addedAmount)
           ],
         ),
