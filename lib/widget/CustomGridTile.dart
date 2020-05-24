@@ -14,10 +14,10 @@ class CustomGridTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridTile(
       child: Card(
-        shape: RoundedRectangleBorder(
+        shape: cardColor!=null?RoundedRectangleBorder(
           side: new BorderSide(color: cardColor, width: 2.0),
           borderRadius: BorderRadius.circular(4.0),
-        ),
+        ):null,
         child: InkWell(
           onTap: () => Navigator.pushNamed(context, path, arguments: id),
           child: Container(

@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:ror_2_companion/provider/SettingProvider.dart';
+import 'package:ror_2_companion/screen/CreditScreen.dart';
 import 'package:ror_2_companion/screen/DisclaimerScreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -59,6 +60,10 @@ class _SettingScreenState extends State<SettingScreen> {
             ListTile(
               title: Text("Disclaimer"),
               onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (_)=>DisclaimerScreen())),
+            ),
+            ListTile(
+              title: Text("Credit"),
+              onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (_)=>CreditScreen())),
             ),
             ListTile(
               title: Text("Open-Sourced Project by MSVCode"),

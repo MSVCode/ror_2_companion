@@ -1,0 +1,416 @@
+[
+  {
+    "type": 0,
+    "key": "item-1",
+    "name": "Learning Process",
+    "description": "Die 5 times."
+  },
+  {
+    "type": 0,
+    "key": "item-8",
+    "name": "\"Is This Bugged?\"",
+    "description": "Fail the Shrine of Chance 3 times in a row."
+  },
+  {
+    "type": 0,
+    "key": "item-17",
+    "name": "The Basics",
+    "description": "Discover 10 unique white items."
+  },
+  {
+    "type": 0,
+    "key": "item-42",
+    "name": "...Maybe One More.",
+    "description": "Duplicate the same item 7 times in a row with a 3D Printer."
+  },
+  {
+    "type": 0,
+    "key": "item-58",
+    "name": "Flawless",
+    "description": "Add an extra charge of your Secondary skill."
+  },
+  {
+    "type": 0,
+    "key": "item-60",
+    "name": "Keyed Up",
+    "description": "Defeat the Teleporter boss under 15 seconds."
+  },
+  {
+    "type": 0,
+    "key": "item-61",
+    "name": "Advancement",
+    "description": "Complete a Teleporter event."
+  },
+  {
+    "type": 0,
+    "key": "item-19",
+    "name": "Rapidfire",
+    "description": "Reach +200% attack speed."
+  },
+  {
+    "type": 0,
+    "key": "item-26",
+    "name": "Prismatically Aligned",
+    "description": "Complete a Prismatic Trial."
+  },
+  {
+    "type": 0,
+    "key": "item-30",
+    "name": "Experimenting",
+    "description": "Pick up 5 different types of Equipment."
+  },
+  {
+    "type": 0,
+    "key": "item-33",
+    "name": "Slaughter",
+    "description": "Defeat 3000 enemies."
+  },
+  {
+    "type": 0,
+    "key": "item-46",
+    "name": "Glorious Battle",
+    "description": "Charge the Teleporter with less than 10% health."
+  },
+  {
+    "type": 0,
+    "key": "item-63",
+    "name": "Death Do Us Part",
+    "description": "Discover the hidden chamber in the Abandoned Aqueduct."
+  },
+  {
+    "type": 0,
+    "key": "item-64",
+    "name": "Death Do Us Part",
+    "description": "Discover the hidden chamber in the Abandoned Aqueduct."
+  },
+  {
+    "type": 0,
+    "key": "item-76",
+    "name": "Going Fast Recommended",
+    "description": "Reach +300% movespeed (includes sprinting)."
+  },
+  {
+    "type": 0,
+    "key": "item-78",
+    "name": "Cut Down",
+    "description": "Defeat 500 elite monsters."
+  },
+  {
+    "type": 0,
+    "key": "item-79",
+    "name": "Warmonger",
+    "description": "Complete 3 Combat Shrines in a single stage."
+  },
+  {
+    "type": 0,
+    "key": "item-103",
+    "name": "Automation Activation",
+    "description": "Activate 6 turrets in a single run."
+  },
+  {
+    "type": 0,
+    "key": "item-31",
+    "name": "Her Concepts",
+    "description": "Find the Altar to N'kuhana."
+  },
+  {
+    "type": 0,
+    "key": "item-32",
+    "name": "Macho",
+    "description": "Deal 5000 damage in one shot."
+  },
+  {
+    "type": 0,
+    "key": "item-35",
+    "name": "The Long Road",
+    "description": "Complete 20 stages in a single run."
+  },
+  {
+    "type": 0,
+    "key": "item-38",
+    "name": "Deja Vu?",
+    "description": "Loop back to the first stage."
+  },
+  {
+    "type": 0,
+    "key": "item-51",
+    "name": "Newtist",
+    "description": "Discover and activate 8 unique Newt Altars."
+  },
+  {
+    "type": 0,
+    "key": "item-66",
+    "name": "The Lone Survivor",
+    "description": "Stay alive for 30 consecutive minutes."
+  },
+  {
+    "type": 0,
+    "key": "item-70",
+    "name": "Deicide",
+    "description": "Defeat an Elite boss on Monsoon difficulty."
+  },
+  {
+    "type": 0,
+    "key": "item-75",
+    "name": "Naturopath",
+    "description": "Without healing, reach and complete the 3rd Teleporter event."
+  },
+  {
+    "type": 0,
+    "key": "item-74",
+    "name": "The Demons And The Crabs",
+    "description": "Kill 20 Hermit Crabs by chasing them off the edge of the map."
+  },
+  {
+    "type": 0,
+    "key": "item-88",
+    "name": "Blockade Breaker",
+    "description": "Kill 15 boss monsters in a single run."
+  },
+  {
+    "type": 0,
+    "key": "item-96",
+    "name": "Blockade Breaker",
+    "description": "Kill 15 boss monsters in a single run."
+  },
+  {
+    "type": 0,
+    "key": "item-107",
+    "name": "Never Back Down",
+    "description": "In 4 consecutive stages don’t leave the teleporter radius until it is fully charged."
+  },
+  {
+    "type": 0,
+    "key": "item-10001",
+    "name": "Moon Worshipper",
+    "description": "Carry 5 Lunar items in a single run."
+  },
+  {
+    "type": 0,
+    "key": "item-20005",
+    "name": "Mechanic",
+    "description": "Repair 30 drones or turrets."
+  },
+  {
+    "type": 0,
+    "key": "item-20006",
+    "name": "[REDACTED]",
+    "description": "Open the Timed Security Chest on Rallypoint Delta."
+  },
+  {
+    "type": 0,
+    "key": "item-20008",
+    "name": "Ascendant",
+    "description": "Defeat the Teleporter bosses after activating 2 Shrines of the Mountain."
+  },
+  {
+    "type": 0,
+    "key": "item-20009",
+    "name": "Funded!",
+    "description": "Collect $30,480 total gold."
+  },
+  {
+    "type": 0,
+    "key": "item-20010",
+    "name": "One with the Woods",
+    "description": "Fully upgrade a Shrine of the Woods."
+  },
+  {
+    "type": 0,
+    "key": "item-20011",
+    "name": "Bookworm",
+    "description": "Collect 10 Monster or Environment Logs."
+  },
+  {
+    "type": 0,
+    "key": "item-20012",
+    "name": "Bookworm",
+    "description": "Collect 10 Monster or Environment Logs."
+  },
+  {
+    "type": 0,
+    "key": "item-20017",
+    "name": "Cleanup Duty",
+    "description": "Destroy 20 flying rocks in Sky Meadow."
+  },
+  {
+    "type": 1,
+    "key": "survivor-0",
+    "name": "...To Be Left Alone",
+    "description": "Stabilize the Cell in the Void Fields."
+  },
+  {
+    "type": 1,
+    "key": "survivor-1",
+    "name": "Pause.",
+    "description": "Free the survivor suspended in time."
+  },
+  {
+    "type": 1,
+    "key": "survivor-3",
+    "name": "Engineering Perfection",
+    "description": "Complete 30 stages."
+  },
+  {
+    "type": 1,
+    "key": "survivor-4",
+    "name": "Warrior",
+    "description": "Reach and complete the 3rd Teleporter event without dying."
+  },
+  {
+    "type": 1,
+    "key": "survivor-5",
+    "name": "Guidance Offline",
+    "description": "Defeat the unique guardian of Siren's Call."
+  },
+  {
+    "type": 1,
+    "key": "survivor-6",
+    "name": "True Respite",
+    "description": "Obliterate yourself at the Obelisk.."
+  },
+  {
+    "type": 1,
+    "key": "survivor-8",
+    "name": "Power Plant",
+    "description": "Repair the broken robot with an Escape Pod's Fuel Array."
+  },
+  {
+    "type": 2,
+    "key": "skill-0-0-1",
+    "name": "Acrid: Easy Prey",
+    "description": "As Acrid, land the killing blow on 50 total enemies that have 1 hit point left."
+  },
+  {
+    "type": 2,
+    "key": "skill-0-2-1",
+    "name": "Acrid: Bad Medicine",
+    "description": "As Acrid, land the final blow on a Scavenger."
+  },
+  {
+    "type": 2,
+    "key": "skill-0-3-1",
+    "name": "Acrid: Pandemic",
+    "description": "As Acrid, inflict Poison 1000 total times."
+  },
+  {
+    "type": 2,
+    "key": "skill-1-1-1",
+    "name": "Artificer: Massacre",
+    "description": "As Artificer, perform a multikill of 20 enemies."
+  },
+  {
+    "type": 2,
+    "key": "skill-1-2-1",
+    "name": "Artificer: Chunked!",
+    "description": "As Artificer, fully defeat the teleporter boss in a one-second burst of damage."
+  },
+  {
+    "type": 2,
+    "key": "skill-1-4-1",
+    "name": "Artificer: Orbital Bombardment",
+    "description": "As Commando, land the killing blow on an Overloading Worm."
+  },
+  {
+    "type": 2,
+    "key": "skill-2-2-1",
+    "name": "Commando: Rolling Thunder",
+    "description": "As Artificer, kill 15 enemies before touching the ground."
+  },
+  {
+    "type": 2,
+    "key": "skill-2-3-1",
+    "name": "Commando: Godspeed",
+    "description": "As Commando, fully charge the first-stage teleporter before the timer hits 5 minutes."
+  },
+  {
+    "type": 2,
+    "key": "skill-2-4-1",
+    "name": "Commando: Incorruptible",
+    "description": "As Commando, clear 20 stages in a single run without picking up any Lunar items."
+  },
+  {
+    "type": 2,
+    "key": "skill-3-2-1",
+    "name": "Engineer: 100% Calculated",
+    "description": "As Engineer, defeat the teleporter boss in less than 5 seconds after it spawns."
+  },
+  {
+    "type": 2,
+    "key": "skill-3-3-1",
+    "name": "Engineer: Zero Sum",
+    "description": "As Engineer, finish charging the teleporter with zero monsters remaining on the stage."
+  },
+  {
+    "type": 2,
+    "key": "skill-3-4-1",
+    "name": "Engineer: Better With Friends",
+    "description": "As Engineer, recruit 12 minions at one time."
+  },
+  {
+    "type": 2,
+    "key": "skill-4-1-1",
+    "name": "Huntress: Finishing Touch",
+    "description": "As Huntress, land a killing blow with every possible hit of a single glaive."
+  },
+  {
+    "type": 2,
+    "key": "skill-4-3-1",
+    "name": "Huntress: One Shot, One Kill",
+    "description": "As Huntress, collect and carry 12 Crowbars at once."
+  },
+  {
+    "type": 2,
+    "key": "skill-4-4-1",
+    "name": "Huntress: Piercing Wind",
+    "description": "As Huntress, start and finish either Rallypoint Delta or Scorched Acres without falling below 100% health."
+  },
+  {
+    "type": 2,
+    "key": "skill-5-2-1",
+    "name": "Loader: Swing By",
+    "description": "As Loader, reach and proceed through the Celestial Portal in 25 minutes or less."
+  },
+  {
+    "type": 2,
+    "key": "skill-5-3-1",
+    "name": "Loader: Earthshatter",
+    "description": "As Loader, land a Charged Gauntlet hit at 300mph or higher."
+  },
+  {
+    "type": 2,
+    "key": "skill-6-2-1",
+    "name": "Mercenary: Demon of the Skies",
+    "description": "As Mercenary, don't touch the ground for 30 seconds."
+  },
+  {
+    "type": 2,
+    "key": "skill-6-4-1",
+    "name": "Mercenary: Ethereal",
+    "description": "As Mercenary, complete a Prismatic Trial without falling below 100% health."
+  },
+  {
+    "type": 2,
+    "key": "skill-7-1-2",
+    "name": "MUL-T: Pest Control",
+    "description": "As MUL-T, defeat two Beetle Queens without leaving the teleporter zone."
+  },
+  {
+    "type": 2,
+    "key": "skill-7-1-3",
+    "name": "MUL-T: Gotcha!",
+    "description": "As MUL-T, land the killing blow on an Imp Overlord with the Preon Accumulator."
+  },
+  {
+    "type": 2,
+    "key": "skill-8-2-1",
+    "name": "REX: Bushwhacked",
+    "description": "As REX, complete an entire teleporter event while under 50% health."
+  },
+  {
+    "type": 2,
+    "key": "skill-8-3-1",
+    "name": "REX: Dunked",
+    "description": "As REX, kill a Clay Dunestrider on Abandoned Aqueduct by throwing it into a pit."
+  }
+]

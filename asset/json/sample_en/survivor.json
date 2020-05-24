@@ -1,0 +1,634 @@
+[
+  {
+    "id": 0,
+    "name": "Acrid",
+    "title": "Test Subject",
+    "description": "Acrid is a melee-range hybrid who uses powerful poisons to melt tanky enemies.",
+    "skillList": [
+      {
+        "skillType": 0,
+        "variant": 0,
+        "name": "Poison",
+        "description": "Certain attacks Poison enemies, dealing damage equal to 10% of their maximum health over time. Poison cannot kill enemies.",
+        "noteList": [
+          "Ticks 3 times/second for 10 seconds",
+          "Deals 1% of target max health or Acrid's damage per second",
+          "Non-lethal, will leave at least 1 health"
+        ]
+      },
+      {
+        "skillType": 0,
+        "variant": 1,
+        "name": "Blight",
+        "description": "Attacks that apply Poison apply stacking Blight instead, dealing 60% damage per second.",
+        "noteList": [
+          "Ticks 3 times/second for 5 seconds",
+          "Deals 20% of Acrid's damage per tick"
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Vicious Wounds",
+        "description": "Maul an enemy for 200% damage. Every 3rd hit deals 400% damage.",
+        "noteList": []
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Neurotoxin",
+        "description": "Spit toxic bile for 240% damage that poisons enemies hit.",
+        "noteList": []
+      },
+      {
+        "skillType": 2,
+        "variant": 1,
+        "name": "Ravenous Bite",
+        "description": "Bite enemy, dealing 310% damage and poisoning them. Deals up to 3x damage to low health enemies.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Caustic Leap",
+        "description": "Leap into the air, dealing 320% damage, stunning, and poisoning enemies on impact. Leaves a pool of acid that deals 25% damage.",
+        "noteList": [
+          "Has 2 charges initially"
+        ]
+      },
+      {
+        "skillType": 3,
+        "variant": 1,
+        "name": "Frenzied Leap",
+        "description": "Leap into the air, dealing 550% damage and stunning enemies on impact. Reduce the cooldown by 2s for every enemy hit.",
+        "noteList": [
+          "Has 2 charges initially"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Epidemic",
+        "description": "Release a deadly poison that deals 100% damage and poisons enemies. The disease continually spreads to up to 20 targets.",
+        "noteList": []
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Artificer",
+    "title": "Herald of the House Beyond",
+    "description": "The Artificer is a high burst damage survivor who excels in fighting large groups and bosses alike.",
+    "skillList": [
+      {
+        "skillType": 0,
+        "variant": 0,
+        "name": "ENV Suit",
+        "description": "Holding the Jump key causes the Artificer to hover in the air.",
+        "noteList": []
+      },
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Flame Bolt",
+        "description": "Fire a bolt for 220% damage that ignites enemies. Hold up to 4.",
+        "noteList": [
+          "Has 4 charges initially",
+          "Burns 8 ticks for 25% damage each"
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 1,
+        "name": "Plasma Bolt",
+        "description": "Fire a bolt for 220% damage that explodes in a small area. Hold up to 4.",
+        "noteList": [
+          "Has 4 charges initially"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Charged Nano-Bomb",
+        "description": "Charge up an exploding nano-bomb that deals 400%-1200% damage and stuns all enemies.",
+        "noteList": [
+          "Can sprint while charging",
+          "Damage increase also calculated during initial animation, so the minimum damage is 600% (increased with Attack Speed)",
+          "The orb fires bolts at nearby enemies on the fly"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 1,
+        "name": "Charged Nano-Spear",
+        "description": "Charge up a piercing nano-spear that deals 400%-1200% damage and freezes all enemies.",
+        "noteList": [
+          "Can sprint while charging",
+          "Damage increase also calculated during initial animation, so the minimum damage is 600% (increased with Attack Speed)",
+          "Frozen enemies with 30% or less health are instantly killed",
+          "Can't freeze bosses"
+        ]
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Snapfreeze",
+        "description": "Create a barrier that freezes enemies for 100% damage. Enemies at low health are instantly killed if frozen.",
+        "noteList": [
+          "Frozen enemies with 30% or less health are instantly killed",
+          "Can't freeze bosses"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Flamethrower",
+        "description": "Burn all enemies in front of you for 1700% damage.",
+        "noteList": [
+          "Attack pierces through enemies",
+          "Deals damage 22 times (unaffected by attack speed)",
+          "Each hit deals 100% damage, has a Proc Coefficient of 1",
+          "Half of hits will set target on fire"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 1,
+        "name": "Ion Surge",
+        "description": "Burst into the sky, dealing 800% damage and stunning nearby enemies.",
+        "noteList": [
+          "Can be used while airborne"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Commando",
+    "title": "Cornered Gunslinger",
+    "description": "The Commando is a jack-of-all-trades character that is reliable in all situations of the game.",
+    "skillList": [
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Double Tap",
+        "description": "Shoot twice for 2x90% damage.",
+        "noteList": []
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Phase Round",
+        "description": "Fire a piercing bullet that hits all enemies in a line for 300% damage.",
+        "noteList": []
+      },
+      {
+        "skillType": 2,
+        "variant": 1,
+        "name": "Phase Blast",
+        "description": "Fire two close-range blasts that deal 8x200% damage total.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Tactical Dive",
+        "description": "Roll a short distance.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 1,
+        "name": "Tactical Slide",
+        "description": "Slide on the ground for a short distance. You can fire while sliding.",
+        "noteList": []
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Suppressive Fire",
+        "description": "Fire repeatedly, stunning enemies for 100% damage per bullet.",
+        "noteList": [
+          "Number of attack increased by Attack Speed, initially six"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 1,
+        "name": "Frag Grenade",
+        "description": "Throw a grenade that explodes for 175% damage. Deals 4x damage in the center of the explosion. Can hold up to 2.",
+        "noteList": [
+          "Has 2 charges initially"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Engineer",
+    "title": "Fortification Expert",
+    "description": "The Engineer is a unique class that requires planning and positioning to be successful.",
+    "skillList": [
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Bouncing Grenades",
+        "description": "Charge up to 8 grenades that deal 100% damage each.",
+        "noteList": ["Can sprint while charging"]
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Pressure Mines",
+        "description": "Place a two-stage mine that deals 300% damage when an enemy walks nearby, or 900% damage if allowed to fully arm. Can place up to 4.",
+        "noteList": []
+      },
+      {
+        "skillType": 2,
+        "variant": 1,
+        "name": "Spider Mines",
+        "description": "Place a robot mine that deals 600% damage when an enemy walks nearby. Can place up to 4.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Bubble Shield",
+        "description": "Place an impenetrable shield that blocks all incoming damage.",
+        "noteList": [
+          "Lasts for 15s",
+          "Only one can be active at a time",
+          "Enemies can move inside the barrier, negating its effects",
+          "Anything can fire outwards from the shield, and nothing can fire through it inwards (including yourself)."
+        ]
+      },
+      {
+        "skillType": 3,
+        "variant": 1,
+        "name": "Thermal Harpoons",
+        "description": "Enter target painting mode to launch heat-seeking harpoons that deal 500% damage each. Can store up to 4.",
+        "noteList": [
+          "Has 4 charges initially",
+          "Harpoons cannot be fired without a target"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "TR12 Gauss Auto-Turret",
+        "description": "Place a turret that inherits all your items. Fires a cannon for 100% damage. Can place up to 2.",
+        "noteList": []
+      },
+      {
+        "skillType": 4,
+        "variant": 1,
+        "name": "TR58 Carbonizer Turret",
+        "description": "Place a mobile turret that inherits all your items. Fires a laser for 200% damage per second that slows enemies. Can place up to 2.",
+        "noteList": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Huntress",
+    "title": "Judge, Jury, Executioner",
+    "description": "The Huntress is an extremely mobile but fragile survivor with a high damage output.",
+    "skillList": [
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Strafe",
+        "description": "Quickly fire a seeking arrow for 150% damage. Can be used while sprinting.",
+        "noteList": [
+          "Initial Fire Rate: 0.5s"
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 1,
+        "name": "Flurry",
+        "description": "Draw back a volley of 3 seeking arrows for 3x100% damage. Critical Strikes fire 6 arrows. Can be used while sprinting.",
+        "noteList": [
+          "Initial Fire Rate: 1.3s"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Laser Glaive",
+        "description": "Throw a seeking glaive that bounces up to 6 times for 250% damage. Damage increases by 10% per bounce.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Blink",
+        "description": "Disappear and teleport forward.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Phase Blink",
+        "description": "Disappear and teleport a short distance. Can store up to 3 charges. Can be used while sprinting.",
+        "noteList": [
+          "Has 3 charges initially", 
+          "Can't blink vertically"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Arrow Rain",
+        "description": "Teleport into the sky. Target an area to rain arrows, slowing all enemies and dealing 225% damage per second.",
+        "noteList": [
+          "Hits 19 times for 110% damage over 6s"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 1,
+        "name": "Ballista",
+        "description": "Teleport backwards into the sky. Fire up to 3 energy bolts, dealing 3x900% damage.",
+        "noteList": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Loader",
+    "title": "Bionic Powerhouse",
+    "description": "The Loader is a slow but powerful bruiser that can use her grappling hook to uniquely navigate the environment.",
+    "skillList": [
+      {
+        "skillType": 0,
+        "variant": 0,
+        "name": "Scrap Barrier",
+        "description": "The Loader is immune to fall damage. Striking enemies with the Loader's gauntlets grants a temporary barrier.",
+        "noteList": [
+          "Barrier gain is 5% of your max barrier."
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Knuckleboom",
+        "description": "Swing at nearby enemies for 320% damage.",
+        "noteList": []
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Grapple Fist",
+        "description": "Fire your gauntlet forward, pulling you to the target.",
+        "noteList": [
+          "Does not damage enemies"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 1,
+        "name": "Spiked Fist",
+        "description": "Fire your gauntlet forward, dealing 320% damage and stunning. Pulls you to heavy targets. Light targets are pulled to YOU instead.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Charged Gauntlet",
+        "description": "Charge up a piercing punch for 600%-2700% damage. Deals more damage at higher speeds.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 1,
+        "name": "Thunder Gauntlet",
+        "description": "Charge up a single punch for 2100% damage that shocks enemies in a cone for 1000% damage. Deals more damage at higher speeds.",
+        "noteList": [
+          "Can't hold the charge"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "M551 Pylon",
+        "description": "Throw a floating pylon that zaps up to 6 nearby enemies for 100% damage. Can be grappled.",
+        "noteList": [
+          "Maximum 3 Pylons at the same time"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Mercenary",
+    "title": "Hired Blade",
+    "description": "The Mercenary is a high skill melee survivor that uses his many dodges to weave in and out of combat.",
+    "skillList": [
+      {
+        "skillType": 0,
+        "variant": 0,
+        "name": "Cybernetic Enhancements",
+        "description": "The Mercenary can jump twice.",
+        "noteList": [
+          "Wax Quail affect twice"
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Laser Sword",
+        "description": "Slice in front for 130% damage. Every 3rd hit strikes in a greater area for 300% damage.",
+        "noteList": [
+          "The base swing speed is 0.42s per swing"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Whirlwind",
+        "description": "Quickly slice horizontally twice, dealing 2x200% damage. If airborne, slice vertically instead.",
+        "noteList": [
+          "The animation speed is improved with attack speed"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 1,
+        "name": "Rising Thunder",
+        "description": "Unleash a slicing uppercut, dealing 450% damage and sending you airborne.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Blinding Assault",
+        "description": "Dash forward, stunning enemies for 300% damage. If you hit an enemy, you can dash again, up to 3 total.",
+        "noteList": [
+          "The player has 2.66 seconds to use this ability again after striking an enemy (while a charge is available)."
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Eviscerate",
+        "description": "Target the nearest enemy, attacking them for 110% damage repeatedly. You cannot be hit for the duration.",
+        "noteList": [
+          "Lasts for 1.3s after casting",
+          "Deals 7 damage ticks on cast (improved by Attack Speed)",
+          "Invincible for 0.6s after Eviscerate ends"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 1,
+        "name": "Slicing Winds",
+        "description": "Fire a wind of blades that attack up to 3 enemies for 8x100% damage.",
+        "noteList": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "MUL-T",
+    "title": "Right Tool for the Wrong Job",
+    "description": "MUL-T is an aggressive survivor who has the tools necessary for any job!",
+    "skillList": [
+      {
+        "skillType": 0,
+        "variant": 0,
+        "name": "Multifunctional",
+        "description": "MUL-T can hold two equipment at once. The active equipment is swapped by using Retool.",
+        "noteList": []
+      },
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Auto-Nailgun",
+        "description": "Rapidly fire nails for 60% damage. Fires six nails when initially pressed.",
+        "noteList": [
+          "Initial press fires six nails, resulting 360% damage and 2.4 proc coefficient if all hits"
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 1,
+        "name": "Rebar Puncher",
+        "description": "Fire a piercing rebar that deals 600% damage.",
+        "noteList": []
+      },
+      {
+        "skillType": 1,
+        "variant": 2,
+        "name": "Scrap Launcher",
+        "description": "Fire an arcing hunk that explodes for 360% damage. Hold up to 4.",
+        "noteList": [
+          "Has 4 charges initially",
+          "Deals AOE damage for 90% damage",
+          "Once fired, the cooldown will begin, when finished the entire ammo capacity of 4 will be reloaded"
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 3,
+        "name": "Power-Saw",
+        "description": "Saw nearby enemies for 1000% damage per second.",
+        "noteList": [
+          "Slightly pulls you forward whenever you hit a target"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Blast Canister",
+        "description": "Launch a stun canister for 220% damage. Drops stun bomblets for 5x44% damage.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Transport Mode",
+        "description": "Zoom forward, gaining armor and speed. Deals 250% damage to enemies in the way. Deals more damage at higher speeds.",
+        "noteList": [
+          "Grants 200 Armor", 
+          "Grants up to 45% additional speed"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Retool",
+        "description": "Passively hold TWO equipment at once. Activating 'Retool' switches the active Equipment and MUL-T's primary attack.",
+        "noteList": []
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "REX",
+    "title": "Symbiotes",
+    "description": "REX is a half robot / half plant that uses HP to cast devastating skills from a distance. The plant nor the robot could survive this planet alone – but thankfully they have each other.",
+    "skillList": [
+      {
+        "skillType": 0,
+        "variant": 0,
+        "name": "Natural Toxins",
+        "description": "Certain attacks Weaken enemies hit, reducing their movement speed, armor, and damage.",
+        "noteList": [
+          "Weaken reduces armor by 30, damage by 40%, and move speed by 40%."
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "DIRECTIVE: Inject",
+        "description": "Fire 3 syringes for 3x80% damage. The last syringe Weakens and heals for 60% of damage dealt.",
+        "noteList": [
+          "Last syringe weakens enemy and heals you when hitting enemy"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Seed Barrage",
+        "description": "Costs 15% of your current health. Launch a mortar into the sky for 450% damage.",
+        "noteList": [
+          "Because the costs calculated from your current health, your health won't reach 0 by using this skill"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 1,
+        "name": "DIRECTIVE: Drill",
+        "description": "Launch a series of seed bullets into the sky, raining down for 450% damage per second.",
+        "noteList": [
+          "Proc coefficient is 0.5 per hit",
+          "Hits 16 times for 90% damage over 3s (1440% damage total)"
+        ]
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "DIRECTIVE: Disperse",
+        "description": "Fire a sonic boom that pushes and Weakens all enemies hit. Pushes you backwards if you are airborne.",
+        "noteList": []
+      },
+      {
+        "skillType": 3,
+        "variant": 1,
+        "name": "Bramble Volley",
+        "description": "Costs 20% of your current health. Fire thorns that pushes and damages all enemies hit for 550% damage. Pushes you backwards if you are airborne. Heals for every target hit.",
+        "noteList": []
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Tangling Growth",
+        "description": "Costs 25% of your current health. Fire a flower that roots for 200% damage. Heals for every target hit.",
+        "noteList": [
+          "Will 'root' enemies in area, making them unable to move"
+        ]
+      }
+    ]
+  }
+]

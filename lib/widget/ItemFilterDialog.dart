@@ -1,10 +1,6 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:ror_2_companion/helper/changeCase.dart';
 import 'package:ror_2_companion/model/Item.dart';
 import 'package:ror_2_companion/provider/DataProvider.dart';
-import 'package:ror_2_companion/widget/CustomDetailRow.dart';
 
 class ItemFilterDialog extends StatefulWidget {
   ItemFilterDialog();

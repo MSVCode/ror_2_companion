@@ -5,22 +5,27 @@ import 'package:ror_2_companion/provider/SettingProvider.dart';
 import 'package:ror_2_companion/screen/ItemDetailScreen.dart';
 import 'package:ror_2_companion/screen/ItemListScreen.dart';
 import 'package:ror_2_companion/screen/Setting.dart';
+import 'package:ror_2_companion/screen/SurvivorDetailScreen.dart';
+import 'package:ror_2_companion/screen/SurvivorListScreen.dart';
 
 void main() {
   runApp(MultiProvider(
     providers: [
-      ChangeNotifierProvider<DataProvider>(
-        create: (ctx) => DataProvider(ctx),
-      ),
       ChangeNotifierProvider<SettingProvider>(
         create: (ctx) => SettingProvider(),
+      ),
+      ChangeNotifierProvider<DataProvider>(
+        create: (ctx) => DataProvider(ctx),
       ),
     ],
     child: MaterialApp(
       title: 'Risk of Rain 2 Companion',
       theme: ThemeData.dark(),
       home: MyApp(),
-      routes: {"/item": (context) => ItemDetailScreen()},
+      routes: {
+        "/item": (context) => ItemDetailScreen(),
+        "/survivor": (context) => SurvivorDetailScreen(),
+      },
     ),
   ));
 }
@@ -35,6 +40,7 @@ class _MyAppState extends State<MyApp> {
   int _currentScreen = 0;
   List<Widget> _screenList = [
     ItemListScreen(),
+    SurvivorListScreen()
   ];
 
   @override
@@ -45,14 +51,23 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _asyncLoad() async {
-    var data = DataProvider.of(context).initialize();
-    var setting = SettingProvider.of(context).initialize();
+    //wait for settings
+    await SettingProvider.of(context).initialize();
 
-    await Future.wait([data, setting]);
+    //then load other futures
+    var data = DataProvider.of(context).initialize();
+
+    await Future.wait([data]);
 
     setState(() {
       _ready = true;
     });
+  }
+
+  ///Change tab and close drawer
+  void _moveTab(int index){
+    setState(() => _currentScreen = index);
+    Navigator.of(context).pop();
   }
 
   Widget _buildApp() {
@@ -77,9 +92,16 @@ class _MyAppState extends State<MyApp> {
               child: ListView(
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.list),
+                    enabled: _currentScreen!=0,
+                    leading: Icon(Icons.storage),
                     title: Text("Item List"),
-                    onTap: () => setState(() => _currentScreen = 0),
+                    onTap: () => _moveTab(0),
+                  ),
+                  ListTile(
+                    enabled: _currentScreen!=1,
+                    leading: Icon(Icons.people),
+                    title: Text("Survivor List"),
+                    onTap: () => _moveTab(1),
                   ),
                   ListTile(
                     leading: Icon(Icons.settings),

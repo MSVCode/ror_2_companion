@@ -1474,10 +1474,10 @@
     "heal": null,
     "statusList": [
       {
-        "type":"Cooldown Reduce",
-        "initialAmount":"25%",
+        "type":"Cooldown",
+        "initialAmount":"-25%",
         "stackType":1,
-        "addedAmount":"+25%"
+        "addedAmount":"-25%"
       }
     ],
     "damageType": null,
@@ -1495,10 +1495,10 @@
     "heal": null,
     "statusList": [
       {
-        "type":"Cooldown Reduce",
-        "initialAmount":"4s",
+        "type":"Cooldown",
+        "initialAmount":"-4s",
         "stackType":0,
-        "addedAmount":"+2s"
+        "addedAmount":"-2s"
       }
     ],
     "damageType": null,
@@ -1549,8 +1549,8 @@
         "addedAmount":"+2"
       },
       {
-        "type":"Cooldown Reduce",
-        "initialAmount":"33%",
+        "type":"Cooldown",
+        "initialAmount":"-33%",
         "stackType":null,
         "addedAmount":"0%"
       }
