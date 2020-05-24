@@ -9,7 +9,7 @@ class SkillProc {
 
   static fromMap(Map<String, dynamic> map) {
     return SkillProc(
-      name: map["type"],
+      name: map["name"],
       procCoef: map["procCoef"],
     );
   }
@@ -71,6 +71,7 @@ class Survivor {
   /// ordered-id
   int id;
   String name;
+  String title;
 
   /// in-game desc
   String description;
@@ -93,6 +94,7 @@ class Survivor {
   Survivor({
     this.id,
     this.name,
+    this.title,
     this.description,
     this.detail,
     this.health,
@@ -114,6 +116,7 @@ class Survivor {
     return Survivor(
       id: map["id"],
       name: map["name"],
+      title: map["title"],
       description: map["description"],
       detail: map["detail"],
       health: map["health"],

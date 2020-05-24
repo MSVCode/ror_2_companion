@@ -12,6 +12,13 @@ class SurvivorListScreen extends StatefulWidget {
 class _SurvivorListScreenState extends State<SurvivorListScreen> {
   TextEditingController _searchController = TextEditingController();
 
+  @override
+  void initState(){
+    super.initState();
+
+    _searchController.text = DataProvider.of(context).lastSurvivorQuery;
+  }
+
   Widget _buildSurvivorGrid(BuildContext ctx, int index) {
     var prov = DataProvider.of(context);
     var data = prov.filteredSurvivorList[index];

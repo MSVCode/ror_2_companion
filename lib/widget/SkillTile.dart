@@ -65,13 +65,17 @@ class SkillTile extends StatelessWidget {
   ///Specific note
   Widget _buildNote() {
     //ListTile(leading: Text("\u2022"), title: Text(val),)
+    if (skill.noteList.length==0)
+      return SizedBox();
+
     return Container(
       padding: EdgeInsets.all(4),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+            Divider(),
           Text(
-            skill.noteList.length==0?"No Notes":"Notes",
+            "Notes",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           ...skill.noteList
@@ -166,7 +170,6 @@ class SkillTile extends StatelessWidget {
                 )
               ],
             ),
-            Divider(),
             _buildNote(),
             _buildUnlock(context)
           ],

@@ -14,7 +14,7 @@ class DataProvider with ChangeNotifier {
   String translation = "";
 
   //items
-  String _lastItemQuery = "";
+  String lastItemQuery = "";
   List<Item> itemList;
   List<Item> filteredItemList;
   List<Unlock> unlockList;
@@ -33,7 +33,7 @@ class DataProvider with ChangeNotifier {
     ITEM_CATEGORY.UTILITY: true
   };
   //survivor
-  String _lastSurvivorQuery = "";
+  String lastSurvivorQuery = "";
   List<Survivor> survivorList;
   List<Survivor> filteredSurvivorList;
 
@@ -45,7 +45,7 @@ class DataProvider with ChangeNotifier {
       Provider.of<DataProvider>(context, listen: listen);
 
   Future<void> initialize() async {
-    translation = SettingProvider.of(context).translation;
+    translation = "sample_en"; //SettingProvider.of(context).translation;
 
     var item = loadItem();
     var unlock = loadUnlock();
@@ -58,7 +58,7 @@ class DataProvider with ChangeNotifier {
   ///
   /// Updates filteredItemList
   void filterItem([String query]) {
-    query = query == null ? _lastItemQuery : query.toLowerCase();
+    query = query == null ? lastItemQuery : query.toLowerCase();
     filteredItemList = itemList.where((item) {
       bool contains = query.isEmpty ||
           item.name.toLowerCase().contains(query) ||
@@ -74,7 +74,7 @@ class DataProvider with ChangeNotifier {
       return contains && rarity && category;
     }).toList();
 
-    if (query != null) _lastItemQuery = query;
+    if (query != null) lastItemQuery = query;
 
     notifyListeners();
   }
@@ -188,7 +188,7 @@ class DataProvider with ChangeNotifier {
   ///
   /// Updates filteredSurvivorList
   void filterSurvivor([String query]) {
-    query = query == null ? _lastSurvivorQuery : query.toLowerCase();
+    query = query == null ? lastSurvivorQuery : query.toLowerCase();
     filteredSurvivorList = survivorList.where((survivor) {
       bool contains = query.isEmpty ||
           survivor.name.toLowerCase().contains(query) ||
@@ -197,7 +197,7 @@ class DataProvider with ChangeNotifier {
       return contains;
     }).toList();
 
-    if (query != null) _lastSurvivorQuery = query;
+    if (query != null) lastSurvivorQuery = query;
 
     notifyListeners();
   }
@@ -254,14 +254,19 @@ class DataProvider with ChangeNotifier {
           List<Map<String, dynamic>> translationSkillList =
               rawTranslation.map<Map<String, dynamic>>((val) => val).toList();
 
-          //assumes same length and same position
           //will automatically 'update' v - as it's by reference
+          //find same type and same variant
           for (int i = 0; i < coreSkillList.length; i++) {
-            var repData = translationSkillList[i];
+            var initialData = coreSkillList[i];
+            var repData = translationSkillList.firstWhere(
+                (val) =>
+                    val["skillType"] == initialData["skillType"] &&
+                    val["variant"] == initialData["variant"],
+                orElse: () => null);
 
             //add skill to v here
             if (repData != null) {
-              coreSkillList[i].addAll(repData);
+              initialData.addAll(repData);
             }
           }
 

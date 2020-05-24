@@ -5,9 +5,7 @@ import 'package:ror_2_companion/model/Survivor.dart';
 import 'package:ror_2_companion/model/Unlock.dart';
 import 'package:ror_2_companion/provider/DataProvider.dart';
 import 'package:ror_2_companion/widget/CustomDetailRow.dart';
-import 'package:ror_2_companion/widget/RenderRarity.dart';
 import 'package:ror_2_companion/widget/SkillTile.dart';
-import 'package:ror_2_companion/widget/StackSimulatorDialog.dart';
 
 class SurvivorDetailScreen extends StatelessWidget {
   Widget _buildStatus(BuildContext context, Survivor data) {
@@ -41,8 +39,8 @@ class SurvivorDetailScreen extends StatelessWidget {
               "Regen",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            Text("${data.regen.toStringAsFixed(0)}/s"),
-            Text("(+${data.addedRegen.toStringAsFixed(0)}/s per level)")
+            Text("${data.regen.toStringAsFixed(1)}/s"),
+            Text("(+${data.addedRegen.toStringAsFixed(1)}/s per level)")
           ],
         ),
         CustomDetailRow(
@@ -101,6 +99,7 @@ class SurvivorDetailScreen extends StatelessWidget {
 
     return Column(
       children: <Widget>[
+        Divider(height: 40,),
         Text(
           enumToTitle(skillType),
           style: TextStyle(
@@ -192,7 +191,7 @@ class SurvivorDetailScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  data.description,
+                  data.title,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -202,17 +201,15 @@ class SurvivorDetailScreen extends StatelessWidget {
                 SizedBox(
                   height: 24,
                 ),
+                Text(
+                  data.description,
+                ),
                 Divider(height: 40),
                 _buildStatus(context, data),
-                Divider(height: 40),
                 _buildSkillSection(context, data, SKILL_TYPE.PASSIVE),
-                Divider(height: 40),
                 _buildSkillSection(context, data, SKILL_TYPE.PRIMARY),
-                Divider(height: 40),
                 _buildSkillSection(context, data, SKILL_TYPE.SECONDARY),
-                Divider(height: 40),
                 _buildSkillSection(context, data, SKILL_TYPE.UTILITY),
-                Divider(height: 40),
                 _buildSkillSection(context, data, SKILL_TYPE.SPECIAL),
                 Divider(height: 40),
                 _buildUnlock(context, data),

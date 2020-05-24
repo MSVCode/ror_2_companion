@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:ror_2_companion/model/Item.dart';
 import 'package:ror_2_companion/provider/DataProvider.dart';
 import 'package:ror_2_companion/provider/SettingProvider.dart';
-import 'package:ror_2_companion/widget/CustomDetailRow.dart';
 import 'package:ror_2_companion/widget/CustomGridTile.dart';
 import 'package:ror_2_companion/widget/ItemFilterDialog.dart';
 
@@ -14,6 +13,13 @@ class ItemListScreen extends StatefulWidget {
 
 class _ItemListScreenState extends State<ItemListScreen> {
   TextEditingController _searchController = TextEditingController();
+
+  @override
+  void initState(){
+    super.initState();
+
+    _searchController.text = DataProvider.of(context).lastItemQuery;
+  }
 
   Widget _buildItemGrid(BuildContext ctx, int index) {
     var prov = DataProvider.of(context);
