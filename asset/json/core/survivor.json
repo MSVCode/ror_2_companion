@@ -1185,5 +1185,149 @@
         ]
       }
     ]
+  },
+  
+  {
+    "id": 9,
+    "name": "Captain",
+    "title": "Tired Veteran",
+    "description": "The Captain is a unique survivor that can control the battlefield with utility and damage - with help from the UES Safe Travels.",
+    "health": 110.0,
+    "addedHealth": 33.0,
+    "regen": 1.0,
+    "addedRegen": 0.2,
+    "damage": 12.0,
+    "addedDamage": 2.4,
+    "speed": 7.0,
+    "armor": 0.0,
+    "skillList": [
+      {
+        "skillType": 0,
+        "variant": 0,
+        "name": "Defensive Microbots",
+        "description": "Passively gain Microbots that shoot down nearby enemy projectiles. Drones are also given Microbots.",
+        "cooldown": null,
+        "procList": [],
+        "damage": 0.0,
+        "noteList": [
+          "Grants a free copy of the Defensive Microbots item"
+        ]
+      },
+      {
+        "skillType": 1,
+        "variant": 0,
+        "name": "Vulcan Shotgun",
+        "description": "Fire a blast of pellets that deal 8x120% damage. Charging the attack narrows the spread.",
+        "cooldown": null,
+        "procList": [
+          {
+            "name": null,
+            "procCoef": 0.75
+          }
+        ],
+        "damage": 9.6,
+        "noteList": [
+          "Hold fire to charge attack"
+        ]
+      },
+      {
+        "skillType": 2,
+        "variant": 0,
+        "name": "Power Tazer",
+        "description": "Shocking. Fire a fast tazer that deals 100% damage. Travels farther if bounced. ",
+        "cooldown": 6.0,
+        "procList": [
+          {
+            "name": null,
+            "procCoef": 1.0
+          }
+        ],
+        "damage": 1.0,
+        "noteList": [
+          "Can stun any non-boss enemy",
+          "Stun last for max 5 seconds"
+        ]
+      },
+      {
+        "skillType": 3,
+        "variant": 0,
+        "name": "Orbital Probe",
+        "description": "Stunning. Request up to 3 Orbital Probes from the UES Safe Travels. Each probe deals 1500% damage.",
+        "cooldown": 11.0,
+        "procList": [
+          {
+            "name": null,
+            "procCoef": 1.0
+          }
+        ],
+        "damage": 15.0,
+        "noteList": [
+          "Has 3 charges when activated"
+        ]
+      },
+      {
+        "skillType": 4,
+        "variant": 0,
+        "name": "Orbital Supply Beacon",
+        "description": "Request a permanent Supply Beacon. Can only be requested twice per stage",
+        "cooldown": 0.0,
+        "procList": [
+          {
+            "name": null,
+            "procCoef": 0.0
+          }
+        ],
+        "damage": 20.0,
+        "noteList": [
+          "Max two beacons can be requested per stage",
+          "Beacons do 2000% damage",
+          "Select Beacon type via Loadout"
+        ]
+      },
+      {
+        "skillType": 5,
+        "variant": 0,
+        "name": "Beacon: Healing",
+        "description": "Heal all nearby allies for 10% of their maximum health every second.",
+        "cooldown": 0.0,
+        "procList": [],
+        "damage": 20.0,
+        "noteList": []
+      },
+      {
+        "skillType": 5,
+        "variant": 1,
+        "name": "Beacon: Shocking",
+        "description": "Periodically Shock all nearby enemies, immobilizing them.",
+        "cooldown": 0.0,
+        "procList": [],
+        "damage": 20.0,
+        "noteList": [
+          "Fires every 3 second"
+        ]
+      },
+      {
+        "skillType": 5,
+        "variant": 2,
+        "name": "Beacon: Resupply",
+        "description": "Recharge Equipment on use.",
+        "cooldown": 0.0,
+        "procList": [],
+        "damage": 20.0,
+        "noteList": [
+          "Can be used up to three times"
+        ]
+      },
+      {
+        "skillType": 5,
+        "variant": 3,
+        "name": "Beacon: Hacking",
+        "description": "Hack all nearby purchasables to a cost of $0 over time.",
+        "cooldown": 0.0,
+        "procList": [],
+        "damage": 20.0,
+        "noteList": []
+      }
+    ]
   }
 ]
