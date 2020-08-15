@@ -1,4 +1,4 @@
-enum SKILL_TYPE { PASSIVE, PRIMARY, SECONDARY, UTILITY, SPECIAL }
+enum SKILL_TYPE { PASSIVE, PRIMARY, SECONDARY, UTILITY, SPECIAL, BEACON }
 
 /// Some skills have multiple proc coefficient
 class SkillProc {

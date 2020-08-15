@@ -234,6 +234,18 @@
     "description": "Destroy 20 flying rocks in Sky Meadow."
   },
   {
+    "type": 0,
+    "key": "item-40007",
+    "name": "The Calm",
+    "description": "Beat the game on Monsoon difficulty. "
+  },
+  {
+    "type": 0,
+    "key": "item-20026",
+    "name": "I Love Dying!",
+    "description": "Die 20 times."
+  },
+  {
     "type": 1,
     "key": "survivor-0",
     "name": "...To Be Left Alone",
@@ -274,6 +286,12 @@
     "key": "survivor-8",
     "name": "Power Plant",
     "description": "Repair the broken robot with an Escape Pod's Fuel Array."
+  },
+  {
+    "type": 1,
+    "key": "survivor-9",
+    "name": "Washed Away",
+    "description": "Beat the game."
   },
   {
     "type": 2,
@@ -412,5 +430,17 @@
     "key": "skill-8-3-1",
     "name": "REX: Dunked",
     "description": "As REX, kill a Clay Dunestrider on Abandoned Aqueduct by throwing it into a pit."
+  },
+  {
+    "type": 2,
+    "key": "skill-9-5-2",
+    "name": "Captain: Wanderlust",
+    "description": "As Captain, visit 10 different environments in a single run."
+  },
+  {
+    "type": 2,
+    "key": "skill-9-5-3",
+    "name": "Captain: Worth Every Penny",
+    "description": "As Captain, repair and recruit a TC-280 Prototype."
   }
 ]

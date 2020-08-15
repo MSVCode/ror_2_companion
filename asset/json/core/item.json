@@ -45,17 +45,23 @@
     "id": 6,
     "name": "Monster Tooth",
     "description": "Drop a healing orb on kill.",
-    "detail": "Killing an enemy spawns a healing orb that heals for 8 (+8 per stack) health.",
+    "detail": "Killing an enemy spawns a healing orb that heals for 8 plus an additional 2% (+2% per stack) of maximum health.",
     "lore": null,
     "procCoef": null,
     "damage": null,
-    "heal": "8",
+    "heal": "8+2%",
     "statusList": [
       {
-        "type":"Health per Orb",
+        "type":"Base Heal",
         "initialAmount":"8",
+        "stackType":null,
+        "addedAmount":"0"
+      },
+      {
+        "type":"Additonal Health per Orb",
+        "initialAmount":"2%",
         "stackType":0,
-        "addedAmount":"+8"
+        "addedAmount":"+2%"
       }
     ],
     "damageType": null,
@@ -258,17 +264,23 @@
     "id": 36,
     "name": "Medkit",
     "description": "Receive a delayed heal after taking damage.",
-    "detail": "Heal for 25 (+25 per stack) health 2 seconds after getting hurt.",
+    "detail": "2 seconds after getting hurt, heal for 20 plus an additional 5% (+5% per stack) of maximum health.",
     "lore": "\"I suggest you stay indoors and rest.\"\n\nMED-E, the medical bot, has been working overtime. The survivors felt very grateful that their escape pod landed near Med Bay cargo - they would have most likely perished without it.\n\n\"I suggest you stay indoors and rest.\"\n\nThe robot was speaking to a tall man, gaunt but strong. \"I'd love to, but we're running low on food.\" Even though his expression was hidden underneath his blue combat helmet, it was obvious the man was extremely tired. \"And everyone else is recovering from last night's attacks. Without the enforcers, we probably wouldn't have-\"\n\n\"I suggest you stay indoors and rest.\" \n\nIt was apparent that MED-E only had a limited set of lines. However, the man continued to respond. \"I can't, MED-E. They're counting on me. You know that.\"\n\n\"I suggest you stay indoors and rest.\" \n\nThis time the man did not humor a reply. Grabbing his shotgun, he turned away from the echoing robot. Weaving his way between countless sleeping bags and stretchers, he set out into the wilderness again. Everyone was counting on him.\n\n\"Please stay indoors and rest.\"",
     "procCoef": null,
     "damage": null,
-    "heal": "25",
+    "heal": "20+5%",
     "statusList": [
       {
-        "type":"Heal",
-        "initialAmount":"25",
+        "type":"Base Heal",
+        "initialAmount":"20",
+        "stackType":null,
+        "addedAmount":"0"
+      },
+      {
+        "type":"Additional Heal",
+        "initialAmount":"5%",
         "stackType":0,
-        "addedAmount":"+25"
+        "addedAmount":"+5%"
       }
     ],
     "damageType": null,
@@ -472,7 +484,7 @@
     "name": "Topaz Brooch",
     "description": "Gain a temporary barrier on kill.",
     "detail": "Gain a temporary barrier on kill for 15 health (+15 per stack).",
-    "lore": null,
+    "lore": "Order: Topaz Brooch\nTracking Number: 442*****\nEstimated Delivery: 05/05/2056\nShipping Method: High Priority\nShipping Address: Locker #2, Parghos Resort, Venus\nShipping Details:\n\nThe locker combination is 33941. Inside the package, besides your standard equipment, you will find the brooch. The appearance of this item is meant to blend in at the party. Pin it to your body and the software inside will map your extents. Activation will briefly cover you in ultra-phasic shielding.\n\nWhen you have taken out the target, the shield will switch on to protect you from any immediate retaliation measures they have installed in the security system. If the time frame is not enough to make your escape, the shield can be... reactivated, but we’d like to keep casualties to a minimum.\n\nGood luck.",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -564,6 +576,20 @@
     "itemCategory": [2]
   },
   {
+    "id": 30001,
+    "name": "Item Scrap, White",
+    "description": "Does nothing. Prioritized when used with 3D Printers. ",
+    "detail": "Does nothing. Prioritized when used with 3D Printers. ",
+    "lore": null,
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [],
+    "damageType": null,
+    "rarity": 0,
+    "itemCategory": [4]
+  },
+  {
     "id": 3,
     "name": "AtG Missile Mk. 1",
     "description": "Chance to fire a missile.",
@@ -595,7 +621,7 @@
     "name": "Will-o'-the-wisp",
     "description": "Detonate enemies on kill.",
     "detail": "On killing an enemy, spawn a lava pillar in a 12m (+2.4m per stack) radius for 350% (+280% per stack) base damage.",
-    "lore": null,
+    "lore": "Audio transcription complete from portable recorder.\n\nPrinting...\"You don’t want to re-name it Bill-o-the-Wisp?\"\"NO.\"\"JAR-ed?\"\"NO.\"\"Then what about FLARE-ed?\"\"STOP.\"\"It needs a name, it’s no dif-FIRE-ent than you or me.\"\"Next time we’re at base I’m applying for a transfer.\"\"You know that won’t go through until at least Dec-EMBER.\"\"How long have you been waiting to use these?\"\"Coming up with them on the spot. I’ve got a good head on my SMOULDERS.\"\"You can stop emphasizing those words so much. I get it.\"\"I will never stop FUELING around.\"\"...\"\"...\"\"...\"\"Want to grab something to eat when we get back?\"\"Thank the stars that’s over, yes. I hope they’re not serving that gruel we had yesterday.\"\"Maybe they’ll cook you a pep-PYRO-ni pizza?\"\"...\"\"Hey, wait up! I can’t run holding this thing, it might go off!\"",
     "procCoef": 1.0,
     "damage": "350%",
     "heal": null,
@@ -847,7 +873,7 @@
     "name": "Bandolier",
     "description": "Chance on kill to drop an ammo pack that resets all skill cooldowns.",
     "detail": "18% (+10% per stack) chance on kill to drop an ammo pack that resets all skill cooldowns.",
-    "lore": null,
+    "lore": "Order: Bandolier\nTracking Number: 112*****\nEstimated Delivery: 04/19/2056\nShipping Method: Standard\nShipping Address: 3950 Sunsell Ln, Tri-City, Earth\nShipping Details:\n\nThank you for your participation in the auction! We’ve included a short history on the item, as well as documents to verify its authenticity.\n\nThis is the famous bandolier worn by B. Grundy himself. He and his pals used to raise terror all over the map of the new territories. Their favorite activity was to tie up people they didn’t like and drag them behind their horses – Grundy clearly had a sweet spot for the old days.\n\nThe sling carries an impressive assortment of ammunition - Grundy himself carried many different guns. It was rumored that they held out for 3 whole days and nights before their weapons ran dry.",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -921,7 +947,7 @@
     "id": 63,
     "name": "Runald's Band",
     "description": "Chance on hit to strike an enemy with a runic ice blast.",
-    "detail": "8% chance on hit to strike an enemy with a runic ice blast, slowing them by 80% and dealing 250% (+125% per stack) TOTAL damage.",
+    "detail": "Hits that deal more than 400% damage also blasts enemies with a runic ice blast, slowing them by 80% for 3s (+3s per stack) and dealing 250% (+250% per stack) TOTAL damage. Recharges every 10 seconds.",
     "lore": "\"Should memories be lost,\nShould oceans be clouded,\nWill you bring me fervor?\nWill you die with me?\"\n\n-The Syzygy of Io and Europa",
     "procCoef": null,
     "damage": "250%",
@@ -931,7 +957,7 @@
         "type":"Damage",
         "initialAmount":"250%",
         "stackType":0,
-        "addedAmount":"+125%"
+        "addedAmount":"+250%"
       },
       {
         "type":"Slow",
@@ -940,10 +966,16 @@
         "addedAmount":"0%"
       },
       {
-        "type":"Chance",
-        "initialAmount":"8%",
+        "type":"Slow Duration",
+        "initialAmount":"3s",
+        "stackType":0,
+        "addedAmount":"+3s"
+      },
+      {
+        "type":"Recharge Time",
+        "initialAmount":"10s",
         "stackType":null,
-        "addedAmount":"0%"
+        "addedAmount":"0s"
       }
     ],
     "damageType": 1,
@@ -954,23 +986,23 @@
     "id": 64,
     "name": "Kjaro's Band",
     "description": "Chance on hit to strike an enemy with a runic flame tornado.",
-    "detail": "8% chance on hit to strike an enemy with a runic flame tornado, dealing 500% (+250% per stack) TOTAL damage.",
+    "detail": "Hits that deal more than 400% damage also blasts enemies with a runic flame tornado, dealing 300% (+300% per stack) TOTAL damage over time. Recharges every 10 seconds.",
     "lore": "\"Should passion die down,\nShould light be extinguished,\nWill you bring me patience?\nWill you die with me?\"\n\n-The Syzygy of Io and Europa",
     "procCoef": null,
-    "damage": "500%",
+    "damage": "300%",
     "heal": null,
     "statusList": [
       {
         "type":"Damage",
-        "initialAmount":"500%",
+        "initialAmount":"300%",
         "stackType":0,
-        "addedAmount":"+250%"
+        "addedAmount":"+300%"
       },
       {
-        "type":"Chance",
-        "initialAmount":"8%",
+        "type":"Recharge Time",
+        "initialAmount":"10s",
         "stackType":null,
-        "addedAmount":"0%"
+        "addedAmount":"0s"
       }
     ],
     "damageType": 1,
@@ -1029,17 +1061,17 @@
     "id": 78,
     "name": "Old Guillotine",
     "description": "Instantly kill low health Elite monsters.",
-    "detail": "Instantly kill Elite monsters below 20% (+20% per stack) health.",
-    "lore": null,
+    "detail": "Instantly kill Elite monsters below 13% (+13% per stack) health.",
+    "lore": "Order: Old Guillotine\nTracking Number: 782*****\nEstimated Delivery: 04/29/2056\nShipping Method: Standard\nShipping Address: Warehouse 36, Anklar, Primas V \nShipping Details:\n\nEveryone is still operating on adrenaline here. We finally overthrew our oppressors and have taken back Primas V! I know some of the overlords will attempt to buy their way onto a stealth transport, but that’s going to be quite difficult due to their epic economic blunder.\n\nWe don’t just want blood for all the injustices we’ve suffered at their hands. We want to send a message to would-be sympathizers. This old guillotine will serve both as an execution method and a symbol to strike fear into their hearts wherever they might be hiding.\n\nPrimas V is alive!",
     "procCoef": null,
     "damage": null,
     "heal": null,
     "statusList": [
       {
         "type":"Threshold",
-        "initialAmount":"20%",
+        "initialAmount":"13%",
         "stackType":2,
-        "addedAmount":"+20%"
+        "addedAmount":"+13%"
       }
     ],
     "damageType": null,
@@ -1078,7 +1110,7 @@
     "name": "Lepton Daisy",
     "description": "Periodically release a healing nova during the Teleporter event.",
     "detail": "Release a healing nova during the Teleporter event, healing all nearby allies for 50% of their maximum health. Occurs 1 (+1 per stack) times.",
-    "lore": null,
+    "lore": "Order: Lepton Daisy\nTracking Number: 23******\nEstimated Delivery: 07/23/2056\nShipping Method: Standard\nShipping Address: Duck Lake, Orlandus, Earth \nShipping Details:\n\nDear Stalnia,\n\nI haven't been able to visit for a while, so I hope you and Libra are doing well. I heard that you're clearing the land there and want to spruce things up. I'm sending this flower I picked in the Carbon Fields of Electron Valley. The terraformers there told me that, over time, landscaping efforts were improved by the organic-band signals sent out by this plant. I've been helping them build a new world.\n\nJust make sure to put it up high enough that Mushka can't get to it. I'm not sure what effect it'll have on dogs...",
     "procCoef": null,
     "damage": null,
     "heal": "50%",
@@ -1191,7 +1223,7 @@
     "id": 104,
     "name": "Death Mark",
     "description": "Enemies with 4 or more debuffs are marked for death, taking bonus damage.",
-    "detail": "Enemies with 4 or more debuffs are marked for death, increasing damage taken by 50% (+50% per stack) from all sources for 7 seconds.",
+    "detail": "Enemies with 4 or more debuffs are marked for death, increasing damage taken by 50% from all sources for 7 (+7 per stack) seconds.",
     "lore": "Order: \"Death Mark\"\nTracking Number: 66******\nEstimated Delivery: 02\\22\\2056\\nShipping Method:  High Priority\nShipping Address: 421 Lane, Lab [72], Mars\nShipping Details:\n\nEveryone said that I was crazy to search for lost artifacts on Mars. Idiots. There hasn’t been any proof of a previous civilization - but I’ve always trusted my gut. This skull proves that I’m right - that something did exist here before.\n\nThat smug professor at the university... always disparaging my research. I loved seeing the look on his face as I shook his hand. Idiot. Karma must have been working overtime - I heard he fell ill shortly after. I suppose my success was just too much for him.\n\n...In fact, everyone I’ve shown seems to not be returning my calls. Are they avoiding me? Are they scared this news would shake up their academic communities? Too proud to admit I’m right?\n\nI’ll find someone who will give me the recognition I deserve. I’ve worked too hard and done too much. If I don’t keep going, I think I might just die.",
     "procCoef": null,
     "damage": "50%",
@@ -1200,19 +1232,33 @@
       {
         "type":"Damage",
         "initialAmount":"50%",
-        "stackType":0,
-        "addedAmount":"+50%"
+        "stackType":null,
+        "addedAmount":"+0%"
       },
       {
         "type":"Duration",
         "initialAmount":"7s",
-        "stackType":null,
-        "addedAmount":"0s"
+        "stackType":0,
+        "addedAmount":"+7s"
       }
     ],
     "damageType": 1,
     "rarity": 1,
     "itemCategory": [1]
+  },
+  {
+    "id": 30002,
+    "name": "Item Scrap, Green",
+    "description": "Does nothing. Prioritized when used with 3D Printers. ",
+    "detail": "Does nothing. Prioritized when used with 3D Printers. ",
+    "lore": null,
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [],
+    "damageType": null,
+    "rarity": 0,
+    "itemCategory": [4]
   },
   {
     "id": 2,
@@ -1253,9 +1299,9 @@
     "statusList": [
       {
         "type":"Damage",
-        "initialAmount":"60%",
-        "stackType":null,
-        "addedAmount":"0%"
+        "initialAmount":"150%",
+        "stackType":0,
+        "addedAmount":"+150%"
       },
       {
         "type":"Dagger",
@@ -1332,7 +1378,7 @@
     "id": 22,
     "name": "H3AD-5T v2",
     "description": "Increase jump height. Hold 'Interact' to slam down to the ground.",
-    "detail": "Increase jump height. Creates a 10m radius kinetic explosion on hitting the ground, dealing 2300% base damage that scales up with speed. Recharges in 10 (-50% per stack) seconds.",
+    "detail": "Increase jump height. Creates a 5m-100m radius kinetic explosion on hitting the ground, dealing 1000%-10000% base damage that scales up with speed. Recharges in 10 (-50% per stack) seconds.",
     "lore": "\"Denizens of lower-gravity planets like Mercury historically have had trouble adjusting to life on other planets. Mercurians, with their lower bone density (left) would typically shatter their femur within a week on heavier planets. Members of asteroid-rigged flotillas and colony ships have similar issues when arriving home from space.\n\nThe invention of Kinetic Dispersion Rings (above) help alleviate the stress of heavier-than-normal gravity by converting kinetic energy into heat, sound, and light. Settlers from Mercury could finally leave their home planet in safety.\"\n\n-Mercurian History Museum",
     "procCoef": null,
     "damage": "2300%",
@@ -1346,13 +1392,13 @@
       },
       {
         "type":"Radius",
-        "initialAmount":"10m",
+        "initialAmount":"5m-100m",
         "stackType":null,
         "addedAmount":"0m"
       },
       {
         "type":"Damage",
-        "initialAmount":"2300%",
+        "initialAmount":"1000%-10000%",
         "stackType":null,
         "addedAmount":"0%"
       }
@@ -1387,7 +1433,7 @@
     "name": "Unstable Tesla Coil",
     "description": "Shock all nearby enemies every 10 seconds.",
     "detail": "Fire out lightning that hits 3 (+2 per stack) enemies for 200% base damage every 0.5s. The Tesla Coil switches off every 10 seconds.",
-    "lore": null,
+    "lore": "Tesla Presentation Software v1.14\nPowering on...\n10...\nIssuing welcome statement...\n9...\nWelcome one and all!\n8...\nPlease take a seat.\n7...\nMake sure those behind you can see.\n6...\nThe presentation will start shortly.\n5...\nPlease obey the staff for your safety.\n4...\nInitiating room mood lighting...\n3...\nGet ready to behold...\n2...\nThe marvelous wonders...\n1...\nOf electricity!\nPower anomaly detected...\nInitiating reboot procedure in 10...",
     "procCoef": 0.3,
     "damage": "200%",
     "heal": null,
@@ -1489,7 +1535,7 @@
     "name": "Soulbound Catalyst",
     "description": "Kills reduce equipment cooldown.",
     "detail": "Kills reduce equipment cooldown by 4s (+2s per stack).",
-    "lore": null,
+    "lore": "Order: Soulbound Catalyst\nTracking Number: 890*****\nEstimated Delivery: 11/06/2056\nShipping Method: High Priority/Fragile\nShipping Address: 1414 Place, Fillmore, Venus\nShipping Details:\n\nIf you thought the ring was a rare find, wait until you get your hands on this!\n\nIt turns out the method the King used did not originate from his time period. His court discovered a ritual performed by a tribe from much further back. It, of course, dealt with sacrifice, but in substantial groups. This was supposed to concentrate the catalyzing properties of the item it was imbued into.\n\nPayment will be at least twice as much as our previous deal. We can discuss it later - another night.",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -1633,7 +1679,7 @@
     "name": "Aegis",
     "description": "Healing past full grants you a temporary barrier.",
     "detail": "Healing past full grants you a temporary barrier for 50% (+50% per stack) of the amount you healed.",
-    "lore": null,
+    "lore": "Order: Artifact E-8EE572\nTracking Number: 490******\nEstimated Delivery: 08/10/2056\nShipping Method: Priority\nShipping Address: Titan Museum of History and Culture, Titan\n\nSorry about the delay, we've had a flood of orders come in from this site. But it was exactly where you said we should look - there was a sealed off room where you marked the excavation diagram. I finished translating the engraving too, so consider that a bonus for the time we took to get to it:\n\n\"I am the will to survive made manifest. To those who never lose hope, to they who try in the face of impossible odds, I offer not \nprotection, but the means to bring one's unconquerable spirit forth as the defender of their mortal lives.\"\n\nIt’s so lightweight, we figure it must've been entirely decorative. That seems to line up with the text. In any case, I hope it makes a good exhibit! I'm a big fan of the museum, so it wouldn't hurt to give me a partner's discount next time I visit, right?",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -1654,7 +1700,7 @@
     "name": "Shattering Justice",
     "description": "Reduce the armor of enemies after repeatedly striking them.",
     "detail": "After hitting an enemy 5 times, reduce their armor by 60 for 8 (+8 per stack) seconds.",
-    "lore": null,
+    "lore": "Shattering Justice Owner’s Manual\n\nExcerpt from section 2.13:\n... and if the target material doesn’t cave under the immense weight just keep hitting it until it does. The patented technology inside the face of this tool doesn’t just use brute force to break down its mark, it also utilizes a formulated nano toxin, released through internal mechanisms, that builds up through subsequent contact. In other words, each hit makes it easier to break.\n\nPlease refer back to section 1.8 for information on proper handling and the included anti-toxin gloves...",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -1707,7 +1753,7 @@
     "id": 105,
     "name": "Interstellar Desk Plant",
     "description": "Plant a healing fruit on kill.",
-    "detail": "On kill, plant a healing fruit seed that grows into a plant after 5 seconds. The plant heals for 5% of maximum health every second to all allies within 3m (+1.5m per stack). Lasts 10 seconds.",
+    "detail": "On kill, plant a healing fruit seed that grows into a plant after 5 seconds. The plant heals for 10% of maximum health every second to all allies within 5m (+5.0m per stack). Lasts 10 seconds. ",
     "lore": null,
     "procCoef": null,
     "damage": null,
@@ -1715,13 +1761,13 @@
     "statusList": [
       {
         "type":"Radius",
-        "initialAmount":"3m",
+        "initialAmount":"5m",
         "stackType":0,
-        "addedAmount":"+1.5"
+        "addedAmount":"+5"
       },
       {
         "type":"Heal",
-        "initialAmount":"5%",
+        "initialAmount":"15%",
         "stackType":null,
         "addedAmount":"0%"
       },
@@ -1735,6 +1781,47 @@
     "damageType": null,
     "rarity": 2,
     "itemCategory": [0]
+  },
+  {
+    "id": 40001,
+    "name": "Defensive Microbots",
+    "description": "Shoot down nearby projectiles. Recharge rate scales with attack speed.",
+    "detail": "Shoot down 1 (+1 per stack) projectiles within 20m every 0.5 seconds. Recharge rate scales with attack speed.",
+    "lore": null,
+    "procCoef": null,
+    "damage": null,
+    "heal": "5%",
+    "statusList": [
+      {
+        "type":"Projectiles Shot",
+        "initialAmount":"1",
+        "stackType":0,
+        "addedAmount":"+1"
+      },
+      {
+        "type":"Radius",
+        "initialAmount":"20m",
+        "stackType":null,
+        "addedAmount":"0m"
+      }
+    ],
+    "damageType": null,
+    "rarity": 2,
+    "itemCategory": [2]
+  },
+  {
+    "id": 30003,
+    "name": "Item Scrap, Red",
+    "description": "Does nothing. Prioritized when used with 3D Printers. ",
+    "detail": "Does nothing. Prioritized when used with 3D Printers. ",
+    "lore": null,
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [],
+    "damageType": null,
+    "rarity": 0,
+    "itemCategory": [4]
   },
   {
     "id": 52,
@@ -1801,7 +1888,7 @@
     "name": "Halcyon Seed",
     "description": "Summon Aurelionite during the Teleporter event.",
     "detail": "Summon Aurelionite during the teleporter event. It has 100% (+50% per stack) damage and 100% (+100% per stack) health.",
-    "lore": null,
+    "lore": "Brother, what is this...? Why is it misshapen and weak? Was there an error in my design?\n\nGuardian. Come to me. Allow me to see your construction.\n\n...\n\nSo I see.\n\nThese are not the correct ratios.\n\nThis is no minor error, Brother. You have purposefully deviated from the design. For what purpose have you done this? You cannot weave a construct from such an abundance of soul. You know it is too unstable - that it is too unpredictable and too frail. I have told you this, and yet you have wasted the materials I have gathered - and exhausted your own strength to fabricate this miscreation.\n\nTo what benefit?\n\nAt its best, it can be no more than an inferior servant; it is deficient in the compounds that were to give it fortitude and strength. At its worst, it will betray us.\n\nYou have created the first being of this world which threatens us. We cannot keep it here. Attempting to destroy it will risk its retaliation... I will prepare one of the vaults for it to be sealed away, while it is still young and naive.\n\nWhat a foolish mistake you have made, brother.\n\nI expect you to return the design to me. I cannot allow you to build another construct with so much power - and with such little control. I will build the rest of our guardians; by my hand, they will be weak, but at least they will be loyal.\n\nGo home. I will deal with this creature. We can discuss a better project for you when I return.",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -1827,7 +1914,7 @@
     "id": 83,
     "name": "Little Disciple",
     "description": "Fire tracking wisps while sprinting.",
-    "detail": "Fire a tracking wisp for 100% (+100% per stack) damage. Fires every 0.5 seconds while sprinting.",
+    "detail": "Fire a tracking wisp for 300% (+300% per stack) damage. Fires every 1.6 seconds while sprinting. Fire rate increases with movement speed.",
     "lore": "HELLO, LITTLE ONE. HOW WAS YOUR ADVENTURE TODAY?\n\nOH\n\nYOUR FORM IS BROKEN, LITTLE ONE. WHAT TRICKERIES HAVE YOU GOTTEN YOURSELF INTO?\n\nOH\n\nDO YOU TIRE OF ADVENTURE? \n\nWOULD YOU LIKE TO HELP ME TEND TO THE GARDEN, MY LITTLE ONE?\n\nI UNDERSTAND. OH, YOUR FORM! DO NOT WORRY. COME CLOSER.\n\nHERE - TWO COILS OF DENKU ROPE. THOSE ARE FOR STRENGTH.\n\nHERE - FOUR CARDS OF OBSIDIAN. THOSE ARE FOR SELF-CONFIDENCE.\n\nI GIVE YOU NOTHING FOR SPIRIT.\n\nOH, DO NOT WORRY! WE WILL STILL GO ON ADVENTURES. THEY WILL BE QUIET ADVENTURES.\n\nCOME CLOSER - CLOSER NOW.\n\nCLOSER!\n\nNOW WATCH - WATCH CLOSELY.\n\nWATCH HOW I TEND TO OUR GARDEN.",
     "procCoef": null,
     "damage": "100%",
@@ -1835,9 +1922,9 @@
     "statusList": [
       {
         "type":"Damage",
-        "initialAmount":"100%",
+        "initialAmount":"300%",
         "stackType":0,
-        "addedAmount":"+100%"
+        "addedAmount":"+300%"
       }
     ],
     "damageType": 0,
@@ -1968,6 +2055,119 @@
     "damageType": null,
     "rarity": 3,
     "itemCategory": []
+  },
+  {
+    "id": 40002,
+    "name": "Molten Perforator",
+    "description": "Chance on hit to fire magma balls.",
+    "detail": "10% chance on hit to call forth 3 magma balls from an enemy, dealing 300% (+300% per stack) damage each.",
+    "lore": "Lab Dissection Analysis File\n\nSubject: Molten Perforator\nTechnician: Dema \"Dembones\" Brown\nTable Spec: Heatsink UB-2\nNotes:\n\n> Using UB-2 due to temperatures above safe levels.\n> Removing molten enamel and placing aside for substance analysis. It’s solid, yet swimming.\n> Upon structural investigation, found cavities and internal chambers\n> Reduce lab temperatures by 10 degrees\n> Heat generating veins present - fire is being supplied to the tooth?\n> Removed my lab coat, very hot\n> Heat generation is still occurring in the severed object\n> Put some more ice in my drink WOW its hot\n> Timestamping for break",
+    "procCoef": null,
+    "damage": "300%",
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Chance",
+        "initialAmount":"10%",
+        "stackType":null,
+        "addedAmount":"0%"
+      },
+      {
+        "type":"Magma Balls",
+        "initialAmount":"3",
+        "stackType":null,
+        "addedAmount":"0"
+      },
+      {
+        "type":"Damage",
+        "initialAmount":"300%",
+        "stackType":0,
+        "addedAmount":"+300%"
+      }
+    ],
+    "damageType": 0,
+    "rarity": 3,
+    "itemCategory": [1]
+  },
+  {
+    "id": 40003,
+    "name": "Shatterspleen",
+    "description": "Critical strikes always bleed enemies. Bleeding enemies now explode. ",
+    "detail": "Critical Strikes bleed enemies for 240% base damage. Bleeding enemies explode on death for 400% (+400% per stack) damage, plus an additional 15% (+15% per stack) of their maximum health.",
+    "lore": "Lab Dissection Analysis File\n\nSubject: Shatterspleen\nTechnician:  Professor Mehri Daimera\nTable Spec: Spillproof BDC-3\nNotes:\n\n> This will be my third attempt at a dissection of an Imp organ\n> First attempt resulted in rupture\n> Second attempt resulted in rupture\n> Cutting into the outer layer produces copious amounts of fluid discharge\n> As the fluid flows, the rest of the organ, inexplicably, swells\n> Swelling will ultimately result in violent rupture\n> Made use of the stemming tools on the BDC-3 to successfully proceed without incident\n> Surprised to find sharp needle point objects (bones?) inside\n> Timestamping for break\n> Came back to leave some final notes\n> Third attempt aborted after I injured my hand\n> Eventually was able to stop my own bleeding. The organ seems to contain immense anticoagulant properties.",
+    "procCoef": null,
+    "damage": "240%",
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Damage",
+        "initialAmount":"240%",
+        "stackType":null,
+        "addedAmount":"0%"
+      },
+      {
+        "type":"Explode Damage",
+        "initialAmount":"400%",
+        "stackType":0,
+        "addedAmount":"+400%"
+      },
+      {
+        "type":"Additional Damage",
+        "initialAmount":"15%",
+        "stackType":0,
+        "addedAmount":"+15%"
+      }
+    ],
+    "damageType": 0,
+    "rarity": 3,
+    "itemCategory": [1]
+  },
+  {
+    "id": 40004,
+    "name": "Mired Urn",
+    "description": "Siphon health from nearby characters while in combat.",
+    "detail": "While in combat, the nearest 1 (+1 per stack) characters to you within 13m will be 'tethered' to you, dealing 100% damage per second, applying tar, and healing you for 100% of the damage dealt.",
+    "lore": "Lab Dissection Analysis File\nSubject: Mired Urn\nTechnician: J. Flint\nTable Spec: Full Enclosure AY-2 with ARMM Kit\nNotes:\n\n- The survey team went through a lot of trouble to bring this one back.\n- Fitz was the only one left standing, in fact said he felt great, and the rest are still in the recovery ward\n- Subject is what appears to be a clay vase\n- Could this be part of a camouflaging defense mechanism?\n- Inside the vase is a dark gooey substance\n- Goo can articulate into functioning appendages\n- Intelligence of subject indeterminable at this point\n- When operating the ARMM kit, goo attaches to all but one of them\n- Instability in the ARMM power system aborts the procedure",
+    "procCoef": null,
+    "damage": "100%",
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Damage",
+        "initialAmount":"100%",
+        "stackType":null,
+        "addedAmount":"0%"
+      },
+      {
+        "type":"Healing",
+        "initialAmount":"100%",
+        "stackType":null,
+        "addedAmount":"0%"
+      },
+      {
+        "type":"Tethered Count",
+        "initialAmount":"1",
+        "stackType":0,
+        "addedAmount":"+1"
+      }
+    ],
+    "damageType": 0,
+    "rarity": 3,
+    "itemCategory": [0,1]
+  },
+  {
+    "id": 30004,
+    "name": "Item Scrap, Yellow",
+    "description": "Does nothing. Prioritized when used with 3D Printers. ",
+    "detail": "Does nothing. Prioritized when used with 3D Printers. ",
+    "lore": null,
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [],
+    "damageType": null,
+    "rarity": 0,
+    "itemCategory": [4]
   },
   {
     "id": 43,
@@ -2200,6 +2400,74 @@
     "itemCategory": [2]
   },
   {
+    "id": 40005,
+    "name": "Defiant Gouge",
+    "description": "Using a Shrine summons enemies nearby.",
+    "detail": "Using a Shrine summons enemies nearby. Scales over time.",
+    "lore": null,
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [],
+    "damageType": null,
+    "rarity": 4,
+    "itemCategory": [2]
+  },
+  {
+    "id": 40006,
+    "name": "Mercurial Rachis",
+    "description": "Randomly create a Ward of Power. ALL characters deal bonus damage while in the Ward.",
+    "detail": "Creates a Ward of Power in a random location nearby that buffs both enemies and allies within 16m (+50% per stack), causing them to deal +50% damage.",
+    "lore": null,
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Range",
+        "initialAmount":"16m",
+        "stackType":0,
+        "addedAmount":"8m"
+      },
+      {
+        "type":"Bonus Damage",
+        "initialAmount":"50%",
+        "stackType":null,
+        "addedAmount":"0%"
+      }
+    ],
+    "damageType": null,
+    "rarity": 4,
+    "itemCategory": [2]
+  },
+  {
+    "id": 40007,
+    "name": "Purity",
+    "description": "Reduce your skill cooldowns by 2 seconds. You are unlucky.",
+    "detail": "All skill cooldowns are reduced by 2 (+1 per stack) seconds. All random effects are rolled +1 (+1 per stack) times for an unfavorable outcome.",
+    "lore": "It looks like starseed, tanning in dirt.\nIt smells like hot stone, and tall grass.\nIt tastes like spiced fruit, sweet and hot.\nIt feels like solar winds, and solar chimes.\nIt sounds like two brothers, chasing glass frogs in the sun.",
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Cooldown Reduction",
+        "initialAmount":"2s",
+        "stackType":0,
+        "addedAmount":"+1s"
+      },
+      {
+        "type":"Luck",
+        "initialAmount":"-1",
+        "stackType":0,
+        "addedAmount":"-1"
+      }
+    ],
+    "damageType": null,
+    "rarity": 4,
+    "itemCategory": [2]
+  },
+  {
     "id": 10001,
     "name": "Glowing Meteorite",
     "description": "Rain meteors from the sky, hurting both enemies and allies.",
@@ -2410,21 +2678,21 @@
     "id": 20004,
     "name": "Ocular HUD",
     "description": "Gain 100% Critical Strike Chance for 8 seconds.",
-    "detail": "Fire a black hole that draws enemies within 30m into its center. Lasts 10 seconds.",
-    "lore": null,
+    "detail": "Gain +100% Critical Strike Chance for 8 seconds.",
+    "lore": "Order: Ocular HUD\nTracking Number: 871*****\nEstimated Delivery: 09/06/2056\nShipping Method: Standard\nShipping Address: Greivenkamp, 5th Houston St, Prism Tower, Earth\nShipping Details:\nI wish you hadn't asked me for help. I was contacted by [REDACTED] and they explained... well, some things. Using their instructions, I was able to design this interface for prolonged exactness. The beauty of it all is that it will compound with any previous precision enhancing tools. Digital plus optical is the way to go.\nWhile I still don't know everything, I feel like I'm already in too deep. You won't hear from me anymore after this.",
     "procCoef": null,
     "damage": null,
     "heal": "50%",
     "statusList": [
       {
-        "type":"Radius",
-        "initialAmount":"30m",
+        "type":"Critical Chance",
+        "initialAmount":"100%",
         "stackType":null,
-        "addedAmount":"0m"
+        "addedAmount":"0%"
       },
       {
         "type":"Duration",
-        "initialAmount":"10s",
+        "initialAmount":"8s",
         "stackType":null,
         "addedAmount":"0s"
       }
@@ -2465,7 +2733,7 @@
     "name": "Preon Accumulator",
     "description": "Fire a ball of energy that electrocutes nearby enemies before detonating.",
     "detail": "Fires preon tendrils, zapping enemies within 35m for up to 600% damage/second. On contact, detonate in an enormous 20m explosion for 4000% damage.",
-    "lore": null,
+    "lore": "Order: Particle Accelerator Component\nTracking Number: 993******\nEstimated Delivery: 06/06/2056\nShipping Method: Volatile\nShipping Address: Advance Particle Research Center, Mesquite, Earth\n\nI still don't get how you keep losing so many accumulators. I build 'em tough, and they're supposed to last. I ran the numbers on the comm speeds, and I'm pretty sure you sent for this order less than two days after you should've got the last one. \n\nIf this keeps up, you're gonna punch a hole in something where it doesn't belong. You've got a real good sponsor, Jim, but this stuff ain't cheap to ship. And it sure as heck ain't fast. So, I'm sending you a custom part. One that's as tough as I can make, and with a safety to keep you from overcharging it - that I'm sure you'll bypass anyway. \n\nAt least try not to blow this one to bits for the first week, alright? Make our hometown look good. You're not gonna show up those fancy Europeans with a smoking scrap heap.",
     "procCoef": 1.0,
     "damage": "4000%",
     "heal": null,
@@ -2492,7 +2760,7 @@
     "name": "Milky Chrysalis",
     "description": "Gain temporary flight.",
     "detail": "Sprout wings and fly for 15 seconds. Gain +20% movement speed for the duration. ",
-    "lore": null,
+    "lore": "Order: Milky Chrysalis\nTracking Number: 393*****\nEstimated Delivery: 11/27/2056\nShipping Method: High Priority/Biological\nShipping Address: Diptera Research Center, Io\nShipping Details:\n\nDeep within the plague wastes there is an alcove free from disease. It is home to a group of insects that have NOT acclimated to their environment. They survive not through resistance… but through transformation. \n\nI’ve witnessed the creatures undergoing infinite states of metamorphosis. Each change that happens to them is reflected in the surrounding land. This constantly molds the area into something less toxic.\n\nI can’t imagine that they don’t have an upper limit - a final form. What adjustments would that final form bring? Are there any restrictions to what can be modified? I’m sending this sample to you to study. Please be careful with it, as it’s frozen in a cryo cell mid-transformation.",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -2546,7 +2814,7 @@
     "name": "The Crowdfunder",
     "description": "Toggle to fire. Costs gold per bullet.",
     "detail": "Fires a continuous barrage that deals 100% damage per bullet. Costs $1 per bullet. Cost increases over time.",
-    "lore": null,
+    "lore": "Order: The Crowdfunder\nTracking Number: 783*****\nEstimated Delivery: 05/09/2056\nShipping Method: Standard\nShipping Address: 206 29th Ave, High Chariot, Mercury \nShipping Details:\n\nThe wealthy overlords on Primas V went to great measures to break the will of the lower class. They kept the threat of injury and death constant, which helped to keep their servants in check, but this was only half of their method. \n\nTo further highlight the vast differences in status, their extravagant weapons were fueled by currency - they were literally throwing money at them.\n\nI don’t have to tell you how that turned out for them. It’s why my client is in hiding now and has to pawn these things off. He thanks you for your patronage in these trying times.",
     "procCoef": 1.0,
     "damage": "100%",
     "heal": null,
@@ -2573,7 +2841,7 @@
     "name": "Gnarled Woodsprite",
     "description": "Heal over time. Activate to send to an ally.",
     "detail": "Gain a Woodsprite follower that heals for 1.5% of your maximum health/second. Can be sent to an ally to heal them for 10% of their maximum health.",
-    "lore": null,
+    "lore": "Order: Gnarled Woodsprite\nTracking Number: 447*****\nEstimated Delivery: 01/16/2056\nShipping Method: High Priority/Biological\nShipping Address: Happy Hope Children's Hospital, Waleton, Earth\nShipping Details:\n\nDr. Coleas's studies on the benefits of sprite-assisted care have paved the way for hospitals across Earth. These little guys take every opportunity to radiate amongst the injured and sick. \n\nWe've seen significant decreases in the recovery times of almost all patients. While effective, I'm not certain if this aura effect is transmitting anything at all. It might all be placebo; people could just be reacting to the spectacle of a cute lifeform putting on a light show in front of them.\n\nEither way, it's good to have them around, and I think they enjoy being around us too. I'm lucky enough to get to keep one in my home... for study purposes, of course. It may seem a little crass, but shipping these little guys in from off world does not seem to impact their attitude in the slightest.",
     "procCoef": null,
     "damage": null,
     "heal": "1.5%",
@@ -2654,7 +2922,7 @@
     "name": "Blast Shower",
     "description": "Cleanse all negative effects.",
     "detail": "Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles.",
-    "lore": null,
+    "lore": "Order: Blast Shower\nTracking Number: 152*****\nEstimated Delivery: 06/19/2056\nShipping Method: Standard\nShipping Address: Frontier Gate, Outer Edge Zone\nShipping Details:\n\nOuter Edge thanks you for your rewards redemption! It takes a real explorer to make their living on the frontier. As you undoubtedly know, REAL exploring is REAL messy. This portable unit will equip you with the modern convenience of taking a shower anywhere at any time!\n\nDisclaimer: Wear your protective suit while cleansing. Do not use product directly on skin. Blast Shower is only rated for B-class toxins and C-class foreign organisms. This company does not accept any responsibility for incidents as a result of an incomplete cleansing.",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -2695,7 +2963,7 @@
     "name": "Jade Elephant",
     "description": "Gain massive armor for 5 seconds.",
     "detail": "Gain 500 armor for 5 seconds.",
-    "lore": null,
+    "lore": "Excerpt from the folk tale \"Clean as Jade\":\n\n“... and while the peasants braced for the advancement of the Emperor’s army, the stone carver finished her last strike on the giant sculpture. The clang of the flat tool against the beautiful, translucent green sheen of the solid surface echoed through the trees and around all the villagers. Their souls were cleansed and made whole by the heavenly stone, now formed into the imposing presence of an elephant.\n\nDetermination and resolve had essentially been carved into the very spirit of the ones, who, just moments ago were clutching their farming implements and make-shift weapons with trembling hands. The attack was repelled that day. The Emperor’s army told stories about their metal weapons bouncing off the cloth of commoners. This inspiring encounter spread to other villages and...”",
     "procCoef": null,
     "damage": null,
     "heal": null,
@@ -2848,6 +3116,87 @@
       {
         "type":"Explode Threshold",
         "initialAmount":"50% HP",
+        "stackType":null,
+        "addedAmount":"0"
+      }
+    ],
+    "damageType": null,
+    "rarity": 5,
+    "itemCategory": [3]
+  },
+  {
+    "id": 20024,
+    "name": "Super Massive Leech",
+    "description": "Heal for a percentage of the damage you deal for 8 seconds.",
+    "detail": "Heal for 20% of the damage you deal. Lasts 8 seconds.",
+    "lore": "Return: Super Massive Leech\nTracking Number: 817*****\nEstimated Delivery: 07/01/2056\nShipping Method: High Priority/Biological\nShipping Address: Rare/Extinct Study Satellite, Beachfront, Saturn\nShipping Details:\n\nWhile the medical benefits of this creature are obvious, the psychological effects are not. Upon receiving a previous shipment, Carolyn took charge of research and experimentation with the organism. \n\nEverything was by the book until, one day, she walked into the lab with the specimen clearly attached to her neck. Incredibly startled, the rest of us eventually coaxed her into placing it back into containment.\n\nWe inspected the bite area but, after running all the standard tests, we did not observe any adverse side effects.\n\nShe stated that it made her feel fantastic, but no one else in the lab felt comfortable with her behavior.",
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Heal",
+        "initialAmount":"20%",
+        "stackType":null,
+        "addedAmount":"0%"
+      },
+      {
+        "type":"Duration",
+        "initialAmount":"8s",
+        "stackType":null,
+        "addedAmount":"0s"
+      }
+    ],
+    "damageType": null,
+    "rarity": 5,
+    "itemCategory": [3]
+  },
+  {
+    "id": 20025,
+    "name": "Gorag's Opus",
+    "description": "You and all your allies enter a frenzy.",
+    "detail": "All allies enter a frenzy for 7 seconds. Increases movement speed by 50% and attack speed by 100%.",
+    "lore": "Audio transcription complete from \"Carrion Crows Tour 2055: Special Edition\"\n\nPrinting...\n\n\"Halfway through the tour we were at this little shop down in Groveside and the guy at the desk is trying to sell us random junk.\"\n\n\"Yeah, he was totally out of the loop, had no idea who we were.\"\n\n\"Yep, anyways, as a joke, I’m thinking I’ll buy this ancient looking drum and use it on stage at the next show. Then we’d circle back and show this guy a video of his merch being used in the biggest performance on the planet.\"\n\n\"We tried to find him again, but the shop was all shut down. Couldn’t figure out what happened to him.\"\n\n\"Thing is, that drum drove our fans wild. It turned out to be our most successful tour ever.\"",
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Duration",
+        "initialAmount":"7s",
+        "stackType":null,
+        "addedAmount":"0s"
+      },
+      {
+        "type":"Movement Speed Bonus",
+        "initialAmount":"50%",
+        "stackType":null,
+        "addedAmount":"0%"
+      },
+      {
+        "type":"Attack Speed Bonus",
+        "initialAmount":"50%",
+        "stackType":null,
+        "addedAmount":"0%"
+      }
+    ],
+    "damageType": null,
+    "rarity": 5,
+    "itemCategory": [3]
+  },
+  {
+    "id": 20026,
+    "name": "Forgive Me Please",
+    "description": "Throw a cursed doll that repeatedly triggers your 'On Kill' effects.",
+    "detail": "Throw a cursed doll out that triggers any On-Kill effects you have every 1 second for 8 seconds.",
+    "lore": "There is a note pinned to the doll:\n\n Ayy, you’re killin’ me!\n \n You’re killin’ me!\n \n You’re killin’ me!\n \n You’re killin’ me!\n \n You’re killin’ me!\n \n You’re killin’ me!\n \n You’re killin’ me!\n \n You’re really killing me.",
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Trigger",
+        "initialAmount":"8",
         "stackType":null,
         "addedAmount":"0"
       }

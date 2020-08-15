@@ -211,6 +211,7 @@ class SurvivorDetailScreen extends StatelessWidget {
                 _buildSkillSection(context, data, SKILL_TYPE.SECONDARY),
                 _buildSkillSection(context, data, SKILL_TYPE.UTILITY),
                 _buildSkillSection(context, data, SKILL_TYPE.SPECIAL),
+                _buildSkillSection(context, data, SKILL_TYPE.BEACON),
                 Divider(height: 40),
                 _buildUnlock(context, data),
               ],
