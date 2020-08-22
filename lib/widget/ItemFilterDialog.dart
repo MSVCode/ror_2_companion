@@ -24,6 +24,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
   bool _checkCategoryEquipment;
   bool _checkCategoryHeal;
   bool _checkCategoryUtility;
+  bool _checkCategoryScrap;
 
   @override
   void initState() {
@@ -42,6 +43,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
     _checkCategoryEquipment = prov.filterItemCategory[ITEM_CATEGORY.EQUIPMENT];
     _checkCategoryHeal = prov.filterItemCategory[ITEM_CATEGORY.HEAL];
     _checkCategoryUtility = prov.filterItemCategory[ITEM_CATEGORY.UTILITY];
+    _checkCategoryScrap = prov.filterItemCategory[ITEM_CATEGORY.SCRAP];
   }
 
   void _saveFilter() {
@@ -61,6 +63,7 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
       ITEM_CATEGORY.EQUIPMENT: _checkCategoryEquipment,
       ITEM_CATEGORY.HEAL: _checkCategoryHeal,
       ITEM_CATEGORY.UTILITY: _checkCategoryUtility,
+      ITEM_CATEGORY.SCRAP: _checkCategoryScrap,
     });
 
     //trigger filter
@@ -228,6 +231,20 @@ class ItemFilterDialogState extends State<ItemFilterDialog> {
                     },
                   ),
                 )
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                    title: Text("Scrap",
+                        style: small.copyWith(color: Colors.white)),
+                    value: _checkCategoryScrap,
+                    onChanged: (val) {
+                      setState(() => _checkCategoryScrap = val);
+                    },
+                  ),
+                ),
               ],
             ),
           ],

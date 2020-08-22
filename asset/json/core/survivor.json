@@ -17,7 +17,7 @@
         "skillType": 0,
         "variant": 0,
         "name": "Poison",
-        "description": "Certain attacks Poison enemies, dealing damage equal to 10% of their maximum health over time. Poison cannot kill enemies.",
+        "description": "Poisonous attacks apply a powerful damage-over-time.",
         "cooldown": null,
         "procList": [],
         "damage": null,
@@ -49,7 +49,7 @@
         "skillType": 1,
         "variant": 0,
         "name": "Vicious Wounds",
-        "description": "Maul an enemy for 200% damage. Every 3rd hit deals 400% damage.",
+        "description": "Maul an enemy for 200% damage. Every 3rd hit is Regenerative and deals 400% damage.",
         "cooldown": null,
         "procList": [
           {
@@ -64,7 +64,7 @@
         "skillType": 2,
         "variant": 0,
         "name": "Neurotoxin",
-        "description": "Spit toxic bile for 240% damage that poisons enemies hit.",
+        "description": "Poisonous. Spit toxic bile for 240% damage.",
         "cooldown": 2.0,
         "procList": [
           {
@@ -79,7 +79,7 @@
         "skillType": 2,
         "variant": 1,
         "name": "Ravenous Bite",
-        "description": "Bite enemy, dealing 310% damage and poisoning them. Deals up to 3x damage to low health enemies.",
+        "description": "Poisonous. Regenerative. Bite an enemy for 310% damage. Deals up to 3x damage to low health enemies.",
         "cooldown": 2.0,
         "procList": [
           {
@@ -94,7 +94,7 @@
         "skillType": 3,
         "variant": 0,
         "name": "Caustic Leap",
-        "description": "Leap into the air, dealing 320% damage, stunning, and poisoning enemies on impact. Leaves a pool of acid that deals 25% damage.",
+        "description": "Poisonous. Stunning. Leap in the air, dealing 320% damage. Leave acid that deals 25% damage.",
         "cooldown": 6.0,
         "procList": [
           {
@@ -115,7 +115,7 @@
         "skillType": 3,
         "variant": 1,
         "name": "Frenzied Leap",
-        "description": "Leap into the air, dealing 550% damage and stunning enemies on impact. Reduce the cooldown by 2s for every enemy hit.",
+        "description": "Stunning. Leap in the air, dealing 550% damage. Reduce the cooldown by 2s for every enemy hit.",
         "cooldown": 10.0,
         "procList": [
           {
@@ -132,7 +132,7 @@
         "skillType": 4,
         "variant": 0,
         "name": "Epidemic",
-        "description": "Release a deadly poison that deals 100% damage and poisons enemies. The disease continually spreads to up to 20 targets.",
+        "description": "Poisonous. Release a deadly disease that deals 100% damage. The disease spreads to up to 20 targets.",
         "cooldown": 10.0,
         "procList": [
           {
@@ -184,7 +184,8 @@
         "damage": 2.2,
         "noteList": [
           "Has 4 charges initially",
-          "Burns 8 ticks for 25% damage each"
+          "Burns 8 ticks for 25% damage each",
+          "2m blast radius"
         ]
       },
       {
@@ -201,14 +202,15 @@
         ],
         "damage": 2.2,
         "noteList": [
-          "Has 4 charges initially"
+          "Has 4 charges initially",
+          "6m blast radius"
         ]
       },
       {
         "skillType": 2,
         "variant": 0,
         "name": "Charged Nano-Bomb",
-        "description": "Charge up an exploding nano-bomb that deals 400%-1200% damage and stuns all enemies.",
+        "description": "Stunning. Charge up a exploding nano-bomb that deals 400%-2000% damage.",
         "cooldown": 5.0,
         "procList": [
           {
@@ -220,7 +222,7 @@
             "procCoef": 0.3
           }
         ],
-        "damage": 12.0,
+        "damage": 20.0,
         "noteList": [
           "Can sprint while charging",
           "Damage increase also calculated during initial animation, so the minimum damage is 600% (increased with Attack Speed)",
@@ -231,7 +233,7 @@
         "skillType": 2,
         "variant": 1,
         "name": "Charged Nano-Spear",
-        "description": "Charge up a piercing nano-spear that deals 400%-1200% damage and freezes all enemies.",
+        "description": "Freezing. Charge up a piercing nano-spear that deals 400%-1200% damage.",
         "cooldown": 5.0,
         "procList": [
           {
@@ -251,7 +253,7 @@
         "skillType": 3,
         "variant": 0,
         "name": "Snapfreeze",
-        "description": "Create a barrier that freezes enemies for 100% damage. Enemies at low health are instantly killed if frozen.",
+        "description": "Freezing. Create a barrier that hurts enemies for 100% damage.",
         "cooldown": 12.0,
         "procList": [
           {
@@ -289,7 +291,7 @@
         "skillType": 4,
         "variant": 1,
         "name": "Ion Surge",
-        "description": "Burst into the sky, dealing 800% damage and stunning nearby enemies.",
+        "description": "Stunning. Burst into the sky, dealing 800% damage.",
         "cooldown": 8.0,
         "procList": [
           {
@@ -387,7 +389,7 @@
         "skillType": 4,
         "variant": 0,
         "name": "Suppressive Fire",
-        "description": "Fire repeatedly, stunning enemies for 100% damage per bullet.",
+        "description": "Stunning. Fire repeatedly for 100% damage per bullet. The number of shots increases with attack speed.",
         "cooldown": 9.0,
         "procList": [
           {
@@ -561,7 +563,7 @@
         "skillType": 1,
         "variant": 0,
         "name": "Strafe",
-        "description": "Quickly fire a seeking arrow for 150% damage. Can be used while sprinting.",
+        "description": "Agile. Quickly fire a seeking arrow for 150% damage.",
         "cooldown": null,
         "procList": [
           {
@@ -578,7 +580,7 @@
         "skillType": 1,
         "variant": 1,
         "name": "Flurry",
-        "description": "Draw back a volley of 3 seeking arrows for 3x100% damage. Critical Strikes fire 6 arrows. Can be used while sprinting.",
+        "description": "Agile. Draw back a volley of 3 seeking arrows for 3x100% damage. Critical Strikes fire 6 arrows.",
         "cooldown": null,
         "procList": [
           {
@@ -620,7 +622,7 @@
         "skillType": 3,
         "variant": 0,
         "name": "Phase Blink",
-        "description": "Disappear and teleport a short distance. Can store up to 3 charges. Can be used while sprinting.",
+        "description": "Agile. Disappear and teleport a short distance. Can store up to 3 charges.",
         "cooldown": 2.0,
         "procList": [],
         "damage": null,
@@ -720,7 +722,7 @@
         "skillType": 2,
         "variant": 1,
         "name": "Spiked Fist",
-        "description": "Fire your gauntlet forward, dealing 320% damage and stunning. Pulls you to heavy targets. Light targets are pulled to YOU instead.",
+        "description": "Stunning. Fire your gauntlet forward, dealing 320% damage. Pulls you to heavy targets. Light targets are pulled to YOU instead.",
         "cooldown": 5.0,
         "procList": [
           {
@@ -735,7 +737,7 @@
         "skillType": 3,
         "variant": 0,
         "name": "Charged Gauntlet",
-        "description": "Charge up a piercing punch for 600%-2700% damage. Deals more damage at higher speeds.",
+        "description": "Heavy. Charge up a piercing punch for 600%-2700% damage.",
         "cooldown": 5.0,
         "procList": [
           {
@@ -750,7 +752,7 @@
         "skillType": 3,
         "variant": 1,
         "name": "Thunder Gauntlet",
-        "description": "Charge up a single punch for 2100% damage that shocks enemies in a cone for 1000% damage. Deals more damage at higher speeds.",
+        "description": "Heavy. Charge up a single punch for 2100% damage that shocks enemies in a cone for 1000% damage.",
         "cooldown": 5.0,
         "procList": [
           {
@@ -787,10 +789,10 @@
     "name": "Mercenary",
     "title": "Hired Blade",
     "description": "The Mercenary is a high skill melee survivor that uses his many dodges to weave in and out of combat.",
-    "health": 140.0,
-    "addedHealth": 42.0,
-    "regen": 2.5,
-    "addedRegen": 0.5,
+    "health": 110.0,
+    "addedHealth": 33.0,
+    "regen": 1.0,
+    "addedRegen": 0.2,
     "damage": 12.0,
     "addedDamage": 2.4,
     "speed": 7.0,
@@ -812,7 +814,7 @@
         "skillType": 1,
         "variant": 0,
         "name": "Laser Sword",
-        "description": "Slice in front for 130% damage. Every 3rd hit strikes in a greater area for 300% damage.",
+        "description": "Agile. Slice in front for 130% damage. Every 3rd hit strikes in a greater area and Exposes enemies.",
         "cooldown": null,
         "procList": [
           {
@@ -820,7 +822,7 @@
             "procCoef": 1.0
           }
         ],
-        "damage": 3.0,
+        "damage": 1.3,
         "noteList": [
           "The base swing speed is 0.42s per swing"
         ]
@@ -847,7 +849,7 @@
         "variant": 1,
         "name": "Rising Thunder",
         "description": "Unleash a slicing uppercut, dealing 450% damage and sending you airborne.",
-        "cooldown": 3.0,
+        "cooldown": 2.5,
         "procList": [
           {
             "name": null,
@@ -861,8 +863,8 @@
         "skillType": 3,
         "variant": 0,
         "name": "Blinding Assault",
-        "description": "Dash forward, stunning enemies for 300% damage. If you hit an enemy, you can dash again, up to 3 total.",
-        "cooldown": 7.0,
+        "description": "Stunning. Dash forward, dealing 300% damage. If you hit an enemy, you can dash again, up to 3 total.",
+        "cooldown": 8.0,
         "procList": [
           {
             "name": null,
@@ -897,7 +899,7 @@
         "skillType": 4,
         "variant": 1,
         "name": "Slicing Winds",
-        "description": "Fire a wind of blades that attack up to 3 enemies for 8x100% damage.",
+        "description": "Fire a wind of blades that attack up to 3 enemies for 8x100% damage. The last hit Exposes enemies.",
         "cooldown": 6.0,
         "procList": [
           {
@@ -943,12 +945,12 @@
         "procList": [
           {
             "name": null,
-            "procCoef": 0.4
+            "procCoef": 0.6
           }
         ],
-        "damage": 0.6,
+        "damage": 0.7,
         "noteList": [
-          "Initial press fires six nails, resulting 360% damage and 2.4 proc coefficient if all hits"
+          "Fire 12 shot per second, resulting 840% damage and 7.2 proc coefficient if all hits"
         ]
       },
       {
@@ -1006,7 +1008,7 @@
         "skillType": 2,
         "variant": 0,
         "name": "Blast Canister",
-        "description": "Launch a stun canister for 220% damage. Drops stun bomblets for 5x44% damage.",
+        "description": "Stunning. Launch a canister for 220% damage. Drops stun bomblets for 5x44% damage.",
         "cooldown": 6.0,
         "procList": [
           {
@@ -1025,7 +1027,7 @@
         "skillType": 3,
         "variant": 0,
         "name": "Transport Mode",
-        "description": "Zoom forward, gaining armor and speed. Deals 250% damage to enemies in the way. Deals more damage at higher speeds.",
+        "description": "Heavy. Zoom forward, gaining 200 armor and 220% movement speed. Deals 250% damage to enemies.",
         "cooldown": 8.0,
         "procList": [
           {
@@ -1137,7 +1139,7 @@
         "skillType": 3,
         "variant": 0,
         "name": "DIRECTIVE: Disperse",
-        "description": "Fire a sonic boom that pushes and Weakens all enemies hit. Pushes you backwards if you are airborne.",
+        "description": "Fire a Sonic Boom that Weakens all enemies hit.",
         "cooldown": 5.0,
         "procList": [
           {
@@ -1152,7 +1154,7 @@
         "skillType": 3,
         "variant": 1,
         "name": "Bramble Volley",
-        "description": "Costs 20% of your current health. Fire thorns that pushes and damages all enemies hit for 550% damage. Pushes you backwards if you are airborne. Heals for every target hit.",
+        "description": "Costs 20% of your current health. Fire a Sonic Boom that damages enemies for 550% damage. Heals for every target hit.",
         "cooldown": 5.0,
         "procList": [
           {

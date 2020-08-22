@@ -30,7 +30,8 @@ class DataProvider with ChangeNotifier {
     ITEM_CATEGORY.DAMAGE: true,
     ITEM_CATEGORY.EQUIPMENT: true,
     ITEM_CATEGORY.HEAL: true,
-    ITEM_CATEGORY.UTILITY: true
+    ITEM_CATEGORY.UTILITY: true,
+    ITEM_CATEGORY.SCRAP: true
   };
   //survivor
   String lastSurvivorQuery = "";
