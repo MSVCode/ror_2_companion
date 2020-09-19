@@ -327,13 +327,13 @@
     "type": 2,
     "key": "skill-1-4-1",
     "name": "Artificer: Orbital Bombardment",
-    "description": "As Commando, land the killing blow on an Overloading Worm."
+    "description": "As Artificer, kill 15 enemies before touching the ground."
   },
   {
     "type": 2,
     "key": "skill-2-2-1",
     "name": "Commando: Rolling Thunder",
-    "description": "As Artificer, kill 15 enemies before touching the ground."
+    "description": "As Commando, land the killing blow on an Overloading Worm."
   },
   {
     "type": 2,
