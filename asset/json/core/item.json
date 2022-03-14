@@ -3204,5 +3204,26 @@
     "damageType": null,
     "rarity": 5,
     "itemCategory": [3]
+  },
+  {
+    "id": 0,
+    "name": "Laser Scope",
+    "description": "Your critical strikes deal an extra 100% damage.",
+    "detail": "Increases attack speed by 15% (+15% per stack).",
+    "lore": "\"",
+    "procCoef": null,
+    "damage": null,
+    "heal": null,
+    "statusList": [
+      {
+        "type":"Damage",
+        "initialAmount":"100%",
+        "stackType":0,
+        "addedAmount":"+100%"
+      }
+    ],
+    "damageType": null,
+    "rarity": 3,
+    "itemCategory": [1]
   }
 ]
